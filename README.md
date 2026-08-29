@@ -2,6 +2,10 @@
 
 **An algorithmic peg whose seigniorage is delivered as loot, and whose reserve is fed by the world's losses.**
 
+> **[Audit log](docs/audit-1.md)** · **[Changelog](CHANGELOG.md)** — what our internal
+> audit found before we open to strangers, what has been fixed, and what is still open.
+> Current build: **0.9.0**.
+
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
 Tomb Finance–style three-token peg. GOLD is meant to be worth one ICP. Every six
 hours the Keeper — a canister that does nothing but watch the price and decide —

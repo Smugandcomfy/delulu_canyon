@@ -47,6 +47,7 @@ flowchart LR
 | [Field guide](docs/field-guide.md) | For players: where to go and what is worth doing in each of the Keeper's moods |
 | [Lineage](docs/lineage.md) | Where this economy comes from, where that family of designs breaks, and what we do differently |
 | [Capacity and cycles](docs/capacity-and-cycles.md) | How many people can play at once, what actually limits it, and what it costs to run a game where the canister pays for every message |
+| [Audit 1](docs/audit-1.md) | What our internal audit found before opening to strangers, what has been fixed, and what is still open |
 | [Activities](docs/activities.md) | Curios, the Collector, NPC trade, fishing, the ferry, the inn and the Ossuary *(shipping soon)* |
 
 ## What this is not

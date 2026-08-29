@@ -1,0 +1,83 @@
+# Audit 1 — hardening log
+
+Before opening the world to strangers we put the whole codebase through an internal audit:
+several independent read-only passes over the canisters and the client, each looking at a
+different dimension — money paths, authorisation, cost under load, dead code, and the seams
+between the backend and the browser.
+
+It produced **78 findings**. This page is the public record of what has been done about them.
+
+## Where it stands
+
+| | |
+|---|---|
+| Findings raised | 78 |
+| Closed | **25** |
+| Fixed | 22 |
+| Investigated and dismissed | 2 |
+| Already resolved before the audit | 1 |
+
+Two findings are worth calling out for being *wrong*. Both were investigated properly and both
+turned out to describe a bug that does not exist — one in the movement code, one in the client's
+configuration handling. In each case we wrote a test that pins the correct behaviour against the
+unchanged code, so nobody "fixes" them later. **An audit finding is a hypothesis, not a verdict.**
+
+## Batches
+
+Work is grouped into batches rather than done finding by finding. Several findings usually turn
+out to be one underlying thing, and fixing them together produces one change to one idea instead
+of three passes over it — twice now, a batch closed a fourth problem nobody had reported.
+
+Commit hashes are from the private implementation repository, listed so this log can be checked
+against it.
+
+| Batch | Status | Commit |
+|---|---|---|
+| Release and tooling safety — build guards, an operations runbook, a repaired local test harness | **Closed** | `35c9574`, `960ee97` |
+| Authorisation review — who may call what, across every canister | **Closed** | `1e3fdc6` |
+| Scheduler resilience — the economy's clock now survives a failed cycle | **Closed** | `514d8c2` |
+| Exchange safety — a trade that cannot complete refuses before anything moves | **Closed** | `4d466a6` |
+| Client responsiveness — portal travel, and how world objects are drawn | **Closed** | `d6c8596` |
+| Navigation and session — fog of war across portals, and the trade window | **Closed** | `06eeed2` |
+| Identity and naming — who owns a name and when it is released | **Closed** | `6af86cb` |
+| Surfacing what already worked — lantern light, dropped chests, bounties, signposts | **Closed** | `f04246d`, `7ed42b9` |
+| Economy accounting | Open | — |
+| Oracle observability | Open | — |
+| World geometry migration | Open | — |
+| Cost and capacity under load | Open | — |
+| Dead code and legacy surface | Open | — |
+
+## What players will notice
+
+- **Portals work from the action button.** Travelling by pressing the action button the moment
+  you arrive on a portal used to leave the button stuck and need a page refresh. Fast travel was
+  never affected, which is why it took a while to pin down.
+- **Objects on the ground stay put.** Chests and crates near the edge of your sight used to
+  appear and disappear as you moved. They also drew *underneath* anyone standing on them, so a
+  crate you were stood on was invisible. Both fixed.
+- **The Wisp Lantern lights what it promises.** Its extra range was real on the server and
+  ignored by the client, so the outer ring of fog never lifted.
+- **A dropped chest tells you what it is and who left it** — the design always sent that; the
+  client simply never asked for it.
+- **A refused dragon bounty can be claimed again** rather than sitting out of reach.
+- **Signposts read the words the realm actually holds**, not a copy baked into the client.
+- **The trade window closes when you close it.**
+
+## Why the open items are vague
+
+The world is live and holds real value. Describing open work in detail — even work that is
+merely unfinished rather than unsafe — is an invitation, so open batches are named by area only
+and closed ones are described by their effect rather than their mechanism.
+
+That is the only thing withheld here. The counts are real, the status is real, and the commit
+hashes let anyone with access to the implementation repository check every line of it.
+
+## What comes next
+
+The remaining batches are, roughly in order: the accounting paths that move value between the
+Keeper and the world, better visibility into what the price oracle is doing and why, the world
+geometry migration, the cost work that matters as concurrency grows, and finally removing the
+legacy surface that predates the current design.
+
+A second audit, focused on three specific behaviours reported from play, has also been completed;
+its findings are folded into the same batches.

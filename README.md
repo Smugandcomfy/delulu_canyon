@@ -45,6 +45,7 @@ flowchart LR
 | [The world](docs/the-world.md) | How the algorithm lands in the game: chests, carrying, death, decay, and the places the economy lives |
 | [Tokens](docs/tokens.md) | GOLD, TORCH and TOMBSTONE — what each is for, how each is made and destroyed |
 | [Field guide](docs/field-guide.md) | For players: where to go and what is worth doing in each of the Keeper's moods |
+| [Capacity and cycles](docs/capacity-and-cycles.md) | How many people can play at once, what actually limits it, and what it costs to run a game where the canister pays for every message |
 
 ## What this is not
 

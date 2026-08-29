@@ -4,7 +4,7 @@
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer built around a Tomb Finance-style three-token peg. GOLD is pegged 1:1 to ICP. Every six hours a canister called the Keeper reads the GOLD/ICP price on ICPSwap; when GOLD trades above the peg it mints new GOLD — but instead of paying it to stakers, it hides it as chests in a persistent dungeon world. Players have to find the chests, carry the gold through danger, and bank it at a vault before it is theirs. When GOLD trades below the peg nothing mints, the world goes dark, and the Crypt sells bonds for burned gold.
 
-The second idea is the **Hoard**. Tomb's bond reserve was fed only by a slice of each expansion, so its contraction side depended on faith. Here the reserve is also fed *involuntarily*: chests nobody found in four epochs, bodies nobody reclaimed, gold bitten off by skeletons — every loss the world produces backs the bonds. Neglect in the dungeon funds the defence of the peg. The full argument is in [docs/WHITEPAPER.md](docs/WHITEPAPER.md); the numbers behind it are in [docs/TOMB_MECHANICS.md](docs/TOMB_MECHANICS.md).
+The second idea is the **Hoard**. Tomb's bond reserve was fed only by a slice of each expansion, so its contraction side depended on faith. Here the reserve is also fed *involuntarily*: chests nobody found in four epochs, bodies nobody reclaimed, gold bitten off by skeletons — every loss the world produces backs the bonds. Neglect in the dungeon funds the defence of the peg. The full argument is in [docs/WHITEPAPER.md](docs/the-world.md); the numbers behind it are in [docs/TOMB_MECHANICS.md](docs/the-keeper.md).
 
 ---
 
@@ -36,7 +36,7 @@ You wash up at the harbour of **Luméira**, a walled town at the centre of a 128
 - **The Crypt** (Hallowmere) is the bond market: bury GOLD during a contraction for TOMBSTONE, dig it up with a premium when the price recovers.
 - **The Store** (Old Bessany, town) sells food, eggs, weapons and repairs for GOLD; pets hatch from eggs and lay more when fed; the cauldrons craft from bone dust; two doors are gated by DAO neurons.
 
-The player guide — first ten minutes, moods, health, torches, the Crypt, eggs and the Store — is [docs/HOW_TO_PLAY.md](docs/HOW_TO_PLAY.md), also available in-game with `H`. Short answers: [docs/FAQ.md](docs/FAQ.md).
+The player guide — first ten minutes, moods, health, torches, the Crypt, eggs and the Store — is available in-game with `H`. Where to go and when: [the field guide](docs/field-guide.md).
 
 ---
 
@@ -69,9 +69,9 @@ Three ICRC ledgers (PanIndustrial `icrc-fungible` 0.2.1, Motoko; ICRC-1/2/3/4 + 
 | | GOLD | TORCH | TOMBSTONE |
 |---|---|---|---|
 | Tomb name | TOMB — money, peg 1 GOLD = 1 ICP | TSHARE — ownership | TBOND — bond |
-| Ledger | `555lq-jaaaa-aaaap-quxha-cai` | `524ne-eyaaa-aaaap-quxhq-cai` | `7hbdm-xqaaa-aaaap-quxia-cai` |
-| Minting account | Keeper `5u6am-7iaaa-aaaap-quxgq-cai` + subaccount `ff`×32 (transfers *to* it burn, *from* it mint) | same | same |
-| Fee collector | coffers `okpx5-c7nln-u3qii-ub55e-374ug-kjede-segkn-jgbv5-dkbfr-m55ma-yqe` (collected since GOLD block 29) | same | same |
+| Ledger | the GOLD ledger | the TORCH ledger | the TOMBSTONE ledger |
+| Minting account | Keeper the Keeper + subaccount `ff`×32 (transfers *to* it burn, *from* it mint) | same | same |
+| Fee collector | coffers the coffers account (collected since GOLD block 29) | same | same |
 | Supply, 28 Aug 2026 | 120,887 | 70,801 | 0 |
 
 **Keeper subaccounts** (tag byte + 31 × `00`): `ff…` MINT · `01…` FLOOR (gold minted as chests, not yet banked) · `02…` HOARD (bond reserve) · `03…` GRAVEYARD_RESERVE (the 70,000 TORCH budget) · `04…` MASONRY (staked TORCH).
@@ -82,9 +82,9 @@ Three ICRC ledgers (PanIndustrial `icrc-fungible` 0.2.1, Motoko; ICRC-1/2/3/4 + 
 
 ## The Keeper
 
-Canister `5u6am-7iaaa-aaaap-quxgq-cai` (`src/keeper`). Full reference: [docs/KEEPER_API.md](docs/KEEPER_API.md); verified analysis: [docs/TOMB_MECHANICS.md](docs/TOMB_MECHANICS.md).
+The Keeper.
 
-**Epoch.** 21,600 s (6 h), aligned to the clock. Every 300 s the Keeper reads `pool.metadata()` on the ICPSwap pool `jscl5-rqaaa-aaaar-qcgya-cai` (GOLD is token0) and keeps the sample if it is within 25 % of the epoch's running median. At the boundary the TWAP is the mean of the surviving samples. Fail-safes → **Stable, no mint, no Crypt**: fewer than 3 samples; pool liquidity below `minPoolLiquidity`; pool or supply unreadable (observed working on mainnet).
+**Epoch.** 21,600 s (6 h), aligned to the clock. Every 300 s the Keeper reads `pool.metadata()` on the GOLD/ICP pool (GOLD is token0) and keeps the sample if it is within 25 % of the epoch's running median. At the boundary the TWAP is the mean of the surviving samples. Fail-safes → **Stable, no mint, no Crypt**: fewer than 3 samples; pool liquidity below `minPoolLiquidity`; pool or supply unreadable (observed working on mainnet).
 
 **State machine.** TWAP > 1.01 → **Expansion** · TWAP < 1.00 → **Contraction** · else **Stable**. The mood (Bright / Dark / Quiet) is pushed to the dungeon.
 
@@ -127,7 +127,7 @@ Who can do what: Keeper **controllers** (`xzm74…`, Tendys root) — config, re
 
 ## The Graveyard
 
-Canister `7aafy-2iaaa-aaaap-quxiq-cai` (`src/graveyard`) — Tomb's Cemetery on ICPSwap v3, which has no LP token. Code installed; **not yet initialised** (waits for the reserve release). Reference: [docs/GRAVEYARD_API.md](docs/GRAVEYARD_API.md).
+The Graveyard — Tomb's Cemetery on ICPSwap v3, which has no LP token. Code installed; **not yet initialised** (waits for the reserve release).
 
 - **Custody by transfer.** The player `approvePosition`s their GOLD/ICP position to the Graveyard and calls `stake`; the Graveyard checks ownership, no open limit orders, full-range ticks (±887,220) and positive liquidity, takes the position with `transferPosition`, and snapshots its liquidity. `unstake` returns it. Swap fees earned in custody stay on the position (`claimFees`). A controller escape hatch returns any orphaned position.
 - **Emission.** 49,000 TORCH over 365 days = 134.25 per day = 33.56 per epoch, by reward-per-share (`accPerLiquidity` scaled 1e18); `claim` from 0.01 TORCH; no lock-up. Intervals with no stakers are forfeited.
@@ -159,20 +159,20 @@ Canister `7aafy-2iaaa-aaaap-quxiq-cai` (`src/graveyard`) — Tomb's Cemetery on 
 ```mermaid
 flowchart TB
     subgraph client["Client — Vite + TypeScript + Phaser 3 (isometric)"]
-        FE[sneed_mud_frontend_staging<br/>coqqu-zaaaa-aaaai-q32ma-cai]
+        FE[sneed_mud_frontend_staging<br/>the client]
     end
     subgraph world["World"]
-        D[Dungeon<br/>5r3gp-3iaaa-aaaap-qqaeq-cai<br/>zones · players · chests · Store · doors]
-        S[Social<br/>7jdoe-maaaa-aaaap-quxja-cai<br/>chat · whispers · presence · moderation]
+        D[Dungeon<br/>zones · players · chests · Store · doors]
+        S[Social<br/>the Social canister<br/>chat · whispers · presence · moderation]
     end
     subgraph economy["Economy"]
-        K[[Keeper<br/>5u6am-7iaaa-aaaap-quxgq-cai<br/>6 h epochs · TWAP · mint · Crypt · Hoard]]
+        K[[Keeper<br/>6 h epochs · TWAP · mint · Crypt · Hoard]]
         L1[(GOLD ledger<br/>555lq…)]
         L2[(TORCH ledger<br/>524ne…)]
         L3[(TOMBSTONE ledger<br/>7hbdm…)]
-        GY[Graveyard<br/>7aafy-2iaaa-aaaap-quxiq-cai]
+        GY[Graveyard]
     end
-    POOL[(ICPSwap GOLD/ICP<br/>jscl5-rqaaa-aaaar-qcgya-cai)]
+    POOL[(ICPSwap GOLD/ICP<br/>the GOLD/ICP pool)]
     SNS[Tendys governance kri5s… · Sneed governance fi3zi…]
     COF[Coffers okpx5…]
     FE -->|enterWorld · move · bank · buy| D
@@ -192,31 +192,14 @@ flowchart TB
     classDef dashed stroke-dasharray: 5 5
 ```
 
-### Canister registry — as of 28 Aug 2026
-
-All on subnet `nl6hn…`. 
-| role | dfx name | principal | state | cycles | memory |
-|---|---|---|---|---|---|
-| Keeper | `keeper` | `5u6am-7iaaa-aaaap-quxgq-cai` | live — reads the pool; safety round deployed | 3.0 T | 8 MB |
-| GOLD ledger | `gold_ledger` | `555lq-jaaaa-aaaap-quxha-cai` | live — kept at cut-over | 1.5 T | 29 MB |
-| TORCH ledger | `torch_ledger` | `524ne-eyaaa-aaaap-quxhq-cai` | live — reinstalled at cut-over | 1.5 T | 13 MB |
-| TOMBSTONE ledger | `tombstone_ledger` | `7hbdm-xqaaa-aaaap-quxia-cai` | live — reinstalled at cut-over | 1.5 T | 9 MB |
-| Graveyard | `graveyard` | `7aafy-2iaaa-aaaap-quxiq-cai` | code installed, not `init`ed | 0.7 T | 6 MB |
-| Social | `social` | `7jdoe-maaaa-aaaap-quxja-cai` | live — v1.1.0 with moderation | 0.6 T | 7 MB |
-| ICPSwap pool | — | `jscl5-rqaaa-aaaar-qcgya-cai` | GOLD/ICP 0.3 %, GOLD = token0 | — | — |
-| Dungeon (production) | `delulu_dungeon` | `` | empty | 1.1 T | — |
-| Client (production) | `delulu_frontend` | `` | empty | 1.1 T | — |
-
-Idle burn across the ten is ~28 B cycles/day (~0.86 T/month) as of 28 Aug 2026, two-thirds of it the staging dungeon; a canister snapshot doubles a canister's reported memory (and burn) while it exists.
-
 ### Money flow between the Keeper's accounts
 
 ```mermaid
 flowchart LR
-    MINT[MINT ff…] -->|expansion| FLOOR[FLOOR 01…]
-    FLOOR -->|5 %| DAO[Tendys governance]
-    FLOOR -->|5 %| COF[coffers]
-    FLOOR -->|slice while bonds out| HOARD[HOARD 02…]
+    MINT[the minting account] -->|expansion| FLOOR[the Floor]
+    FLOOR -->|5 %| DAO[the DAO treasury]
+    FLOOR -->|5 %| COF[the coffers]
+    FLOOR -->|slice while bonds out| HOARD[the Hoard]
     FLOOR -->|bank| PW[player wallet]
     FLOOR -->|"unfound · bodies · bites (sweep)"| HOARD
     PW -->|bury: burn| MINT
@@ -224,11 +207,11 @@ flowchart LR
     HOARD -->|dig up × premium| PW
     PW -->|Store even purchase 50 %| MINT
     PW -->|Store 50–100 %| COF
-    RES[GRAVEYARD_RESERVE 03…] -->|49,000 once| GY[Graveyard]
+    RES[the Graveyard reserve] -->|49,000 once| GY[Graveyard]
     RES -->|7,000| DAO
     RES -->|7,000 over 30 d| COF
     RES -->|≤ 50 per call| PW
-    PW -->|stake| MAS[MASONRY 04…]
+    PW -->|stake| MAS[the Masonry]
     MAS -->|after 6 epochs| PW
 ```
 

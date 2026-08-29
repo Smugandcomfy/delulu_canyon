@@ -45,7 +45,9 @@ flowchart LR
 | [The world](docs/the-world.md) | How the algorithm lands in the game: chests, carrying, death, decay, and the places the economy lives |
 | [Tokens](docs/tokens.md) | GOLD, TORCH and TOMBSTONE — what each is for, how each is made and destroyed |
 | [Field guide](docs/field-guide.md) | For players: where to go and what is worth doing in each of the Keeper's moods |
+| [Lineage](docs/lineage.md) | Where this economy comes from, where that family of designs breaks, and what we do differently |
 | [Capacity and cycles](docs/capacity-and-cycles.md) | How many people can play at once, what actually limits it, and what it costs to run a game where the canister pays for every message |
+| [Activities](docs/activities.md) | Curios, the Collector, NPC trade, fishing, the ferry, the inn and the Ossuary *(shipping soon)* |
 
 ## What this is not
 

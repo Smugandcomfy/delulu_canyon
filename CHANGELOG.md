@@ -16,65 +16,78 @@ launched, which is what `0.x` means here.
 
 ## [Unreleased]
 
-Work in the realm, not yet deployed.
+Nothing waiting. The work below is live.
+
+---
+
+## [0.11.0] — 2026-08-30
 
 ### New
 
 - **The Graveyard is open.** Brannock's plots are live: the farm is funded, both
   pools are registered, and TORCH grows for planted positions from now on. This
   was the last thing standing between the liquidity screen and doing something —
-  the screen has been shipped for a while, waiting on the plots.
+  the screen had been shipped for a while, waiting on the plots.
 
-### Better
+- **Trading with other players, for tokens.** You could already barter face to
+  face — items and the gold in your hands, swapped on the spot. Now you can
+  trade what you have **banked**: place tokens with the Bazaar, offer some for
+  others, and take an offer somebody else has left standing. An offer keeps
+  standing on its own, so the other player does not have to be online, or
+  nearby, or even awake. It opens with **GOLD and TORCH**.
 
-- **Making a position is a much better screen.** It now shows what you actually
-  hold of each token, fills in the second side for you as you type the first,
-  and puts the pool's current price in front of you before you commit. A
-  full-range position takes both sides at a fixed ratio, so the amounts are not
-  a guess — the screen simply works them out. There is a Max on each side that
-  leaves room for the fees, and anything you cannot afford is refused before it
-  reaches the chain rather than after.
+  Two things it guarantees. **A trade happens completely or not at all** — there
+  is no moment where one side has been paid and the other has not. And **anyone
+  can check the books**: it will tell you, publicly, whether it is holding
+  exactly what it says it owes everyone. It checks itself on a timer, and if
+  that number is ever wrong it stops rather than pays.
 
-### Coming
+  One thing to get right the first time: the address you send to has **two
+  lines** and both matter. Use the copy button, which takes both — the second
+  line is what makes the account yours.
 
-- **Trading with other players, for tokens.** You can already barter face to face
-  — items and the gold in your hands, swapped on the spot. What you could not do
-  is trade what you have *banked*. A new part of the realm is being built for
-  that: you place tokens with it, offer some for others, and take an offer
-  somebody else has left standing. An offer is a standing thing, so the other
-  player does not have to be online, or nearby, or even awake.
+- **A fee on sending tokens from your wallet.** Sending a token to another
+  principal from the in-game wallet costs a small platform fee, **twice whatever
+  that token's own ledger charges**, added **on top** of what you send. Whoever
+  you send to receives exactly the amount you typed — the fee is never taken out
+  of it, and the confirm box names every line before you agree.
 
-  Two things it is built to guarantee. **A trade happens completely or not at
-  all** — there is no state in which one side has been paid and the other has
-  not. And **anyone can check the books**: it will answer, publicly, whether it
-  is holding exactly what it says it owes everyone. If that number is ever
-  wrong, it stops rather than pays.
-
-  Not open yet, and it will open with a small number of tokens.
-
-- **A fee on sending tokens from your wallet.** Saying this before it arrives
-  rather than after: sending a token to another principal from the in-game
-  wallet will cost a small platform fee, **twice whatever that token's own
-  ledger charges**, and it is added **on top** of what you send. Whoever you
-  send to receives exactly the amount you typed — the fee is never taken out of
-  it. The confirm box will show every line before you agree to it.
-
-  Bringing your gold to the vault, buying from the Store, quest rewards and
+  Bringing gold to the vault, buying from the Store, quest rewards and
   face-to-face barter are all unaffected.
 
 ### Better
 
+- **Making a liquidity position is a much better screen.** It shows what you
+  actually hold of each token, fills in the second side for you as you type the
+  first, and puts the pool's current price in front of you before you commit. A
+  full-range position takes both sides at a fixed ratio, so the amounts are not
+  a guess — the screen works them out. There is a Max on each side that leaves
+  room for the fees, and anything you cannot afford is refused before it reaches
+  the chain rather than after.
 - **The Store settles a purchase in fewer steps**, which makes a busy Store less
   likely to fall behind itself.
-- The realm was upgraded on 30 August. **Nothing about it changes how the world
-  plays today** — the work above is in place but switched off, and each piece
-  gets turned on deliberately rather than all at once.
-- **Continued work on the parts that hold value.** The trading system is being
-  built to be checkable and reversible before it opens rather than after: it can
-  report its own books, stop itself if they ever disagree, and be put right by
-  hand if they do. The realm's own test suites now run as a single command
-  alongside the client's, so the pieces that move tokens are held to the same
-  gate as the pieces that draw them.
+
+### Fixed
+
+- **The Soul Gem can be finished.** The ending quest could not be completed at
+  all: its first step never registered that you were holding the Gem, so
+  everything behind it — the shaft, the dragon, the vault chest — sat unreachable
+  no matter what you did. It also asked for a balance that could not be arrived
+  at. Both fixed.
+- **A bed at the inn does what it says.** It lasts the twenty minutes it
+  advertises rather than eighty seconds, and it now genuinely mends you faster
+  instead of only showing a countdown.
+- **A dropped crate can no longer overwrite the Tower's chest.** Two different
+  things numbered chests from two different counters into the same place, and
+  would eventually have collided.
+
+### Under the hood
+
+- Continued work on the parts that hold value, before they hold much: the
+  trading system reports its own books, stops itself if they ever disagree, and
+  can be put right by hand if they do. The realm's own test suites now run as a
+  single command alongside the client's, so the pieces that move tokens are held
+  to the same gate as the pieces that draw them.
 
 ---
 

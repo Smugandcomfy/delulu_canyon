@@ -14,6 +14,34 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [Unreleased]
+
+Work in the realm, not yet deployed.
+
+### Coming
+
+- **Trading with other players, for tokens.** You can already barter face to face
+  — items and the gold in your hands, swapped on the spot. What you could not do
+  is trade what you have *banked*. A new part of the realm is being built for
+  that: you place tokens with it, offer some for others, and take an offer
+  somebody else has left standing. An offer is a standing thing, so the other
+  player does not have to be online, or nearby, or even awake.
+
+  Two things it is built to guarantee. **A trade happens completely or not at
+  all** — there is no state in which one side has been paid and the other has
+  not. And **anyone can check the books**: it will answer, publicly, whether it
+  is holding exactly what it says it owes everyone. If that number is ever
+  wrong, it stops rather than pays.
+
+  Not open yet, and it will open with a small number of tokens.
+
+### Better
+
+- **The Store settles a purchase in fewer steps**, which makes a busy Store less
+  likely to fall behind itself.
+
+---
+
 ## [0.10.0] — 2026-08-29
 
 ### New

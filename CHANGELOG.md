@@ -18,6 +18,23 @@ launched, which is what `0.x` means here.
 
 Work in the realm, not yet deployed.
 
+### New
+
+- **The Graveyard is open.** Brannock's plots are live: the farm is funded, both
+  pools are registered, and TORCH grows for planted positions from now on. This
+  was the last thing standing between the liquidity screen and doing something —
+  the screen has been shipped for a while, waiting on the plots.
+
+### Better
+
+- **Making a position is a much better screen.** It now shows what you actually
+  hold of each token, fills in the second side for you as you type the first,
+  and puts the pool's current price in front of you before you commit. A
+  full-range position takes both sides at a fixed ratio, so the amounts are not
+  a guess — the screen simply works them out. There is a Max on each side that
+  leaves room for the fees, and anything you cannot afford is refused before it
+  reaches the chain rather than after.
+
 ### Coming
 
 - **Trading with other players, for tokens.** You can already barter face to face
@@ -45,9 +62,6 @@ Work in the realm, not yet deployed.
   Bringing your gold to the vault, buying from the Store, quest rewards and
   face-to-face barter are all unaffected.
 
-- **Planting liquidity in the Graveyard** is waiting on the plots being opened,
-  not on the client. The screen has been there for a while.
-
 ### Better
 
 - **The Store settles a purchase in fewer steps**, which makes a busy Store less
@@ -55,6 +69,12 @@ Work in the realm, not yet deployed.
 - The realm was upgraded on 30 August. **Nothing about it changes how the world
   plays today** — the work above is in place but switched off, and each piece
   gets turned on deliberately rather than all at once.
+- **Continued work on the parts that hold value.** The trading system is being
+  built to be checkable and reversible before it opens rather than after: it can
+  report its own books, stop itself if they ever disagree, and be put right by
+  hand if they do. The realm's own test suites now run as a single command
+  alongside the client's, so the pieces that move tokens are held to the same
+  gate as the pieces that draw them.
 
 ---
 

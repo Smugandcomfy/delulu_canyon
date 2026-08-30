@@ -35,10 +35,26 @@ Work in the realm, not yet deployed.
 
   Not open yet, and it will open with a small number of tokens.
 
+- **A fee on sending tokens from your wallet.** Saying this before it arrives
+  rather than after: sending a token to another principal from the in-game
+  wallet will cost a small platform fee, **twice whatever that token's own
+  ledger charges**, and it is added **on top** of what you send. Whoever you
+  send to receives exactly the amount you typed — the fee is never taken out of
+  it. The confirm box will show every line before you agree to it.
+
+  Bringing your gold to the vault, buying from the Store, quest rewards and
+  face-to-face barter are all unaffected.
+
+- **Planting liquidity in the Graveyard** is waiting on the plots being opened,
+  not on the client. The screen has been there for a while.
+
 ### Better
 
 - **The Store settles a purchase in fewer steps**, which makes a busy Store less
   likely to fall behind itself.
+- The realm was upgraded on 30 August. **Nothing about it changes how the world
+  plays today** — the work above is in place but switched off, and each piece
+  gets turned on deliberately rather than all at once.
 
 ---
 

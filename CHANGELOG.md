@@ -16,7 +16,11 @@ launched, which is what `0.x` means here.
 
 ## [Unreleased]
 
-Built and tested, not yet in the world. It arrives with the next deploy.
+Nothing waiting. The work below is live.
+
+---
+
+## [0.12.0] — 2026-08-30
 
 ### New
 

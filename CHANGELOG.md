@@ -1,74 +1,72 @@
 # Changelog
 
-Delulu Canyon ships as two artefacts that deploy independently — the **client** (an asset
-canister) and the **realm** (the dungeon canister, plus the Keeper, Graveyard and Social behind
-it). They carry the same version number when released together, and the in-game menu shows both,
-because the interesting case is when they differ.
+What changed, for people who play Delulu Canyon.
 
-`getVersion()` on the realm and the menu's build line are the two places to check what is
-actually running. A module hash tells you something changed; these tell you what.
+The world runs on-chain and holds real value, so this log says what is **different
+to play** — not how the machine works underneath. Engineering detail stays in the
+implementation repository and is deliberately not mirrored here, for the same
+reason the [audit log](docs/audit-1.md) names open work by area only.
 
-The format is loosely [Keep a Changelog](https://keepachangelog.com/); versions are
-`MAJOR.MINOR.PATCH`. **1.0.0 is reserved for opening the world to strangers** — until then the
-world is live but not launched, and that is what `0.x` means here.
+The client and the realm deploy independently and carry a version each; the
+in-game menu shows both. Versions are `MAJOR.MINOR.PATCH`, and **1.0.0 is reserved
+for opening the world to strangers** — until then the world is live but not
+launched, which is what `0.x` means here.
+
+---
+
+## [0.10.0] — 2026-08-29
+
+### New
+
+- **Provide liquidity from inside the game.** The Graveyard can now make a
+  full-range ICPSwap position for you directly. Your own wallet approves the pool,
+  and the position is minted **to you** — the game never holds your tokens and
+  never holds the position, so you can change or remove it on ICPSwap whether or
+  not you plant it here. It names which token is which side, and offers back
+  anything the deposit did not use. *(Available once the Graveyard opens.)*
+
+### Better
+
+- **Store prices now suit a world where gold is money.** GOLD tracks ICP, so the
+  old prices asked real money for a biscuit. Everyday goods and repairs are far
+  cheaper. Gabriel's Sword keeps its price, deliberately — it is meant to be a
+  fortune.
+- **Signing in fresh is reliable again.**
+- **Your character no longer gets stuck able to fast-travel but not walk.**
+- **The Wisp Lantern lights what it promises**, and dropped chests say what they
+  hold and who left them.
+- **Signposts read the words the realm actually holds.**
+- Continued work on the parts of the economy that move value between the Keeper,
+  the world and the Graveyard.
 
 ---
 
 ## [0.9.0] — 2026-08-29
 
-The first versioned build. It collects the work coming out of the internal audit; the public
-summary is in the [audit log](docs/audit-1.md).
+The first versioned build, collecting the work from our internal audit. The public
+summary of that audit is in the [audit log](docs/audit-1.md).
 
-### Fixed — the world
+### New
 
-- **Portal travel by the action button no longer hangs.** Pressing it the moment you arrived on
-  a portal left the button reading "Entering…" and disabled until a page refresh. Fast travel was
-  never affected, which is what made it hard to place.
-- **Chests and crates stop flickering.** Objects near the edge of your sight appeared and
-  disappeared as you moved.
-- **Crates draw above whoever is standing on them**, so one you are stood on is no longer
-  invisible.
-- **Fog of war no longer leaks across portals** into the zone you just left.
-- **The trade window closes when you close it**, instead of reopening on the next update and
-  discarding what was already offered.
-- **The Wisp Lantern lights what it promises.** Its extra range was real on the realm and
-  ignored by the client.
-- **A dropped chest names what is inside it and who left it.**
-- **A dragon bounty the Keeper could not pay can be claimed again.**
-- **Signposts show the words the realm holds**, not a copy baked into the client.
-- **A trade with an NPC that cannot pay refuses before it takes anything.**
+- The in-game menu shows which build you are on, and which build the realm is on.
 
-### Fixed — the machine
+### Better
 
-- **Authorisation** tightened across every canister: nothing accepts an unauthenticated caller
-  that should not, and the dungeon now sheds unauthorised load at ingress instead of paying for
-  a full call first.
-- **The economy's clock survives a failed cycle.** Its timer was one-shot and re-armed at the
-  end of the work it scheduled, so one failure would have stopped it permanently.
-- **A conversation reward is given once**, not once per time you ask for it.
-- **Names belong to whoever holds them.** Renaming releases the name you leave, and no player can
-  release another's.
-- **The wanderers' weekly purse is weekly**, rather than refilling every epoch.
-- **Regenerating a zone keeps its gold real.** It also relocates sponsor chests, which hold real
-  tokens, instead of leaving them where the new map put a wall.
+- **Portals work from the action button.** Pressing it the moment you arrive used
+  to leave the button stuck until a page refresh. Fast travel was never affected,
+  which is why it took a while to pin down.
+- **Objects on the ground stay put.** Chests and crates near the edge of your
+  sight used to appear and disappear as you moved, and drew underneath anyone
+  standing on them.
+- **The trade window closes when you close it.**
+- **Fog of war no longer follows you through a portal.**
+- **A refused dragon bounty can be claimed again** rather than sitting out of reach.
+- Groundwork across the canisters: reliability, cost under load, and the paths
+  that move value.
 
-### Added
+### Note
 
-- `getVersion()` on the realm, and a build line in the menu showing the client's version beside
-  the realm's.
-- Repository guards that fail the build rather than the deploy: every deploy target must already
-  exist on mainnet, and every update method must have an explicit ingress rule.
-- An operations runbook covering the alarms that matter and the two upgrade
-  traps this estate has actually hit.
-
-### Changed
-
-- `npm run deploy` no longer guesses. Staging and production are separate commands and
-  production asks for confirmation. It previously pointed at two canisters that do not exist,
-  and would have created them.
-
-### Notes
-
-Two audit findings were investigated and **dismissed** — one in the movement code, one in the
-client's configuration handling. Both described a bug that is not there, and both now have a test
-pinning the correct behaviour so they are not "fixed" later.
+Two audit findings were investigated and **dismissed** — both described a problem
+that turned out not to exist, and both now have a test pinning the correct
+behaviour so nobody "fixes" them later. An audit finding is a hypothesis, not a
+verdict.

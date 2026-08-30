@@ -41,6 +41,7 @@ against it.
 | Navigation and session — fog of war across portals, and the trade window | **Closed** | `06eeed2` |
 | Identity and naming — who owns a name and when it is released | **Closed** | `6af86cb` |
 | Surfacing what already worked — lantern light, dropped chests, bounties, signposts | **Closed** | `f04246d`, `7ed42b9` |
+| Reliability and observability — the machine can now report when a part of it stops talking to another | **Closed** | `5bf5e1c` |
 | Economy accounting | Open | — |
 | Oracle observability | Open | — |
 | World geometry migration | Open | — |

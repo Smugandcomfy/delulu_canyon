@@ -16,7 +16,57 @@ launched, which is what `0.x` means here.
 
 ## [Unreleased]
 
-Nothing waiting. The work below is live.
+Built and tested, not yet in the world. It arrives with the next deploy.
+
+### New
+
+- **Five new weapons, and somewhere to buy them.** Between the iron dagger and
+  Gabriel's Sword there was nothing at all: a dragon took forty strokes, or it
+  took one and cost a fortune. Now there is a rung for every purse — a **bone
+  axe**, a **hunter's spear**, an **ashen blade**, a **wyrmtooth sabre** and an
+  **elvish longsword**. The sabre puts a dragon down in four strokes. The
+  longsword does it in two. Gabriel's Sword is still the finest thing on the
+  shelf; it is no longer the only answer.
+
+- **A second store, and deliberately not in Luméira.** **Sable Ironhand** keeps a
+  forge in **Lanternfall** — the last town before the Highland Pass and the way
+  down, which is where an edge is actually worth buying. She carries the whole
+  ladder and nothing else. *"I do not sell biscuits."* Old Bessany still sells
+  everything else, and the bone axe, so there is something to swing before the
+  walk east.
+
+- **The deep now feels deep.** The wings below the tower, the sanctum, the grove
+  and the hearth used to hold exactly the same rats and bats as the corridor by
+  the entrance — the same creatures at every depth, only more of them. The lower
+  levels now have their own: **cave crawlers** that carry poison, **ash hounds**
+  that hunt through the burnt-out caves, and **gloom moths**. And there are
+  **ravens** above ground now, over the meadows, the highlands and the graveyard.
+
+### Better
+
+- **Eledrin's jewels.** Choosing a jewel in the Grove could do nothing whatsoever
+  — no jewel, no karma, no word of explanation — if you had already finished his
+  quest first. It now works in either order, and anyone who lost their choice to
+  this can simply make it again.
+
+- **Barter on a small screen.** The trading table had no layout of its own on a
+  phone: the two sides ran off the edge, and the window could stand taller than
+  the screen with no way to shut it. Both fixed.
+
+- **A shorter welcome.** The scroll on the title screen was long, and most of
+  its footnotes explained the machine rather than the place. It is now about
+  the world: who is on the plaza and what each of them is short of, what lives
+  at which depth, and what is worth walking east for. The detail all still
+  exists — it lives in **How to play**, where you can search it.
+
+- **The legend shows everything now.** Every item in the game, including the new
+  weapons, and every creature — seventeen of them, where before it named three.
+
+- **The map names the forge.** Sable's counter has a card of its own under
+  "Where the work happens", so you can find her without stumbling into her.
+
+- Groundwork across the canisters: guard rails on the public checks, and tests
+  covering ground that had none.
 
 ---
 

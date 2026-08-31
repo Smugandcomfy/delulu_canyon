@@ -20,6 +20,36 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.15.1] — 2026-08-31
+
+### Fixed
+
+- **Monsters and animals stopped moving.** For a while the world's heartbeat —
+  the four-second pulse that drives every creature, and with it health
+  regeneration, poison, hatching eggs and the slow decay of forgotten chests —
+  stopped running. Everything a player *did* still worked, which is why it looked
+  like a monster bug rather than the clock: you could still walk up and kill an
+  ash hound, it simply would not fight back. It is running again.
+
+- **And it can no longer stop like that.** The heartbeat used to be arranged so
+  that a single bad beat would end it permanently, with nothing to say so and no
+  way to restart it short of a full deployment. A bad beat is now survivable, the
+  world reports the health of its own clock, and it can be restarted directly.
+
+### Better
+
+- **Housekeeping the traders had been quietly accumulating.** A per-turn record of
+  who traded with whom was being kept for ever instead of for the turn. Nothing a
+  player would notice today, and nothing lost — but it would have grown without
+  limit, and the world now counts it so it cannot grow unseen again.
+
+- **A ceiling on how much the world will describe at once.** With a crowd in one
+  place — the plaza by the vault and the store — there is now a firm limit on how
+  much is sent to each person in one go. Nobody hits it at today's numbers; it is
+  there so that a busy square stays as quick as an empty one.
+
+---
+
 ## [0.15.0] — 2026-08-31
 
 The largest release so far, and most of it is one shape: things the world

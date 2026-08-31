@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.15.0**.
+player reports is listed on the same terms. Current build: **0.15.1**.
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's
@@ -74,6 +74,7 @@ have produced their own batches, and they are listed on the same terms.
 | Sign-in moved to the identity host the network now points at, after checking that principals do not move with it | **Closed** | `411b333` |
 | A third read-only pass, over every errand, every person you can talk to, and every refusal the client was discarding — 28 findings, 10 of which could not have succeeded for anybody | **Closed** | `1c5c7a6`, `3913635`, `6211bba` |
 | The same pass turned on its own output: six defects found in the fixes themselves before any of them was deployed | **Closed** | `400c8a8`, `6a6e5b9` |
+| The world's heartbeat could stop for good and say nothing — now survivable, observable and restartable without a deployment | **Closed** | `0e46e1b` |
 
 ## What players will notice
 
@@ -117,6 +118,36 @@ Two of the findings from that pass were checked and **rejected**: both described
 behaviour that was already correct. They are recorded here for the same reason the
 audit's two wrong findings are — a pass that never disagrees with itself is not
 being run properly.
+
+## An outage, and what it says about silent failures
+
+On 31 August the world's four-second heartbeat stopped. Players noticed one thing:
+monsters standing still. Everything they *did* still worked — you could walk up to a
+creature and kill it, it simply would not fight back — so it read as a monster bug
+rather than as the clock.
+
+It was not a monster bug. The same pulse drives health regeneration, poison, hatching
+eggs and the decay of forgotten chests. All of it had stopped, and nothing anywhere
+said so.
+
+Two things made it worse than it needed to be, and both are now fixed:
+
+- **A single bad beat ended the heartbeat permanently.** The way a recurring timer
+  works, it schedules its next run only after the current one finishes; anything that
+  interrupts one takes the schedule with it. One interruption, and the world's clock
+  was gone for good.
+- **There was no way to restart it, and no way to see it.** Recovery meant a full
+  redeployment of the realm. Nothing reported whether the clock was running.
+
+A bad beat is survivable now, the world reports the health of its own clock, and it
+can be restarted directly.
+
+**The honest part.** This was found because a player said monsters were not attacking
+and we went looking — not because anything raised its hand. A world that is live and
+holds value should not depend on someone noticing that a hound is standing still. The
+lesson we have taken is narrower than "add monitoring": **anything whose failure is
+invisible to the person it fails needs to report its own health**, and the clock is
+now the first thing that does.
 
 ## Why the open items are vague
 

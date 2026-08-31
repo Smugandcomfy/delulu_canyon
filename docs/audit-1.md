@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.14.1**.
+player reports is listed on the same terms. Current build: **0.14.2**.
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's
@@ -66,6 +66,8 @@ have produced their own batches, and they are listed on the same terms.
 | Account recovery — a player can find which sign-in holds their character | **Closed** | `e05e200` |
 | Content and world correctness — the weapon ladder priced against itself, a key placed where it could be found, and the several places the world contradicted its own guide | **Closed** | `69f02e0`, `fe1583a`, `d38d1df`, `5f32734` |
 | The Ossuary's pub, and the rule that what the shops sell and what the chests give away stay apart | **Closed** | `d8c5fe5` |
+| Movement — a square the world refused once stayed refused; and a way back that was never tied to its door | **Closed** | `9fa8482`, `5fb20c6` |
+| The Keeper's own payments, and a way to recover a staking position stranded behind a sign-in nobody can use | **Closed** | `86a1253` |
 
 ## What players will notice
 

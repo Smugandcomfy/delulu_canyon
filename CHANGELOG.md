@@ -20,6 +20,31 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.14.2] — 2026-08-31
+
+### Better
+
+- **A square you could plainly see is open is open.** After a fight, tiles ahead
+  of you could answer "you can't walk there" while the way back stayed clear —
+  and walking back the other way cured it. The game had remembered that something
+  was standing on a square, and never forgot it once the something had gone.
+
+- **Coming back through a door puts you at the door.** Returning from one of the
+  gated places could land you in the far corner of the map instead. Every way
+  back is now sound, including the ones that were never properly tied to their
+  door in the first place.
+
+- **Staking, burying and digging up repeat properly**, in the same way buying
+  does — a round number of TORCH could be staked once and then refused until the
+  next day.
+
+### Housekeeping
+
+- The DAO's share of TORCH has been released to Tendys governance, as the
+  emissions plan set out at genesis: seven thousand, no vesting.
+
+---
+
 ## [0.14.1] — 2026-08-31
 
 ### Better

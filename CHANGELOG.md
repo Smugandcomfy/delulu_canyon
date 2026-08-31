@@ -20,6 +20,101 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.15.0] — 2026-08-31
+
+The largest release so far, and most of it is one shape: things the world
+promised and did not do. A sweep across every errand, every person you can talk
+to, and every refusal the game was swallowing turned up a long tail of them.
+
+### Fixed
+
+- **Quests you had finished would not finish.** Telling someone their errand was
+  done did nothing, and the quest log went on saying it was ready to hand in.
+  Talking to people is what moves an errand along, and the game had been asking
+  the world a read-only question — one that cannot change anything — for every
+  reply except the very first one on the list. Every reply counts now, whichever
+  one you pick.
+
+- **Eggs did not count as eggs.** They are kept in the nursery rather than the
+  bag, and everything that looked for one looked in the bag: the farmwife's
+  errand could never be completed, her own market stall sold you an egg that
+  would never hatch, and "warm an egg" quietly did nothing at all however many
+  you were carrying. Eggs are counted where eggs live now, and warming one tells
+  you what happened.
+
+- **Arriving somewhere by boat, door or ring did not count as arriving.** The
+  ferry set you down on the exact square an errand named and the errand did not
+  notice — and standing there made every later attempt fail too. Being carried
+  somewhere counts the same as walking there.
+
+- **A reward the Keeper could not pay was simply lost.** Some errands are
+  once-only, so there was no second chance at it. What cannot be paid is now
+  written down as owed, and there is a "Claim owed TORCH" entry in the ☰ menu
+  that pays it when the Keeper can.
+
+- **Choices that promised something and delivered nothing.** An option you had
+  already taken still offered the same reward and did nothing when clicked. It
+  now says you have already had it, and stops advertising what it cannot give.
+  Three of the Dragon Wizard's answers shared one memory between them, so
+  whichever you picked first killed the other two — they are separate now.
+
+- **Handing over goods you did not have enough of said nothing.** The
+  conversation moved on and the errand did not. Whoever you are talking to now
+  tells you how many more they need, and the button stops offering a trade you
+  cannot make.
+
+- **Traders said "none left this turn" at the start of a turn.** Their stock and
+  purse refreshed only when somebody, somewhere, completed a trade — so a new
+  turn could open with everything greyed out and a reason that was not true.
+
+- **The way into the Ossuary could not be knocked on.** The door asked to be
+  knocked on before it would read your standing, and nothing could knock. It
+  opens now — and there is a pub down there, with a landlady, a hearth and
+  food.
+
+### Better
+
+- **The alchemist has the cauldron he tells you to use.** He had been sending
+  people to a cauldron that did not exist anywhere in town, which made his own
+  errand impossible to start. He mends blades at his own counter now, too,
+  instead of quoting prices for a service he could not perform.
+
+- **Old Corliss stands at the harbour.** The ferryman had been keeping his boat
+  in the middle of the town square, some fifty squares from any water.
+
+- **An Ancient Key is on the shopkeeper's shelf.** One key existed in the whole
+  world at a time and reappeared roughly every four days in a fixed spot, so two
+  people could not attempt the tower in the same week. Ten GOLD, as the guide
+  always said.
+
+- **The ending is reachable by playing the game.** The Wizard's reading of your
+  character had been written for a much narrower range than ordinary play
+  produces, so doing the errands in order was itself enough to close the door on
+  the Soul Gem. The reading has been re-pitched, and the three places that judge
+  whether you are "balanced" now agree with each other.
+
+- **Kindness is worth something at last.** The discount and the better price a
+  generous character was promised had never actually been applied to anything.
+
+- **Leaving the world is a real thing you can do.** The ☰ menu's "Leave the
+  world" steps your character off the map entirely, where nothing can reach
+  them, and puts them back where they stood next time you play.
+
+- **You can put things down.** Items can be dropped from the bag for anyone to
+  pick up — the chests that get left behind have been drawn for a while, and now
+  something can create them.
+
+- **The action bar shows more, and stops offering what cannot work.** It fits
+  four things instead of three and says when there are more; it no longer offers
+  a bed at seven doors that are not the inn; and a button whose target has moved
+  on says so rather than doing nothing.
+
+- **The quest log knows where you are standing.** Its Accept and Hand-in buttons
+  could sit greyed out telling you to walk to someone you were already next to,
+  for up to fifteen seconds.
+
+---
+
 ## [0.14.4] — 2026-08-31
 
 ### Changed

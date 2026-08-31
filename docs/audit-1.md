@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.14.4**.
+player reports is listed on the same terms. Current build: **0.15.0**.
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's
@@ -72,6 +72,8 @@ have produced their own batches, and they are listed on the same terms.
 | Barter — the trade window discarded the trade as it opened, so no trade could ever be completed | **Closed** | `1173f79` |
 | Touch handling extracted from the scene so it can be tested, and the compass moved off the player's name | **Closed** | `058dc01` |
 | Sign-in moved to the identity host the network now points at, after checking that principals do not move with it | **Closed** | `411b333` |
+| A third read-only pass, over every errand, every person you can talk to, and every refusal the client was discarding — 28 findings, 10 of which could not have succeeded for anybody | **Closed** | `1c5c7a6`, `3913635`, `6211bba` |
+| The same pass turned on its own output: six defects found in the fixes themselves before any of them was deployed | **Closed** | `400c8a8`, `6a6e5b9` |
 
 ## What players will notice
 
@@ -88,6 +90,33 @@ have produced their own batches, and they are listed on the same terms.
 - **A refused dragon bounty can be claimed again** rather than sitting out of reach.
 - **Signposts read the words the realm actually holds**, not a copy baked into the client.
 - **The trade window closes when you close it.**
+
+## The third pass, and what it says about the method
+
+The audit's own lesson — that a finding is a hypothesis, not a verdict — cut both
+ways this time.
+
+A player reported that an errand said it was ready to hand in and then would not
+hand in. Rather than fix the one report, we ran a third read-only pass over every
+errand, every conversation, and every error the client was quietly discarding. It
+found **28 things, 10 of which could not have succeeded for anybody** — and the
+reported bug turned out to be one instance of a single underlying cause behind a
+whole family of them.
+
+That is the case for looking wider than the report. Four of the ten had never been
+mentioned by anyone, because a thing that has never worked produces no complaint
+that it stopped working.
+
+Then the same method was turned on the fixes. Before any of it was deployed, a
+further read-only pass over the pending work found **six defects in the repairs
+themselves** — including two in the very change written to stop a reward being
+lost, which had introduced two new ways to lose it. All six were fixed before
+release; none reached a player.
+
+Two of the findings from that pass were checked and **rejected**: both described
+behaviour that was already correct. They are recorded here for the same reason the
+audit's two wrong findings are — a pass that never disagrees with itself is not
+being run properly.
 
 ## Why the open items are vague
 

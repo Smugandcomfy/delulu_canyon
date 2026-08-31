@@ -20,6 +20,46 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.13.0] — 2026-08-30
+
+### New
+
+- **The Ossuary is open.** It has been built for a while and was never actually
+  placed in the world; it is there now, down in Hallowmere, for those who hold a
+  tombstone.
+
+- **The Soul Gem Vault means what it always said.** The door was supposed to open
+  only for someone carrying the gem and standing at exactly nothing — neither
+  good nor wicked — and in truth it opened for anyone who had finished the Flame.
+  It now asks for both. Which of Eledrin's jewels you took is a real decision
+  again, and the Wizard's reading is worth having.
+
+### Better
+
+- **Planting a position works.** Two separate faults, one after the other: the
+  game asked the exchange for something only its operators may ask for, and then
+  the plots themselves misread the exchange's reply and stopped dead. Both are
+  fixed, both were found by a player, and the second had been broken since the
+  plots opened. If you tried and gave up, please try again.
+
+- **The world remembers what order things happened in.** The game asks the realm
+  what is around you about once a second, and those answers do not always come
+  back in the order they were asked. Occasionally an older answer landed on top of
+  a newer one — a chest you had just opened flickering back for a moment, that
+  sort of thing. The realm now stamps each answer, and the game ignores anything
+  it has already moved past.
+
+- **Quieter chatter between the halls and the square**, which costs the world less
+  to run and matters more the more of us there are.
+
+### Note
+
+Two of the fixes above came from players reporting them with the exact error
+text. That is what made them findable. If something misbehaves, the wall of red
+is the useful part — please paste it.
+
+---
+
 ## [0.12.2] — 2026-08-30
 
 ### Fixed

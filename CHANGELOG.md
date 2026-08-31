@@ -20,6 +20,24 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.14.4] — 2026-08-31
+
+### Changed
+
+- **Signing in now goes to the identity host the network points people at.**
+  The old address had been intermittently failing to complete, which — until
+  this was fixed alongside it — quietly handed people a second, empty account.
+  Nobody's account changes and nobody is signed out: both addresses are the same
+  identity service, so the same anchor still gives the same player.
+
+- **The guild's "Re-check" button says what it does.** It never asked governance
+  — it forgets what the door remembered, and the door asks for itself when you
+  stand at it. Pressing it and seeing no change looked like the game had not
+  noticed a newly hotkeyed neuron. It is now called "Forget verdict" and tells
+  you to walk to the door, which is where the real answer comes from.
+
+---
+
 ## [0.14.3] — 2026-08-31
 
 ### Fixed

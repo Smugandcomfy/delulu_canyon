@@ -4,7 +4,7 @@
 
 > **[Audit log](docs/audit-1.md)** · **[Changelog](CHANGELOG.md)** — what our internal
 > audit found before we open to strangers, what has been fixed, and what is still open.
-> Current build: **0.14.3**.
+> Current build: **0.14.4**.
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
 Tomb Finance–style three-token peg. GOLD is meant to be worth one ICP. Every six

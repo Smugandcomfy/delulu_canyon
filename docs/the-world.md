@@ -8,7 +8,7 @@ does not hand it over. This document is how one becomes the other.
 When an epoch expands, the Keeper does not pay the new gold to anyone. It hands
 it to the dungeon, which hides it.
 
-Each expansion the world picks **six zones**, drawn by weight without
+Each expansion the world picks **fourteen zones**, drawn by weight without
 replacement, with **at least one shallow zone** always among them so a new player
 with no torches bound still has somewhere to go. The chip at the top of the
 screen names them; the map marks them.
@@ -42,9 +42,9 @@ liability:
 - **After four epochs** — one day — an unclaimed body crumbles, and its gold goes
   to the Hoard.
 
-The only way to make gold yours is to walk it to the **vault on Luméira's
-plaza**. There is exactly one vault in the world, and it is in the safest place
-in it, which is the point: the walk back is the tax.
+The only way to make gold yours is to walk it to a **vault**. Every zone keeps
+one, usually near the way in, so the tax is not the walk home — it is the walk
+back through whatever you came past to get here.
 
 Banked gold is an ordinary token in your wallet. Nobody can take it, and the
 world has no claim on it.
@@ -73,7 +73,7 @@ recovery.
 
 | place | where | what it does |
 |---|---|---|
-| **The vault** | Luméira plaza | The only place carried gold becomes banked gold |
+| **The vaults** | one in every zone, the plaza's included | Where carried gold becomes banked gold |
 | **The Obelisk** | Luméira plaza | Shows the Keeper's mood and counts down to the next turn |
 | **Old Bessany's Store** | Luméira town | Food, eggs, an iron dagger, repairs — and a burn |
 | **The Masonry** | Lanternfall | Bind and unbind TORCH for health and the deep doors |

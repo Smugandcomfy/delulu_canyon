@@ -20,6 +20,72 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.14.1] — 2026-08-31
+
+### Better
+
+- **You can buy the same thing twice.** Buying a second seed cake — or a second
+  anything at the same price — was refused, and it stayed refused, because the
+  price does not change. The ledger was quite right to think it had already seen
+  that exact payment; nothing distinguished one purchase from the next. Every
+  payment now carries a marker of its own. Nothing was ever at risk: a refusal is
+  a refusal, and no gold moved.
+
+- **The ferry, the inn and a mended rod are repeatable too**, for the same
+  reason, and they no longer blame your wallet approval when something else went
+  wrong. They say what actually happened.
+
+- **Staking, burying and digging up are repeatable too.** The same shape reached
+  the Keeper: a round number of TORCH staked once could not be staked again that
+  day. Round numbers are exactly what people stake.
+
+---
+
+## [0.14.0] — 2026-08-31
+
+### New
+
+- **The Ossuary keeps a pub.** A hearth, tables, chairs, and Maudy Ashgrave
+  behind the counter with hardtack, salt cod and honeycake. Board, not physic —
+  she does not stock what the chests give away, and will say so if you ask.
+
+- **A second shop.** Sable Ironhand keeps a forge in Lanternfall and deals only
+  in edges: a ladder of weapons from bone through elvish steel, each one a real
+  step up from the last. Old Bessany still sells the biscuits.
+
+- **The Ancient Key can be found.** It sits in a chest on the Hill, in a fixed
+  spot, the same for everyone — rather than behind the door it opens.
+
+- **Account recovery, in the ☰ menu.** If you arrived by a different address in
+  the past, you may have been signed in as a different player without knowing.
+  Type the name you used to play under and it will tell you whether that
+  character is this sign-in or another one, and give you something to send on.
+
+- **A sign at the harbour** explaining that the first chest has to be banked
+  before anything else will pay out. That was always true and was never said
+  anywhere.
+
+### Better
+
+- **Movement on touch devices.** Tapping the world could stop working — usually
+  after fast travel — while the map and the menus carried on responding, and only
+  reloading the page fixed it. It could also stop after walking past something
+  that got in your way. Both are fixed, and tapping is now judged by a finger's
+  standards rather than a mouse's.
+
+- **Coming back from a gated place puts you at the door**, or at the heart of the
+  zone if the way back was never wired — instead of the very top corner of the
+  map.
+
+- **Prices make sense against each other.** The weapon ladder now runs in the
+  order the weapons actually hit. The iron dagger had been left on an older scale
+  and cost more than weapons several times its worth.
+
+- **Quieter, safer accounting** in the places where gold changes hands, and a few
+  ways it could have gone astray closed off.
+
+---
+
 ## [0.13.0] — 2026-08-30
 
 ### New

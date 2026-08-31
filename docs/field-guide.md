@@ -12,8 +12,9 @@ in the game, under **H**.
 This is the only time new chests appear. Deeper floors, fatter chests: 1–3 gold on
 the surface, 3, 5 or 10 below, a rare 25 on the third floors.
 
-**Bank what you carry.** Carried gold is not yours until you reach the vault on
-Luméira's plaza — the only one in the world.
+**Bank what you carry.** Carried gold is not yours until you bank it at a vault.
+Luméira's plaza has the one everybody starts at, and every zone keeps one of its
+own, usually near the way in.
 
 **Dig up your tombstones.** At the Crypt in Hallowmere. The Hoard pays them back,
 with a premium when gold is dear. This is the only mood in which the Crypt pays
@@ -61,7 +62,7 @@ the Farmsteads and the guilds are the safe shift.
 
 | place | where | what it is for | when |
 |---|---|---|---|
-| The vault | Luméira plaza | Turn carried gold into banked gold — the only vault in the world | whenever you are carrying |
+| A vault | Luméira plaza, and one in every zone | Turn carried gold into banked gold | whenever you are carrying |
 | Old Bessany's Store | Luméira town | Food, eggs, an iron dagger; repairs | any |
 | The Bonewright and the cauldrons | town, Lanternfall | Crafting | Quiet |
 | The Masonry | Lanternfall | Bind and unbind torches — health and the deep doors | Quiet, before you need them |
@@ -84,4 +85,4 @@ the Farmsteads and the guilds are the safe shift.
   open doors, but add no more health.
 - **Six hours to a turn**, four turns a day. The strip counts down to the next one
   and rings a bell when it comes.
-- **The only vault is on the plaza.** Everything else is carrying.
+- **Every zone has a vault, usually near the way in.** Until you reach one, everything you hold is carrying.

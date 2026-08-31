@@ -20,6 +20,28 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.12.2] — 2026-08-30
+
+### Fixed
+
+- **Planting a position at Brannock's plots works.** It never has. Every attempt
+  failed the moment you confirmed it, with a wall of text from the exchange, and
+  it failed the same way for everyone — the game was asking the pool to do
+  something only the exchange's own operators are allowed to ask for. It now
+  makes the request the ordinary way: your approval, the pool takes each side,
+  then the position is minted **to you**. Nothing about that changed the rules —
+  the position is still yours, still uprootable whenever you like — it is only
+  that the game was knocking on the wrong door.
+
+  The plant screen now shows six steps instead of four, so if something does go
+  wrong you can see which one it stopped on. Anything the pool does not use still
+  comes straight back to you.
+
+  Found and reported by a player, with the exact error text, which is what made
+  it findable. Thank you.
+
+---
+
 ## [0.12.1] — 2026-08-30
 
 ### New

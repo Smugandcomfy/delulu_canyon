@@ -75,6 +75,9 @@ have produced their own batches, and they are listed on the same terms.
 | A third read-only pass, over every errand, every person you can talk to, and every refusal the client was discarding — 28 findings, 10 of which could not have succeeded for anybody | **Closed** | `1c5c7a6`, `3913635`, `6211bba` |
 | The same pass turned on its own output: six defects found in the fixes themselves before any of them was deployed | **Closed** | `400c8a8`, `6a6e5b9` |
 | The world's heartbeat could stop for good and say nothing — now survivable, observable and restartable without a deployment | **Closed** | `0e46e1b` |
+| **Fourth pass — an adversarial security review of all six canisters** (see the section below). One access-ordering fix on an owner-only setup call | **Open** | _pending_ |
+| From the same review: a set of rate-limit hardenings so a flood of throwaway accounts cannot waste the canisters' fuel — grouped into one pass | **Open** | _pending_ |
+| From the same review: two small internal-accounting tidy-ups in recently-added code, found before any player hit them | **Open** | _pending_ |
 
 ## What players will notice
 
@@ -148,6 +151,50 @@ holds value should not depend on someone noticing that a hound is standing still
 lesson we have taken is narrower than "add monitoring": **anything whose failure is
 invisible to the person it fails needs to report its own health**, and the clock is
 now the first thing that does.
+
+## The security review
+
+Before opening the world wider we ran an adversarial security review across all six
+of the game's on-chain services — the world, the token engine, the farm, the market,
+the social layer and the ledgers. The framing was deliberately hostile: for each
+service we asked, in effect, *how would someone try to break or drain this?* — and
+covered six angles, from wasting a canister's fuel to tricking one service into
+trusting another to any path that could double-count value.
+
+**What it found, in plain terms.** The review raised a long list of candidates and
+then argued against each one, because a first-pass "finding" is a hypothesis, not a
+verdict. Of the ones checked hardest so far, **none were critical, and none could
+move or duplicate anyone's tokens.** What survived scrutiny falls into three buckets,
+all now on the open list above:
+
+- **One access-ordering fix.** An owner-only setup call did a piece of its work
+  before it finished checking who was asking. It could not change anyone's balance or
+  the game's settings — the real check still stood — but the ordering is wrong and is
+  being corrected. It is a one-line change.
+- **Rate-limit hardening.** A handful of actions were not yet behind the same
+  per-account throttle as everything else, so someone creating many throwaway
+  accounts could waste a canister's fuel (not steal anything, not corrupt anything).
+  These are being grouped into a single hardening pass. The canisters are funded well
+  ahead of any such attempt, so this is prudence, not an emergency.
+- **Two internal tidy-ups** in code added in the last few days, caught before any
+  player encountered them.
+
+**What was ruled out.** Several of the scarier-sounding candidates were checked and
+dismissed — the places they claimed a problem turned out to be already protected. As
+with the earlier passes, we keep those in the record: a review that never disagrees
+with itself is not being run properly.
+
+**Why the detail is thin here, on purpose.** This page names the *shape* of each
+item, not the step-by-step of how it might be exploited — the world is live and holds
+value, and a public how-to helps nobody but an attacker. The full technical detail,
+with the exact locations and the fixes, lives in the implementation repository, and
+each item above will carry its commit hash here as it closes. A meaningful share of
+the review's candidates has not yet been through the same hostile second-checking; we
+will finish that before the world opens to strangers.
+
+This is the fourth independent pass over the code, after the original hardening audit,
+a deep pass on reported behaviour, and the errand/NPC sweep. Security here is a
+standing habit, not a one-time gate.
 
 ## Why the open items are vague
 

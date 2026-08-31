@@ -20,6 +20,32 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.14.3] — 2026-08-31
+
+### Fixed
+
+- **Signing in could quietly give you a brand new character.** If the identity
+  window did not complete — you closed it, a popup was blocked, the network
+  hiccuped — the game signed you in a second way that produces a *different*
+  account, and you arrived with an empty bag. Nothing said so. It now stops,
+  tells you the sign-in did not finish, and asks you to try again rather than
+  make a new character. If this happened to you, the ☰ menu has an account
+  recovery panel that will find which sign-in holds your things.
+
+- **Barter never worked, for anybody, on any device.** The trade window threw
+  away the trade the moment it opened, so it drew an empty purple panel with no
+  buttons — and because it never told the world you had left, closing it made it
+  reappear until you walked away. One line, both halves. Trading works now.
+
+- **The compass no longer sits on top of your name.** The distance moved above
+  the arrow, where there is nothing to collide with.
+
+- **Tapping the world is steadier on a phone.** The gesture handling that was
+  fixed last release now stands on its own and is properly covered, including
+  the case where a touch is lost mid-pinch.
+
+---
+
 ## [0.14.2] — 2026-08-31
 
 ### Better

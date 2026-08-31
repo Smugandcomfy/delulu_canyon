@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.14.2**.
+player reports is listed on the same terms. Current build: **0.14.3**.
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's
@@ -68,6 +68,9 @@ have produced their own batches, and they are listed on the same terms.
 | The Ossuary's pub, and the rule that what the shops sell and what the chests give away stay apart | **Closed** | `d8c5fe5` |
 | Movement — a square the world refused once stayed refused; and a way back that was never tied to its door | **Closed** | `9fa8482`, `5fb20c6` |
 | The Keeper's own payments, and a way to recover a staking position stranded behind a sign-in nobody can use | **Closed** | `86a1253` |
+| Sign-in — an unfinished trip to the identity window handed out a second, empty account | **Closed** | `6eaea06` |
+| Barter — the trade window discarded the trade as it opened, so no trade could ever be completed | **Closed** | `1173f79` |
+| Touch handling extracted from the scene so it can be tested, and the compass moved off the player's name | **Closed** | `058dc01` |
 
 ## What players will notice
 

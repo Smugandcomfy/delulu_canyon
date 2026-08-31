@@ -20,6 +20,38 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.12.1] — 2026-08-30
+
+### New
+
+- **The Canyon has its own door: [delulu.game](https://delulu.game).** The game
+  now lives at its own address, and the old one keeps working — you are the same
+  character either way, with the same gold. Bookmark whichever you like.
+
+### Better
+
+- **The terms screen works on a phone.** It was taller than the screen, and the
+  Accept button sat below the bottom edge with no way to scroll to it and no way
+  to close the panel. If you tried to start playing on a phone and simply could
+  not get in, this was why. Fixed, along with the lore scroll, which had the same
+  problem.
+
+- **The Legend and the Lore are in the menu now.** Both used to live only on the
+  title screen, so you passed them once — before you owned a single item — and
+  could not get back without logging out. They are in ☰ alongside the guide.
+
+- **The first hour makes sense on a quiet day.** If the welcome pouch could not
+  be funded, the game still told you to open a chest that was not there. It now
+  says so plainly and points you at the vault.
+
+- **Chat says something true when it is reconnecting** rather than showing you an
+  internal message, and keeps what you typed.
+
+- The world map no longer calls Luméira "planned" — you have been standing in it
+  for weeks.
+
+---
+
 ## [0.12.0] — 2026-08-30
 
 ### New

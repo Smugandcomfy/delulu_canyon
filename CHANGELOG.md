@@ -20,6 +20,39 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.15.2] — 2026-08-31
+
+### Better
+
+- **More to find in the dungeons.** The gated dungeons — the Bone Halls, the
+  Drowned Chapel and the deeper floors beneath the Tower, the Sanctum, the Grove
+  and the Hearth — now hold noticeably more item chests, and they stay stocked.
+  Gear is the reason to go down there; gold is the reason to go out. Luméira stays
+  quiet on purpose: the world wants you to leave it.
+
+- **Security hardening from a full adversarial review.** We put all six of the
+  game's on-chain services through a deliberately hostile review (see the
+  [audit log](docs/audit-1.md)). Nothing found could move or duplicate anyone's
+  tokens. What it did find is now fixed: a setup call that did part of its work
+  before finishing its permission check, some actions that were not yet behind the
+  same per-account throttle as everything else, and two small internal-accounting
+  tidy-ups in recent code. None of it was ever reachable in a way that touched a
+  player's balance.
+
+- **The heartbeat looks after itself now.** Following yesterday's stoppage, the
+  world's clock has a second line of defence: if it ever stops, the next player who
+  moves quietly starts it again. It also reports its own health, so a stopped clock
+  can no longer go unnoticed.
+
+- **Groundwork for moving the world.** The realm can now take a complete,
+  change-detecting fingerprint of everything it keeps — every character, every
+  item, every scrap of progress — and a freshly rebuilt world refuses to start
+  running until its contents have been restored. Nothing visible changes today;
+  this is the safety net that lets the world be moved or rebuilt some day without
+  losing a single record.
+
+---
+
 ## [0.15.1] — 2026-08-31
 
 ### Fixed

@@ -75,9 +75,10 @@ have produced their own batches, and they are listed on the same terms.
 | A third read-only pass, over every errand, every person you can talk to, and every refusal the client was discarding — 28 findings, 10 of which could not have succeeded for anybody | **Closed** | `1c5c7a6`, `3913635`, `6211bba` |
 | The same pass turned on its own output: six defects found in the fixes themselves before any of them was deployed | **Closed** | `400c8a8`, `6a6e5b9` |
 | The world's heartbeat could stop for good and say nothing — now survivable, observable and restartable without a deployment | **Closed** | `0e46e1b` |
-| **Fourth pass — an adversarial security review of all six canisters** (see the section below). One access-ordering fix on an owner-only setup call | **Open** | _pending_ |
-| From the same review: a set of rate-limit hardenings so a flood of throwaway accounts cannot waste the canisters' fuel — grouped into one pass | **Open** | _pending_ |
-| From the same review: two small internal-accounting tidy-ups in recently-added code, found before any player hit them | **Open** | _pending_ |
+| **Fourth pass — an adversarial security review of all six canisters** (see the section below). One access-ordering fix on an owner-only setup call | **Closed** | `ca0a942` |
+| From the same review: rate-limit hardenings so a flood of throwaway accounts cannot waste the canisters' fuel — the safe subset done, the rest scoped | **Closed** | `ca0a942` |
+| From the same review: two small internal-accounting tidy-ups in recently-added code, found before any player hit them | **Closed** | `ca0a942` |
+| Groundwork so the world can be moved or rebuilt without losing a single player record — a complete change-detecting fingerprint of everything kept, and a rule that a freshly rebuilt world cannot start running before its contents are restored | **Closed** | `3617809` |
 
 ## What players will notice
 

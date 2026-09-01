@@ -88,17 +88,32 @@ stateDiagram-v2
 
 | | Bright | Quiet | Dark |
 |---|---|---|---|
-| minting | yes, capped | no | no |
-| new chests | scattered across the chosen zones | none | none |
+| minting | yes, bounded by what the market can absorb | no | no |
+| new gold chests | scattered across the chosen zones | scattered, funded from the Hoard | scattered, funded from the Hoard |
+| new item chests | restocked to each zone's target | restocked | restocked |
 | burying GOLD for a bond | refused | refused | open, up to this epoch's capacity |
 | redeeming a bond | open, while the Hoard covers it | refused | refused |
 | skeletons take carried gold | no | no | yes |
 | chests already on the ground | still there, still ageing | still there, still ageing | still there, still ageing |
 
-That last row is the one players feel. A Quiet epoch creates nothing, but the
-canyon is not empty during it: everything scattered in earlier turns is still
-lying where it fell, on a clock. Somebody else's careless afternoon is the reason
-to walk around in a dull one.
+The two chest rows are the ones players feel, and they used to read differently.
+Gold chests once appeared only in Bright epochs, which meant the canyon stopped
+producing gold entirely whenever GOLD traded at or below its peg — the floors went
+quiet at exactly the moment they most needed people walking them. That is no
+longer how it works. **Every epoch stocks gold chests, in every mood.**
+
+What changes between the moods is where the gold comes from. A Bright epoch can
+mint some of it, because the market is asking for more GOLD than exists. A Quiet
+or Dark epoch mints nothing at all — it draws instead on the **Hoard**, the gold
+the world has already lost and recovered: chests nobody found before they
+crumbled, bodies nobody walked back to reclaim, gold bitten off the careless in
+the dark. None of that is new supply. It is the same gold going round again, and
+the Hoard is deliberately spent slowly enough that it can never be emptied.
+
+So the old advice — that a dull epoch is only worth walking for what somebody else
+left lying around — is out of date. It is still true that everything scattered in
+earlier turns is still there, on a clock. But a Quiet epoch is now stocking fresh
+floors of its own.
 
 The Crypt is strictly one-directional per mood — you can only buy a bond when the
 price is under the peg, and only redeem one when it is over. That is the whole
@@ -112,9 +127,16 @@ enforces the patience.
 This is the diagram the rest of the design hangs off. Solid arrows are the happy
 path; dotted arrows are where value leaves the player and goes somewhere else.
 
+Two things about it are worth reading twice. The mint is the **smaller** of two
+rules — the old share-of-supply ceiling, and how much GOLD the market could take
+without pushing the price back under the peg. A mint big enough to drive the
+price further from the peg is not a defence of the peg, so the Keeper does not
+make one. And the Hoard now feeds chest gold as well as bonds, which is why the
+dotted arrows that carry losses into it have a solid one coming back out.
+
 ```mermaid
 flowchart LR
-    P["Price above the ceiling"] -->|"the boundary decides"| M["Mint: supply times the smallest of<br/>how far above peg, the supply tier, the cap"]
+    P["Price above the ceiling"] -->|"the boundary decides"| M["Mint: the smaller of<br/>the supply rule and<br/>what the market can absorb"]
     M -->|"credited to the Keeper's float"| FL["The float — gold the Keeper<br/>holds on the world's behalf"]
     FL -->|"tithes, the Masonry's share and<br/>the Hoard's slice come off first"| SP["Chest gold"]
     SP -->|"zones drawn by weight, at least one shallow"| Z["The chosen zones"]
@@ -125,12 +147,13 @@ flowchart LR
     ASK -->|"refused: nothing moves,<br/>the gold stays in hand"| CAR
 
     Z -.->|"no room in the zones this turn"| CARRY["Held back"]
-    CARRY -.->|"offered again at the next expansion,<br/>never re-minted"| SP
+    CARRY -.->|"offered again next epoch,<br/>never re-minted"| SP
     C -.->|"nobody opens it before it crumbles"| H["The Hoard"]
     CAR -.->|"killed — the gold lies with the body"| BODY["A body on the ground"]
     BODY -.->|"its owner walks back and reclaims it"| CAR
     BODY -.->|"nobody comes back for it in time"| H
     CAR -.->|"bitten by a skeleton while the world is Dark"| H
+    H -->|"a limited share each epoch,<br/>so the reserve is never emptied"| SP
 ```
 
 Read the solid path first. The Keeper mints into its own float and never pays a
@@ -359,20 +382,23 @@ sequenceDiagram
 
     alt Bright
         K->>K: value the outstanding bonds at today's premium
-        K->>L: mint the capped amount into the float
+        K->>K: how much can the market absorb at this depth and this premium?
+        K->>L: mint the smaller of that and the supply rule, into the float
         K->>L: pay the DAO, pay development, pay the Masonry share
         K->>L: top up the Hoard, capped so chests keep their floor
-        K->>K: jitter the weights, draw the zones, plan each zone's chests
-        loop one call per chest size, per zone
-            K->>W: place this many chests of this size here
-            W-->>K: placed, or refused
-        end
-        Note over K: anything refused is held back for the next expansion
     else Dark
         K->>K: set this epoch's Crypt capacity as a share of supply
     else Quiet
         K->>K: no mint, and the Crypt stays shut in both directions
     end
+
+    K->>L: draw this epoch's chest budget from the Hoard, within its limit
+    K->>K: jitter the weights, draw the zones, plan each zone's chests
+    loop one call per chest size, per zone
+        K->>W: place this many chests of this size here
+        W-->>K: placed, or refused
+    end
+    Note over K: anything refused is held back for the next epoch
 
     K->>W: the mood is now Bright / Quiet / Dark
     Note over W: this message is also the world's clock — it advances the realm's<br/>own epoch, which ages chests, bodies and dropped items,<br/>and books what crumbled to the decay counter
@@ -381,7 +407,13 @@ sequenceDiagram
     K->>K: compare it against the float and record the difference
 ```
 
-Three things in that sequence are easy to miss.
+**The chest step sits outside the mood branch.** That is deliberate, and it is the
+most recent change to this diagram: stocking the floors is something every epoch
+does, not something only an expansion does. A Bright epoch can add newly minted
+gold to the budget; a Quiet or Dark one funds it entirely from the Hoard. Either
+way the world gets chests.
+
+Three more things in that sequence are easy to miss.
 
 **The sweep happens before the mint, not after.** The Keeper collects what
 crumbled during the previous turn as its first real act, so the Hoard's balance is

@@ -5,10 +5,23 @@ does not hand it over. This document is how one becomes the other.
 
 ## Gold falls as chests
 
-When an epoch expands, the Keeper does not pay the new gold to anyone. It hands
-it to the dungeon, which hides it.
+The world does not hand gold to anyone. It hides it, and people go and find it.
+The floors are stocked **every epoch, in every mood**, out of two purses.
 
-Each expansion the world picks **fourteen zones**, drawn by weight without
+- When an epoch expands, the Keeper does not pay the new gold to anyone. It hands
+  it to the dungeon, which hides it.
+- Every epoch, expanding or not, the dungeon also draws on the **Hoard** — gold
+  that was minted long ago and has since decayed back out of the world. This
+  creates nothing. It is the world's own losses going back onto the floors.
+
+The second purse is the one that keeps the lights on. The Keeper mints only when
+gold is dear, and mints only as much as the market can absorb, so new gold is
+scarce and arrives in bursts. If new gold were the only gold, the dungeon would
+fall quiet exactly when the world most needs people walking around in it. Drawing
+on the Hoard means the chests are there whatever the price is doing, without
+adding a single coin to supply.
+
+Each epoch the world picks **fourteen zones**, drawn by weight without
 replacement, with **at least one shallow zone** always among them so a new player
 with no torches bound still has somewhere to go. The chip at the top of the
 screen names them; the map marks them.
@@ -23,10 +36,10 @@ the zone is:
 | third floors | 40 % hold 3 · 35 % hold 5 · 20 % hold 10 · 5 % hold 25 |
 
 A zone takes at most **60 chests** in one epoch. Gold the world could not place —
-because the zones filled, or a call failed — is carried forward and placed at the
-next expansion rather than lost or re-minted.
+because the zones filled, or something went wrong — is carried forward and placed
+at the next scatter rather than lost or re-minted.
 
-So the same mint produces a different world depending on how deep people are
+So the same gold produces a different world depending on how deep people are
 willing to go. The surface is safe and thin. The third floors hold the 25s and
 the dark elf wizards guarding them.
 
@@ -68,6 +81,18 @@ when the price is falling, nobody chooses to. Here it fills fastest exactly when
 the world is most dangerous and people are most careless. Gold that is not
 secured does not vanish; it becomes the promise made to whoever buys the
 recovery.
+
+And what the Hoard keeps, it gives back. The same reserve that stands behind the
+bonds also stocks the chests, every epoch, out of whatever is left above what it
+already owes. Gold that leaks out of the world is not gone from the world:
+
+```
+Hoard  →  next epoch's chests  →  found and banked, or decayed back to the Hoard
+```
+
+A hard limit on how much may leave the Hoard in any one epoch means it can be
+drawn down but never emptied — it approaches zero without ever arriving there,
+and the world's ordinary carelessness keeps refilling it.
 
 ## The places the economy lives
 
@@ -125,13 +150,16 @@ emission schedule is fixed and finite — see [tokens.md](tokens.md).
 Four epochs make a day, and they are not interchangeable. What is worth doing at
 any hour depends entirely on what the price did:
 
-- **Bright.** New chests exist, and only now. Go and find them, bank what you
-  carry, dig up tombstones if you hold any.
-- **Quiet.** Nothing new falls, but everything from earlier epochs is still lying
-  there and is on a four-epoch clock. Sweep. Craft. Bind torches. Plant.
-- **Dark.** Carrying is expensive. Bank early, stay shallow, and consider burying
-  gold at the Crypt — you are buying the recovery, and the people being bitten in
-  the deep are the ones paying for it.
+- **Bright.** The Keeper is minting, so the new gold goes out on top of the
+  Hoard's and the chests are the fattest they get. Go and find them, bank what
+  you carry, dig up tombstones if you hold any.
+- **Quiet.** Nothing is minted, but the Hoard still stocks the floors, and
+  everything from earlier epochs is still lying there on a four-epoch clock.
+  Nothing bites, so it is the cheapest hunting of the four. Sweep. Craft. Bind
+  torches. Plant.
+- **Dark.** Chests still fall, but carrying is expensive. Bank early, stay
+  shallow, and consider burying gold at the Crypt — you are buying the recovery,
+  and the people being bitten in the deep are the ones paying for it.
 
 The [field guide](field-guide.md) is the short version of that, and the same text
 players see in-game.

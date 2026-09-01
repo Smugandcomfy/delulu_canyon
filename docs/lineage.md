@@ -27,7 +27,7 @@ be more expansion.
 
 ## Where it breaks
 
-Three failures, and they compound.
+Four failures, and they compound.
 
 **The reflexive one.** Newly minted supply usually goes to whoever holds the share token.
 That is a yield, and a yield attracts capital that is there *for the yield*, not for the
@@ -41,6 +41,15 @@ defend itself.
 
 **The oracle one.** The whole policy is driven by one number: the price. If that number
 comes from a pool thin enough to move, then whoever moves it decides how much gets minted.
+
+**The depth one.** This is the quiet one, and it is the one that does the most damage. The mint
+exists to walk the price back down to the peg — and it is almost always sized as a share of
+*total supply*, a percentage of every token that exists. Nothing in that number is a property of
+the market. A pool that could absorb a few tokens without flinching gets handed hundreds, and the
+mint sent to defend the peg becomes the thing that breaks it. It happens on a quiet day, to a
+project doing everything else right, and it happens again every epoch, so the gap compounds.
+Worse, because the rule never looks at the pool at all, no amount of liquidity growth ever makes
+it safe.
 
 ## What we changed
 

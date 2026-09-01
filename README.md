@@ -4,7 +4,7 @@
 
 > **[Audit log](docs/audit-1.md)** · **[Changelog](CHANGELOG.md)** — what our internal
 > audit found before we open to strangers, what has been fixed, and what is still open.
-> Current build: **0.14.4**.
+> Current build: **0.15.2**.
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
 Tomb Finance–style three-token peg. GOLD is meant to be worth one ICP. Every six
@@ -17,6 +17,12 @@ at a vault before any of it is theirs. When GOLD trades below the peg nothing is
 minted at all: the world turns Dark, and the Crypt opens to sell bonds for gold
 that is burned.
 
+How much the Keeper mints is bounded by **what the market can actually absorb**,
+not just by how much GOLD exists. A mint large enough to push the price further
+from the peg is not a defence of the peg, so the Keeper will not make one: when
+the market is thin it creates little, and when the market is deep it can create
+more.
+
 The second idea is the **Hoard**. In Tomb, the bond reserve was fed by one thing
 — a slice of each expansion — so the contraction side of the machine depended on
 belief, and every notable fork died when belief ran out. Here the reserve is also
@@ -25,15 +31,21 @@ walked back to reclaim, gold bitten off the careless while the world is Dark.
 Every loss the world produces becomes backing for the bonds. Neglect in the
 dungeon funds the defence of the peg, and the patient are paid by the careless.
 
+The Hoard also stocks the floors. Gold chests appear in **every** mood, not only
+when the Keeper is minting — funded by that same recovered gold, so the world's
+losses come back out as the world's rewards and nothing new has to be created to
+keep the dungeon worth walking into.
+
 ```mermaid
 flowchart LR
     B["People buying and selling GOLD"] -->|"price"| P[("The GOLD/ICP pool")]
     P -->|"time-weighted price, every six hours"| K{{"The Keeper"}}
-    K -->|"above the ceiling: mint, at most 2% of supply"| C["Chests hidden in the world"]
+    K -->|"above the ceiling: mint, bounded by what the market can absorb"| C["Chests hidden in the world"]
     C -->|"find · carry · bank"| W["Player wallets"]
     W -->|"sell or buy"| P
     C -->|"unfound, unreclaimed, bitten"| H[("The Hoard")]
-    K -->|"below the peg: mint nothing"| X["The Crypt"]
+    H -->|"stocks chests in every mood"| C
+    K -->|"below the peg: mint nothing, open the Crypt"| X["The Crypt"]
     W -->|"bury GOLD, burning it"| X
     X -->|"a tombstone for each gold"| W
     H -->|"dig up once the price recovers, with a premium"| W

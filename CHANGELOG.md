@@ -14,9 +14,95 @@ launched, which is what `0.x` means here.
 
 ---
 
-## [Unreleased]
+## [Unreleased] — Beta sprint over: the oracle brought to game-time mechanics
 
-Nothing waiting. The work below is live.
+**This lands with the next Keeper update. Everything below is written and tested;
+it is not live yet.**
+
+The beta sprint was about building the world. This one was about making the money
+behave like the world does — on game time, at game scale, reacting to what is
+actually happening rather than to a number that stopped being true.
+
+### The short version
+
+The Keeper mints new GOLD when GOLD trades above its peg. That is the whole point
+of it. But the size of the mint was decided by one thing only — how much GOLD
+exists — and it never once asked the question that matters: **how much GOLD can
+the market actually take?**
+
+Those two numbers turned out to be about **forty times apart.** The Keeper was
+minting roughly forty times more gold per epoch than the market could absorb, so
+the mint that was supposed to walk the price back down to the peg pushed it
+further away instead. Then it did it again six hours later.
+
+That is fixed. The mint is now the **smaller** of the two rules: the old share-of-
+supply ceiling, and what the market can genuinely absorb at the current depth and
+the current premium. When the market is thin, the Keeper mints little. When the
+market is deep, it can mint more. It can no longer mint into a wall.
+
+### The oracle was reading a price that had stopped existing
+
+The Keeper reads the price many times through each six-hour epoch and takes the
+middle reading, so one strange trade cannot set the epoch's number. That part was
+right and is unchanged.
+
+What was wrong is what happened when the market genuinely moved. The Keeper
+decided early in an epoch roughly where the price was, and then refused anything
+too far from it — including, it turned out, the price itself. We watched a real
+recovery get turned away reading after reading for half an hour while the Keeper
+sat on a stale, much lower number.
+
+Now the Keeper tells the difference between a spike and a move. One odd reading is
+still ignored. A **run** of readings all saying the same thing is recognised for
+what it is — the market has moved — and the Keeper moves with it. It also now
+requires a great deal more evidence before it will mint at all; if it has not seen
+enough of the epoch, it does nothing, which is the right answer to "I could not
+see the price properly."
+
+### The dungeon no longer goes quiet when the price is weak
+
+This is the change you will actually feel.
+
+Gold chests used to appear **only** in Bright epochs — only when the Keeper was
+minting. So whenever GOLD traded at or below its peg, the world stopped producing
+gold entirely. The dungeon went quiet at exactly the moment it most needed people
+in it. That was backwards, and it is now fixed: **gold chests appear every epoch,
+in every mood.**
+
+They are funded from the **Hoard** — gold that already exists and has fallen back
+out of the world. Chests nobody found before they crumbled, bodies nobody walked
+back to reclaim, gold bitten off the careless in the dark. That gold is not
+destroyed; it returns to the reserve, and the reserve now sends it back out as
+chests. Nothing new is created. The world's own losses stock the world's floors,
+which is what the Hoard was always for.
+
+The Hoard cannot be emptied doing it. Only a limited share of it may be spent in
+any one epoch, so it gets smaller and smaller without ever reaching nothing, and
+the world keeps refilling it. It is a reserve, not a piggy bank.
+
+### What this means for playing
+
+- **Every mood is worth playing now.** Dark and Quiet epochs stock gold chests
+  like Bright ones. Dark still opens the Crypt and still lets the monsters roam;
+  Quiet is still the time for errands and gear. What has gone away is the dead
+  patch where there was simply nothing to find.
+- **Gold will be scarcer per epoch, and that is the point.** The Keeper was
+  handing out gold it could not back. What it scatters now is gold the market can
+  actually carry, plus everything the world has lost and recovered. A chest means
+  something again.
+- **Item chests are unchanged.** Gear kept appearing in every mood throughout, and
+  still does.
+
+### Under the hood, briefly
+
+- The expansion mint is bounded by real market depth as well as by supply.
+- The Keeper measures depth conservatively across a whole epoch rather than
+  trusting a single moment.
+- If the Keeper cannot read the market at all, it mints nothing rather than
+  guessing.
+- Chest funding, the new mint rule and the reserve limits are all operator-tunable
+  and ship switched off, so nothing about the economy changes until it is turned
+  on deliberately.
 
 ---
 

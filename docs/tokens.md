@@ -21,9 +21,15 @@ to the price — mint when gold is dear, offer bonds when it is cheap — descri
 full in [the-keeper.md](the-keeper.md).
 
 GOLD is created in exactly one place: the Keeper, at an epoch boundary, when the
-time-weighted price is above the ceiling, capped at 2 % of supply. Nothing else in
-the system can mint it. The dungeon can ask the Keeper to pay out gold it is
-already holding, but it cannot create any.
+time-weighted price is above the ceiling. How much is the **smaller** of two
+limits: a share of supply, never more than 2 %, and as much as the GOLD market
+can actually absorb before the price is back at the peg. The second is normally
+the one that binds, and by a wide margin — a mint sized from supply alone takes
+no account of how deep the market is, and gold created faster than the market
+can take it pays for itself in a lower price. Gold is now created against real
+depth, which means it is created conservatively. Nothing else in the system can
+mint it. The dungeon can ask the Keeper to pay out gold it is already holding,
+but it cannot create any.
 
 GOLD is destroyed in two places: burying it at the Crypt, which burns it outright,
 and the Store, where every second purchase burns half its price.
@@ -77,6 +83,15 @@ A tombstone is a claim on the Hoard and nothing else. If the Hoard cannot cover 
 redemption, the redemption is refused; it does not mint new gold to cover itself.
 That constraint is why what fills the Hoard — the unfound chests, the unreclaimed
 bodies, the bites — is the load-bearing part of the design rather than a flourish.
+
+The Hoard also spends. Every epoch, in every mood, part of the gold the world
+scatters as chests is drawn from it: gold that was minted long ago and has since
+decayed back out of the world. That creates no new supply — it recirculates gold
+the world already lost — so it is invisible to the peg. The draw comes only from
+the surplus above what the Hoard already owes to outstanding tombstones, and a
+hard cap on how much may leave in any single epoch means the Hoard can be drawn
+down but never emptied: it approaches zero without ever reaching it, while the
+world's losses keep refilling it.
 
 ## What these are not
 

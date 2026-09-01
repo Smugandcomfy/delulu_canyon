@@ -20,6 +20,71 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.16.0] — 2026-09-01
+
+**Live.** Gold can now be worth a fraction of itself, the deep floors have
+something permanent in them, and the world is a good deal richer in things to
+find.
+
+### Gold comes in pieces now
+
+Every amount of gold in the world — in a chest, in your hands, in the bank, on a
+body — was a whole number. The smallest a chest could hold was one whole GOLD,
+and since a GOLD is meant to be worth about one ICP, that made the smallest
+possible find quite a large amount of money. It also meant the only way to hand
+out less was to hide fewer chests, which makes for a duller canyon.
+
+Gold is now counted in hundred-millionths. Nothing you own changed value — the
+same gold is simply written down more precisely.
+
+**What that buys is a lot more chests, and a real reason to go deep.** Chests now
+get bigger the further down you go:
+
+| where | roughly |
+|---|---|
+| the surface and the towns | 0.002 GOLD |
+| the first floors down | 0.005 |
+| the gated dungeons | 0.015 |
+| the deep floors | **0.04** |
+
+A deep chest is worth **twenty surface chests**. The canyon holds thousands of
+chests an epoch now rather than hundreds, and where you hunt matters more than it
+ever has.
+
+### Eight permanent chests, and the keys that open them
+
+Scattered chests come and go. These do not.
+
+**Eight chests now stand permanently in the world** — five on the deep floors,
+three out in the open — and they look the part: heavier, banded, brass-locked.
+Each holds a named item that belongs to that place and nowhere else, and **each
+player can take it once, ever.** Two people can claim the same one at the same
+time; nobody races anybody.
+
+They are locked, and they are guarded. The key for a deep chest is carried by the
+things living in the **gated dungeons**; the key for an outdoor chest by the
+things living in the **open country** around it. Keys are spent when used, so
+each trip down is earned somewhere else first.
+
+The named items sit deliberately below the relics — good enough to change how you
+play, never good enough to make a relic ordinary.
+
+### Relics come from the deep now
+
+Relics used to be possible from any chest, anywhere, at a rate so thin that in
+the whole life of the world **not one had ever been found.**
+
+They now come only from the deep floors, and far more often there. The deep tier
+is where the rarest things in the game live — which is what the guards, the keys
+and the walk were always supposed to mean.
+
+### Also
+
+- **The Keeper can be asked what it is running.** It mints the world's gold and
+  had no version to report until now.
+- More to find everywhere, from the same amount of gold — the change that makes
+  all of the above possible.
+
 ## Beta sprint over: the oracle brought to game-time mechanics — 2026-09-01
 
 **Live.** This one changed the Keeper rather than the realm or the client, so

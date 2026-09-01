@@ -14,10 +14,17 @@ launched, which is what `0.x` means here.
 
 ---
 
-## [Unreleased] — Beta sprint over: the oracle brought to game-time mechanics
+## [Unreleased]
 
-**This lands with the next Keeper update. Everything below is written and tested;
-it is not live yet.**
+Nothing waiting. The work below is live.
+
+---
+
+## Beta sprint over: the oracle brought to game-time mechanics — 2026-09-01
+
+**Live.** This one changed the Keeper rather than the realm or the client, so
+neither of their version numbers moved — the world you connect to is still on
+`0.15.2`. What changed is the thing deciding how much gold exists.
 
 The beta sprint was about building the world. This one was about making the money
 behave like the world does — on game time, at game scale, reacting to what is
@@ -80,6 +87,29 @@ The Hoard cannot be emptied doing it. Only a limited share of it may be spent in
 any one epoch, so it gets smaller and smaller without ever reaching nothing, and
 the world keeps refilling it. It is a reserve, not a piggy bank.
 
+### And the gold moved to where people actually go
+
+Alongside the above, the share of each epoch's gold going to each part of the
+canyon was rebalanced — the first time it has been touched since the world opened.
+
+We looked at where the gold actually *is*, rather than where it is sent, and the
+two turned out to be very different. The shallow, ungated ring — Luméira, the
+Antechamber, the Highland, the Grove, the Hallowmere — was being stripped bare
+inside a single epoch, every epoch. Meanwhile the floors under the Castle Tower
+had quietly accumulated more than half of all the gold lying in the world, simply
+because far fewer people go down there. Luméira looked poor not because it was
+given little, but because it was the one place everything got found.
+
+So the split is now **half to the accessible ring, a fifth to the gated middle
+dungeons, and the rest to the deep floors** — where before, the accessible ring
+was receiving under a fifth of it. In practice the surface should feel about as
+rich as it did, out of a much smaller total, and the deep floors should stop
+hoarding gold nobody is collecting.
+
+The gated middle dungeons take the largest cut of gold in this change. That is
+deliberate: gear is the reason to run that tier, and they were already stocked
+with far more item chests in the last update.
+
 ### What this means for playing
 
 - **Every mood is worth playing now.** Dark and Quiet epochs stock gold chests
@@ -100,9 +130,8 @@ the world keeps refilling it. It is a reserve, not a piggy bank.
   trusting a single moment.
 - If the Keeper cannot read the market at all, it mints nothing rather than
   guessing.
-- Chest funding, the new mint rule and the reserve limits are all operator-tunable
-  and ship switched off, so nothing about the economy changes until it is turned
-  on deliberately.
+- Chest funding, the mint rule and the reserve limits are all tunable while the
+  world runs, so the economy can be adjusted without another update.
 
 ---
 

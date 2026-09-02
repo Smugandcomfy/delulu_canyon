@@ -20,6 +20,55 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.17.0] — 2026-09-03
+
+**Live.** Players can put their own tokens into chests now — and give them away,
+lose them, or leave them lying in a hall for a stranger.
+
+### User chests: seal a token, and the crate travels
+
+Every chest in the canyon so far had the world behind it: the Keeper's mint, or
+a sponsor's treasury. What players owned stayed in wallets and vaults. This
+release hands the chest itself over.
+
+At the Bazaar you can now **seal any ICRC-1 token into a crate** — GOLD, TORCH,
+or anything else, imported by its ledger canister id. The crate is a thing in
+the world: carry it, drop it on the ground for whoever finds it, or hand it to
+a neighbour standing beside you. Whoever opens it is paid **exactly what the
+crate says**. A birthday present, a bounty, a trap for the curious, a tip left
+on a table — that part is up to you.
+
+The honest details, because a crate holds real value:
+
+- **The value never travels.** While the crate is out in the world, the tokens
+  sit where they were sealed — in the Bazaar's books, the same audited books
+  that hold every trade, the ones it checks against the ledgers on a timer and
+  publishes. The crate is the claim on them, nothing more.
+- **A crate that rots unopened refunds its maker.** Like any dropped thing, a
+  crate on the ground decays after long enough — but the tokens inside go home
+  to whoever sealed them, not to anyone else and not to nowhere. The seal fee —
+  the larger of three ledger fees or half a percent — does not come back.
+- **Crates fall with you.** Die carrying one and it lies with your body, and
+  anyone who walks past may take it. That is what carrying means here, and
+  crates are not an exception to it.
+
+### The id is the only honest name
+
+Anyone can deploy a token and call it anything — nothing anywhere makes token
+names unique, and a stranger's crate marked with a familiar name is exactly
+where that matters. So the Bazaar now shows **the ledger canister id wherever a
+token is named**, and tokens no operator has vouched for are marked plainly as
+**unvetted**. Before you value a crate by its label, read the id — the label is
+whatever its maker wanted it to be; the id is what the token is.
+
+### Fixed
+
+- **Sponsor chests hold still.** They had been drifting across the screen when
+  the camera rotated, as if the chest were somewhere it was not. It draws where
+  it stands now.
+
+---
+
 ## [0.16.1] — 2026-09-02
 
 **Live.** A small release with one job: the Crypt's promise is now set aside

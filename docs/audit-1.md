@@ -80,6 +80,8 @@ have produced their own batches, and they are listed on the same terms.
 | From the same review: two small internal-accounting tidy-ups in recently-added code, found before any player hit them | **Closed** | `ca0a942` |
 | Groundwork so the world can be moved or rebuilt without losing a single player record — a complete change-detecting fingerprint of everything kept, and a rule that a freshly rebuilt world cannot start running before its contents are restored | **Closed** | `3617809` |
 | Economy accounting, continued — the reserve that pays tombstones back is now set aside before any other spending, under one rule shared by every path that spends from it | **Closed** | `0a608e1` |
+| A world created fresh could have mis-counted its starting treasury on its first upgrade — found by a new test, fixed before any fresh world existed, and the test harness strengthened so this class is caught loudly | **Closed** | `b873f6f` |
+| User chests — a player's own tokens sealed into crates, built custody-first: the trading canister holds the value, the world holds only a pointer, and every destroying path refunds the maker | **Closed** | `254ab6a`, `b873f6f` |
 
 ## What players will notice
 

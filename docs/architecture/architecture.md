@@ -6,9 +6,9 @@ separately. This document names them and explains why the line between them fall
 where it does.
 
 Canisters are referred to by name throughout — *the Keeper*, *the dungeon*, *the
-Graveyard*. Their addresses are on-chain and discoverable, but they are not
-listed here, because a document that hard-codes addresses goes stale the first
-time anything moves.
+Graveyard*. Their addresses are public and on-chain, and they are listed in one
+place, [canisters.md](canisters.md), so that a reader can check they are talking
+to the real thing and a move changes one file.
 
 ```mermaid
 flowchart TB
@@ -68,6 +68,14 @@ between two players is a plain ledger transfer that the game never sees.
 separate so that a busy chat cannot slow the world down, and so that moderation
 tools can be changed without touching the economy.
 
+**The Bazaar** is the trading canister. It takes custody of tokens a player
+deposits, holds standing offers so two players need not be online at the same
+moment, and settles a trade completely or not at all. It also holds the value
+behind every player-sealed crate while the crate itself travels the world — the
+crate is a pointer; the tokens never leave the Bazaar's books. It publishes
+those books, checks them against the ledgers on a timer, and stops rather than
+pays if they ever disagree.
+
 **The Graveyard** takes custody of liquidity positions from the trading pools and
 pays TORCH for them over a fixed emission window. A planted position is held by
 the canister, not by us; it can be uprooted at any time and walks straight back
@@ -98,8 +106,8 @@ it already minted for that purpose — but the dungeon has no power to create an
 Every path that could increase supply lives in one small canister with one
 published rule.
 
-The same reasoning puts liquidity in the Graveyard and the vault rather than in
-the dungeon. Custody should sit in a canister small enough to audit, and boring
+The same reasoning puts liquidity in the Graveyard and the vault, and traded
+tokens in the Bazaar, rather than in the dungeon. Custody should sit in a canister small enough to audit, and boring
 enough that it rarely changes.
 
 ## What the client does and does not do

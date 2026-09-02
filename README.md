@@ -2,9 +2,17 @@
 
 **An algorithmic peg whose seigniorage is delivered as loot, and whose reserve is fed by the world's losses.**
 
-> **[Audit log](docs/audit-1.md)** · **[Changelog](CHANGELOG.md)** — what our internal
-> audit found before we open to strangers, what has been fixed, and what is still open.
-> Current build: **0.16.0**.
+> **Play: [delulu.game](https://delulu.game)** — sign in with Internet Identity and
+> you are in. The game is itself a canister; its raw address is
+> [coqqu-zaaaa-aaaai-q32ma-cai.icp0.io](https://coqqu-zaaaa-aaaai-q32ma-cai.icp0.io),
+> the same door either way.
+>
+> New here? Start with the **[Player's Guide](docs/guides/how-to-play.md)** and the
+> **[Quest Guide](docs/guides/quests.md)**.
+>
+> **[Changelog](CHANGELOG.md)** · **[Audit log](docs/audit-1.md)** — what is
+> different to play, and what our internal audits found, fixed and still hold
+> open. Current build: **0.17.0**.
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
 Tomb Finance–style three-token peg. GOLD is meant to be worth one ICP. Every six
@@ -54,19 +62,42 @@ flowchart LR
 
 ## The documents
 
+### For players — [docs/guides/](docs/guides/)
+
+| | |
+|---|---|
+| [How to play](docs/guides/how-to-play.md) | The whole game from the first ten minutes: moods, health, torches, the Crypt, crates, eggs and the Store |
+| [Quests and things to do](docs/guides/quests.md) | The quest chains, the board, crafting, pets, curios, the shops and the pub |
+| [Field guide](docs/guides/field-guide.md) | Where to go and what is worth doing in each of the Keeper's moods |
+| [Activities](docs/guides/activities.md) | Curios, the Collector, NPC trade, fishing, the ferry, the inn and the Ossuary |
+
+### The architecture — [docs/architecture/](docs/architecture/)
+
 | | |
 |---|---|
 | [Architecture](docs/architecture/architecture.md) | The canisters, what each is responsible for, and why the machine is split this way |
+| [The canisters](docs/architecture/canisters.md) | Every mainnet canister by role and on-chain id — the addresses that are the game |
 | [The Keeper](docs/architecture/the-keeper.md) | The algorithm in full — sampling, the three moods, expansion, contraction, the bond, the fail-safes |
 | [The world](docs/architecture/the-world.md) | How the algorithm lands in the game: chests, carrying, death, decay, and the places the economy lives |
 | [Tokens](docs/architecture/tokens.md) | GOLD, TORCH and TOMBSTONE — what each is for, how each is made and destroyed |
-| [Field guide](docs/guides/field-guide.md) | For players: where to go and what is worth doing in each of the Keeper's moods |
-| [Quests and things to do](docs/guides/quests.md) | For players: the quest chains, the board, crafting, pets, curios, the shops and the pub |
+
+### The technical record — [docs/technical/](docs/technical/)
+
+| | |
+|---|---|
 | [How the peg drives the game](docs/technical/how-the-peg-drives-the-game.md) | The monetary machine and the minute-to-minute play, drawn out: the moods, where a mint goes, and what fills the Hoard |
 | [Lineage](docs/technical/lineage.md) | Where this economy comes from, where that family of designs breaks, and what we do differently |
 | [Capacity and cycles](docs/technical/capacity-and-cycles.md) | How many people can play at once, what actually limits it, and what it costs to run a game where the canister pays for every message |
-| [Audit 1](docs/audit-1.md) | What our internal audit found before opening to strangers, what has been fixed, and what is still open |
-| [Activities](docs/guides/activities.md) | Curios, the Collector, NPC trade, fishing, the ferry, the inn and the Ossuary |
+
+### The record
+
+| | |
+|---|---|
+| [Changelog](CHANGELOG.md) | What changed, release by release, for people who play |
+| [Audit log](docs/audit-1.md) | What our internal audits found before opening to strangers, what has been fixed, and what is still open |
+
+The files in [src/](src/) name each canister's job; the implementation lives in
+a private repository until launch, for the reasons the audit log gives.
 
 ## What this is not
 

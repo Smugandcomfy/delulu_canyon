@@ -20,6 +20,32 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.16.1] — 2026-09-02
+
+**Live.** A small release with one job: the Crypt's promise is now set aside
+before anything else may spend from the reserve.
+
+### The Hoard keeps the Crypt's gold apart
+
+The Crypt saw its first real use this week: players buried gold for tombstones
+while the price sat below the peg. A tombstone is a promise — dig it up when
+the price recovers and the Hoard pays you back, at a premium if it recovers
+far. Until they are dug up, the Hoard is what stands behind them.
+
+The parts of the Keeper that spend from the Hoard did not all agree on what
+"spendable" meant. The chest funding already set the tombstone promise aside;
+one other path did not. Nothing went wrong — the reserve comfortably covers
+every tombstone outstanding, and it did throughout — but with the Crypt now
+genuinely in use, "nothing went wrong" is not the standard.
+
+There is now exactly one answer to "what may the Hoard spare?", used
+everywhere: the balance, less what it owes tombstone holders at today's rate,
+less anything already promised to a payout in flight. Every spender draws from
+that surplus and stops at its edge, visibly. Nothing about today's play
+changes; what changed is what cannot happen later.
+
+---
+
 ## [0.16.0] — 2026-09-01
 
 **Live.** Gold can now be worth a fraction of itself, the deep floors have

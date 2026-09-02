@@ -79,6 +79,7 @@ have produced their own batches, and they are listed on the same terms.
 | From the same review: rate-limit hardenings so a flood of throwaway accounts cannot waste the canisters' fuel — the safe subset done, the rest scoped | **Closed** | `ca0a942` |
 | From the same review: two small internal-accounting tidy-ups in recently-added code, found before any player hit them | **Closed** | `ca0a942` |
 | Groundwork so the world can be moved or rebuilt without losing a single player record — a complete change-detecting fingerprint of everything kept, and a rule that a freshly rebuilt world cannot start running before its contents are restored | **Closed** | `3617809` |
+| Economy accounting, continued — the reserve that pays tombstones back is now set aside before any other spending, under one rule shared by every path that spends from it | **Closed** | `0a608e1` |
 
 ## What players will notice
 

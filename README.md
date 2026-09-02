@@ -12,7 +12,7 @@
 >
 > **[Changelog](CHANGELOG.md)** · **[Audit log](docs/audit-1.md)** — what is
 > different to play, and what our internal audits found, fixed and still hold
-> open. Current build: **0.20.0**.
+> open. Current build: **0.21.0**.
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
 Tomb Finance–style three-token peg — and, since 0.18.0, **two worlds**: the

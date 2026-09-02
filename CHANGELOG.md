@@ -20,6 +20,62 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.21.0] — 2026-09-03
+
+**Live.** Friends, phones, and a set of blades that are not drawn yet.
+
+### Parties, and the whisper grows up
+
+You can gather a **party of up to eight** — and it holds together across
+worlds, because a party is not a thing any one world owns. Invite by name,
+leave when you like, and the longest-serving member takes over if the leader
+wanders off. Party chat rides beside zone chat with the same manners: the same
+rate limits, the same mutes, the same moderation.
+
+Whispers were always the direct message; now they remember. **Unread counts**,
+a **read mark** that does not un-read itself when you open an old tab, and your
+messages grouped **by the person you were talking to** instead of one long
+column. A stranger who whispers into silence is throttled after a while; a real
+conversation never is, because one reply forgives the whole backlog.
+
+### The worlds, from the front door
+
+The login screen now lists every world with **how many people are in it right
+now** — **Earth**, **Water**, **Solar System**. A newcomer is *offered* the
+quietest one rather than pushed there, and only ever a world that can actually
+take them.
+
+### Phones
+
+One card at the top of the screen: the menu on the left, your health on the
+right, your coin underneath, and the whole menu unfolds downward from that same
+card instead of floating over the health bar. Two long-standing annoyances are
+gone with it — **the dark rectangle that sat over the map** (an ambient layer
+that never resized when your screen did) and **pinch zoom sticking** at full-in
+or full-out. A double tap now resets the zoom.
+
+### Blades, sheathed
+
+Player-versus-player is **built and shipped, and switched off**. When it is
+turned on it will live only below the second floor, never in town, never in a
+guild hall, and never in a room where a boss is standing — a raid is the one
+time the canyon makes you cooperate. Damage will be a share of what you can
+take rather than a flat number, so a veteran and a newcomer die in the same
+number of blows and the weapon decides. There will be no looting the dead.
+
+### Also
+
+- **Quests no longer nudge your karma just for being finished.** A quest that
+  means to move you still does; what is gone is the drift that made the last
+  chapter's door unreachable for anyone who simply played the story.
+- **A half-made character is no longer a life sentence.** If registration got
+  half-way — a name written, the rest refused — the game finishes the job on
+  your next visit instead of leaving you in a black world for ever.
+- **A journey that turns back tells you why.** Arriving in a world where
+  somebody already has your name used to bounce you home in silence.
+
+---
+
 ## [0.20.0] — 2026-09-03
 
 **Live.** The Dark gets a purpose, a third world opens, and the first raid boss waits at the bottom of it.

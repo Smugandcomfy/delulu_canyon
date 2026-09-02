@@ -102,7 +102,8 @@ shield.
 
 The tower door wants two things at once. The **Ancient Key** sits in a chest on
 the Hill, in a fixed place, the same for everyone; if somebody takes it, another
-appears in time. The **Loaf of Friendship** is baked by Pippin out of three
+appears in time — and Old Bessany keeps one on her shelf for ten gold, if you
+would rather buy than hunt. The **Loaf of Friendship** is baked by Pippin out of three
 enchanted herbs, which the wisps of the Grove carry and drop a few at a time. The
 loaf heals two hundred and fifty if you eat it and opens the door if you don't,
 and Pippin will tell you plainly that you cannot do both.
@@ -122,7 +123,7 @@ The noticeboard in Luméira town carries **two posts, and they change with the
 day**. They are drawn from five standing requests, never the same one twice on
 one day, and they are deliberately things you were going to do anyway:
 
-- Bank twenty-five gold at the vault.
+- Bank gold at the vault — the post names the amount.
 - Slay ten beasts.
 - Lay twelve skeletons down.
 - Open eight chests.
@@ -384,14 +385,13 @@ Relics never trade, and neither does an incubating egg or the weapon in your han
 ## The plots, the Masonry and the Crypt
 
 These three are the long game. The [field guide](field-guide.md) says when each is
-worth walking to and [the world](the-world.md) says why they exist; briefly:
+worth walking to and [the world](../architecture/the-world.md) says why they exist; briefly:
 
 **Brannock's plots** in Hallowmere are where TORCH will come from — the only place
 it is ever emitted. Bring a full-range liquidity position in one of the pools and
 plant it, and it grows torches around the clock while it stays planted. The game
 never holds your tokens and never holds the position: it is minted to you, it stays
-yours, and uprooting hands it straight back. The plots are built; they open when the
-Graveyard does.
+yours, and uprooting hands it straight back.
 
 **The Masonry** in Lanternfall binds torches to you. Bound torches are still yours
 — binding is not spending — and they do two things: every one adds ten points of

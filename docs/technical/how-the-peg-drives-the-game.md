@@ -1,11 +1,11 @@
 # How the peg drives the game
 
-[The Keeper](the-keeper.md) is the rule. [The world](the-world.md) is what the rule
+[The Keeper](../architecture/the-keeper.md) is the rule. [The world](../architecture/the-world.md) is what the rule
 lands in. This document is the join between them, drawn rather than described:
 eight diagrams that trace one turn of the monetary machine all the way down to a
 player standing beside a chest deciding whether to open it.
 
-It assumes you have read [the-keeper.md](the-keeper.md) and [tokens.md](tokens.md)
+It assumes you have read [the-keeper.md](../architecture/the-keeper.md) and [tokens.md](../architecture/tokens.md)
 and does not repeat their arithmetic. What it adds is the wiring — which canister
 tells which other canister what, in what order, and where a piece of value can
 change hands or stop existing along the way.
@@ -455,8 +455,8 @@ the Hoard, the bonds outstanding, the price each turn acted on and where every
 chest fell are all readable by anyone who wants to check the arithmetic — which is
 the point of publishing the rule rather than the reassurance.
 
-Where to go next: [the-keeper.md](the-keeper.md) for the arithmetic in full,
-[the-world.md](the-world.md) for what the canyon does with it,
-[tokens.md](tokens.md) for the three ledgers, and
-[architecture.md](architecture.md) for why the mint and the world are separate
+Where to go next: [the-keeper.md](../architecture/the-keeper.md) for the arithmetic in full,
+[the-world.md](../architecture/the-world.md) for what the canyon does with it,
+[tokens.md](../architecture/tokens.md) for the three ledgers, and
+[architecture.md](../architecture/architecture.md) for why the mint and the world are separate
 canisters in the first place.

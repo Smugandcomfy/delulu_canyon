@@ -56,17 +56,17 @@ flowchart LR
 
 | | |
 |---|---|
-| [Architecture](docs/architecture.md) | The canisters, what each is responsible for, and why the machine is split this way |
-| [The Keeper](docs/the-keeper.md) | The algorithm in full — sampling, the three moods, expansion, contraction, the bond, the fail-safes |
-| [The world](docs/the-world.md) | How the algorithm lands in the game: chests, carrying, death, decay, and the places the economy lives |
-| [Tokens](docs/tokens.md) | GOLD, TORCH and TOMBSTONE — what each is for, how each is made and destroyed |
-| [Field guide](docs/field-guide.md) | For players: where to go and what is worth doing in each of the Keeper's moods |
-| [Quests and things to do](docs/quests.md) | For players: the quest chains, the board, crafting, pets, curios, the shops and the pub |
-| [How the peg drives the game](docs/how-the-peg-drives-the-game.md) | The monetary machine and the minute-to-minute play, drawn out: the moods, where a mint goes, and what fills the Hoard |
-| [Lineage](docs/lineage.md) | Where this economy comes from, where that family of designs breaks, and what we do differently |
-| [Capacity and cycles](docs/capacity-and-cycles.md) | How many people can play at once, what actually limits it, and what it costs to run a game where the canister pays for every message |
+| [Architecture](docs/architecture/architecture.md) | The canisters, what each is responsible for, and why the machine is split this way |
+| [The Keeper](docs/architecture/the-keeper.md) | The algorithm in full — sampling, the three moods, expansion, contraction, the bond, the fail-safes |
+| [The world](docs/architecture/the-world.md) | How the algorithm lands in the game: chests, carrying, death, decay, and the places the economy lives |
+| [Tokens](docs/architecture/tokens.md) | GOLD, TORCH and TOMBSTONE — what each is for, how each is made and destroyed |
+| [Field guide](docs/guides/field-guide.md) | For players: where to go and what is worth doing in each of the Keeper's moods |
+| [Quests and things to do](docs/guides/quests.md) | For players: the quest chains, the board, crafting, pets, curios, the shops and the pub |
+| [How the peg drives the game](docs/technical/how-the-peg-drives-the-game.md) | The monetary machine and the minute-to-minute play, drawn out: the moods, where a mint goes, and what fills the Hoard |
+| [Lineage](docs/technical/lineage.md) | Where this economy comes from, where that family of designs breaks, and what we do differently |
+| [Capacity and cycles](docs/technical/capacity-and-cycles.md) | How many people can play at once, what actually limits it, and what it costs to run a game where the canister pays for every message |
 | [Audit 1](docs/audit-1.md) | What our internal audit found before opening to strangers, what has been fixed, and what is still open |
-| [Activities](docs/activities.md) | Curios, the Collector, NPC trade, fishing, the ferry, the inn and the Ossuary |
+| [Activities](docs/guides/activities.md) | Curios, the Collector, NPC trade, fishing, the ferry, the inn and the Ossuary |
 
 ## What this is not
 

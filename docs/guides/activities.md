@@ -1,8 +1,5 @@
 # Curios, trade, and the things to do between chests
 
-*Not live yet — this describes the work in the milestone that is being tested now. It will
-be true of the world when that ships, and this note comes off then.*
-
 Chests are the economy. Everything here is what the canyon is like when the Keeper is
 Quiet, when your bag is full and the vault is a long walk away, or when you simply want
 something to do that is not walking into skeletons.

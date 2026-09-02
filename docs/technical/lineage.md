@@ -127,4 +127,4 @@ not that it cannot happen.
 
 **None of this is investment advice, and GOLD is not a stablecoin.** It is a game currency
 with a peg mechanism and a published set of rules. The rules are in
-[The Keeper](the-keeper.md); the code they come from is the same code the canisters run.
+[The Keeper](../architecture/the-keeper.md); the code they come from is the same code the canisters run.

@@ -161,7 +161,7 @@ any hour depends entirely on what the price did:
   shallow, and consider burying gold at the Crypt — you are buying the recovery,
   and the people being bitten in the deep are the ones paying for it.
 
-The [field guide](field-guide.md) is the short version of that, and the same text
+The [field guide](../guides/field-guide.md) is the short version of that, and the same text
 players see in-game.
 
 ## Planned

@@ -11,9 +11,9 @@ in the game, under **H**.
 **Hunt the named zones.** The chip names where the gold fell; the map marks them.
 Chests fall in every mood, but Bright is the mood where the Keeper adds new gold
 on top of what the Hoard puts out — this is the richest hunting of the four.
-Every chest holds one gold. There are simply more of them where the Keeper has
-weighted the epoch — and the shallow, ungated ring now takes the largest share of
-it, so the surface is worth walking again.
+Chests get bigger the further down you go — a deep chest is worth about twenty
+surface chests — and the shallow, ungated ring takes the largest share of the
+epoch's gold, so the surface is worth walking again.
 
 **Bank what you carry.** Carried gold is not yours until you bank it at a vault.
 Luméira's plaza has the one everybody starts at, and every zone keeps one of its
@@ -55,7 +55,7 @@ the Keeper's Board. Sponsors' chests turn up in Quiet epochs as well.
 ## ☾ Dark — the Crypt opens
 
 **Carry less, bank sooner.** The skeletons bite: a twentieth of what you are
-carrying, at least one gold, every time, and it goes to the Hoard.
+carrying, every time, and it goes to the Hoard.
 
 **Chests still fall — keep the trips short.** The Hoard stocks the floors in every
 mood, Dark included. The gold is there; what changes is that holding it costs you.

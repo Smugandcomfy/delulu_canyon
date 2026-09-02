@@ -50,9 +50,19 @@ against it.
 | Economy accounting — four ways gold could be counted twice, and a sell path that could promise gold the world did not have | **Closed** | `f6ff141`, `0987e14` |
 | Oracle observability — the Floor's drift now raises an alarm when it *grows*, rather than when it is merely large | **Closed** | `46f0718`, `9d00656` |
 | Interface drift — client interfaces are now checked against the live canisters rather than against our own assumptions | **Closed** | `cc54599` |
-| World geometry migration | Open | — |
-| Cost and capacity under load — spawn caps trimmed; the idle cost of a larger world is still being measured | Open | `b479d25` |
-| Dead code and legacy surface | Open | — |
+| World geometry migration | **Closed** | — |
+| Cost and capacity under load — the per-poll cost is now measured on the live canister rather than estimated; the idle cost of a larger world is still being watched | **Mostly closed** | `b479d25` |
+| Dead code and legacy surface — the legacy surface is gone; three unused entry points remain and are queued for deletion | **Mostly closed** | — |
+
+**On the three that were open at the last update.** The world geometry migration
+is finished — every zone is on the new sizing and the pending list is empty.
+Capacity stopped being a guess: the poll that drives the client was measured on
+the live canister across nearly four million queries and came in at a small
+fraction of the per-query budget, which retired the concern that it scanned the
+whole world. What remains is watching the idle cost as the world grows, which is
+a standing measurement rather than an open fault. And the legacy surface has been
+removed; what is left is three entry points that answer nothing and are queued to
+be deleted outright.
 
 ### Since the audit
 

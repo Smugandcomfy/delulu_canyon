@@ -14,6 +14,8 @@ game.
 | canister | what it is | id |
 |---|---|---|
 | The realm | the world itself: zones, players, chests, the Store, the doors, the quests | `5r3gp-3iaaa-aaaap-qqaeq-cai` |
+| Waterworld | the second world — same code, its own state: the isles, their dungeons, their people | `3nrbc-jiaaa-aaaap-quxsq-cai` |
+| The Wayhouse | the registry of worlds, and the escrow every traveller passes through between them | `2o5ie-5qaaa-aaaap-quxua-cai` |
 | The client | the browser game, served from an asset canister — [delulu.game](https://delulu.game) points here, and [coqqu-zaaaa-aaaai-q32ma-cai.icp0.io](https://coqqu-zaaaa-aaaai-q32ma-cai.icp0.io) is the same door by its raw address | `coqqu-zaaaa-aaaai-q32ma-cai` |
 | The Keeper | the clock and the treasury; the only thing that can mint | `5u6am-7iaaa-aaaap-quxgq-cai` |
 | GOLD ledger | the money — an ordinary ICRC-1/2/3 ledger any wallet can hold | `555lq-jaaaa-aaaap-quxha-cai` |

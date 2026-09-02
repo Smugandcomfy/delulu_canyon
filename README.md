@@ -12,10 +12,12 @@
 >
 > **[Changelog](CHANGELOG.md)** · **[Audit log](docs/audit-1.md)** — what is
 > different to play, and what our internal audits found, fixed and still hold
-> open. Current build: **0.17.0**.
+> open. Current build: **0.19.0**.
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
-Tomb Finance–style three-token peg. GOLD is meant to be worth one ICP. Every six
+Tomb Finance–style three-token peg — and, since 0.18.0, **two worlds**: the
+canyon of Luméira and the isles of Waterworld, each its own canister, with a
+gate between them that a whole character can step through. GOLD is meant to be worth one ICP. Every six
 hours the Keeper — a canister that does nothing but watch the price and decide —
 reads the time-weighted price of GOLD against ICP. When GOLD trades above the
 peg the Keeper mints more of it; but instead of paying that new gold to stakers,

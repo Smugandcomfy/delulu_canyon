@@ -263,6 +263,35 @@ the mood decides what is worth doing for the next six hours. The
 - **The Obelisk on the plaza** glows with the same mood as the chip, if you
   would rather read the sky than a bar.
 
+## Two worlds, and the gate between
+
+Southwest of town, south of the harbour, a portal stands between two fountains
+with a sign that tells you what it is. Through it is **Waterworld**: isles,
+bridges, shallows a boat crosses, six dungeons of its own — a second world
+with the same rules and the same money, running as its own canister.
+
+Three things to know before you sail:
+
+- **Bank first.** Carried gold and unbanked pouches do not travel. The gate
+  will refuse you, politely, until they are in a vault — banked gold is yours
+  in both worlds.
+- **Everything else goes with you.** Gear, pets, titles, quests, curios,
+  crates — the whole character steps through, and steps back the same way.
+- **There is never two of you.** Mid-journey, the world you left holds your
+  place; you arrive whole or you stay put.
+
+## The guild halls
+
+Two great halls stand open — the Sneed Guild Hall and the Tendys Hall — each a
+nave two hundred tiles deep with side rooms, hearths, and an altar carrying
+the guild's own mark, read live from its SNS. Each hall keeps four
+**dispensers**: chests that never empty and never race. Each rolls its own
+table for you, once an epoch — potions, cutlasses, the wider table, and,
+rarely, the guild's **standard**, a flag carried as a staff that calls
+lightning at fifteen tiles. Its short-armed cousin, the **Tideflame Censer**,
+is brewed, not dispensed — see the Four Tides in the
+[Quest Guide](quests.md).
+
 ## The loop
 
 Find gold → bank it → bind torches to reach the richer floors, or plant gold

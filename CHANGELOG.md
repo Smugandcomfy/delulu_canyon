@@ -20,6 +20,92 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.19.0] — 2026-09-02
+
+**Live.** The stories wake up, the guilds get their halls, and Waterworld gets
+its first quest.
+
+### The four stories come alive
+
+The [four stories](docs/guides/quests.md#the-four-stories) — the Drowned Bell,
+the Smugglers' Cache, the Bard's Ballad, the Doll-maker — were told in the
+guide before the world could tell them itself. Now it can. Talk to the person
+each story names, walk into the places it happens, read what you find, and the
+thread pulls: Sister Ashwyn will really hang the bell and it really rings
+across the water on every turn of the Keeper from then on, with a 🔔 in your
+chat when it does. Pell really sings one finished player's name on every
+Bright turn. The doll-maker's last chapter really waits under the Crypt, and
+finishing it really pays. And page seven's riddle really opens a place in the
+third cave that was not there before — once for each person who reads it,
+never a race, with the smugglers' own chance of something far better than
+dust inside.
+
+### The Four Tides — Waterworld's first quest
+
+Four keepers of the tide stand on the isles, each holding one quarter of
+something old. Earn all four, bring them to the cauldron by the Crypt in
+Luméira, and brew the **Tideflame Censer** — the canyon's first casting
+weapon. It throws fire five tiles for 25, needs a breath between castings,
+and swings like a stick if you insist on using it up close.
+
+### The great halls
+
+The Sneed Guild Hall stops being a borrowed dungeon: a nave thirty tiles wide
+and two hundred deep, side rooms set like the Ossuary's pub, banners, hearths,
+and at the far end an altar carrying the guild's own mark — read live from its
+SNS, because the chain says what a guild looks like. The Tendys Hall rises in
+the same shape. Each hall keeps four **dispensers**: chests that never empty
+and never race — each rolls its own table for each player, once an epoch.
+Potions in one, cutlasses in another, the wider table in a third — and rarely,
+from the fourth, the guild's **standard**: a flag carried as a staff that
+calls lightning fifteen tiles for 15. Long reach pays in lighter damage; the
+censer's short flame hits harder.
+
+### Also
+
+- Waterworld's dungeons now carry their true names on the map.
+- The clapper's chest in the flooded nave **re-arms** after its wait — the
+  Drowned Bell is a story every player can finish, not a race one player won.
+- **Pippin re-bakes.** Lose the Loaf — eat it in a bad moment, drop it, spend
+  it unwisely — and three herbs at his oven make another. Lost bread is a
+  trip, not a dead end.
+- Housekeeping on travel: a journey that settles now tidies away every trace
+  of the traveller in the world they left, and journeys settle one at a time.
+- The gate to Waterworld now stands where it belongs: southwest of Luméira's
+  town, south of the harbour, between two fountains, with a sign that says
+  what it is.
+
+---
+
+## [0.18.0] — 2026-09-01
+
+**Live.** There is a second world, and a boat between.
+
+### Waterworld, and how to get there
+
+**Waterworld** is a new realm — one main island, bridged isles, shallows a
+boat can cross, six dungeons of its own — running as its own canister, with
+the same rules and the same money. The door is the **Waterworld Gate** in
+Luméira; step through and the canyon hands you over.
+
+Travel is honest about what it is, so the rules are strict and worth knowing:
+
+- **Bank before you sail.** Carried gold and unbanked pouches do not travel —
+  the gate refuses you until they are safe in a vault. What is banked is yours
+  everywhere.
+- **You, your gear, your pets, your story travel.** Name, level, inventory,
+  equipment, titles, quests, curios — the whole character steps through.
+- **Crates travel as claims.** A sealed crate in your pack arrives with you,
+  and opens in either world for exactly what it says.
+- **One of you.** While you are mid-journey the world you left holds its
+  breath for you; there is never a moment with two of you, or none.
+
+The **Wayhouse** — a small canister whose only job is the handover — keeps the
+registry of worlds and escrows each traveller between them. Global chat now
+carries a world tag, so the canyon and the isles can hear each other.
+
+---
+
 ## [0.17.0] — 2026-09-03
 
 **Live.** Players can put their own tokens into chests now — and give them away,

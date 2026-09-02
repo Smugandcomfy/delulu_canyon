@@ -286,6 +286,17 @@ The Flame set pays more standing than the rest, because of what it is a set of.
 [activities.md](activities.md) has the longer account of the curios and the
 Collector.
 
+### The Four Tides
+
+Waterworld's first quest, and the road to the canyon's first casting weapon.
+Four keepers of the tide stand on the isles, each holding one quarter of
+something old: a storm feather, a brine pearl, a kelp-heart, an ember coral.
+Talk to each; earn what they hold. Then sail home and stand at the cauldron by
+the Crypt with all four, and brew the **Tideflame Censer** — fire thrown five
+tiles for 25 damage, a breath between castings, and a perfectly ordinary stick
+up close. The guild standards throw farther and hit lighter; the censer is the
+one that hurts.
+
 ### The four stories
 
 Four of the five sets are also a thread somebody in the world will pull for you.

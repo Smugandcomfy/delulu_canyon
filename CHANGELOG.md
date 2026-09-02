@@ -20,6 +20,42 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.20.0] — 2026-09-03
+
+**Live.** The Dark gets a purpose, a third world opens, and the first raid boss waits at the bottom of it.
+
+### Dark seasons
+
+The Keeper's gold now follows its mood. When the world is Bright it rains chests as always; when it is Dark, the flow narrows to a trickle — and most of that trickle now hides in **fixed chests behind bosses**, not scattered in the open. Dark times are for quests, for bonds, and for the brave few who go looking where the monsters are. The Hoard's promise to tombstone-holders comes first, always, before a single Dark chest is funded.
+
+### Space World
+
+A third world, reached by a new gate southwest of Luméira: **the Solar System** — ten planets adrift in a starfield void you cross by shuttle. Same rules, same money. There is no town and no shop on any surface — every store, forge and bank lives inside **the Orbital**, a station you enter through its airlock. New things the void parts with: Stardust, a Meteor Blade, a Void Lantern, a Comet Core. And a suit: hotkey any NNS or SNS neuron and claim the **star-suit** — only the suited may pass the airlock into the gauntlet below.
+
+### The bosses, and the first raid
+
+Five great monsters now hold the deep places, each guarding a fixed chest with a treasure worth the fight: the **Obsidian Wyrm**, the **Forge Tyrant**, the **Marrow King** (in the canyon), the **Leviathan** (beneath Waterworld) — and, at the bottom of Space World's suit-gated gauntlet, the **Void Octopus**: two thousand hit points, wounds that do not heal between visits, and the **Ray Gun** waiting behind it. This is the first fight built for a crowd.
+
+### The Space Race
+
+Under a ringed planet, a rink of pure void: gather two to five, line up, and fly. First over the line wins, and the whole world hears about it.
+
+### Waterworld doubles
+
+Twice the size, with its shops each on their own island — a chandlery, a forge, an inn, a strongbox — and the Leviathan's own dungeon opening off the south shore.
+
+### A world with a soundtrack
+
+The background hum becomes music: a grown theme for the canyon, bright island calypso for Waterworld, a techno pulse for the Solar System, a racing beat on the rink, and a low unsettling drone in every dungeon. One toggle still silences it all.
+
+### Also
+
+- Quest-bound treasures (the Soul Gem, the tide-quarters, the Ray Gun) can no longer be dropped, traded or given away — no more losing the one thing a quest needed.
+- Reaching a new world **attunes** you to it, the first step toward fast travel.
+- Every world can now talk in world chat.
+
+---
+
 ## [0.19.0] — 2026-09-02
 
 **Live.** The stories wake up, the guilds get their halls, and Waterworld gets

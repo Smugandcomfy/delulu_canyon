@@ -8,7 +8,7 @@
 
 <br>
 
-# ▶ **[PLAY AT DELULU.GAME](https://delulu.game)** ◀
+# **[delulu.game](https://delulu.game)**
 
 **Sign in with Internet Identity and you are in.** No download, no wallet to fund,
 no seed phrase. The game *is* a canister — [coqqu-zaaaa-aaaai-q32ma-cai.icp0.io](https://coqqu-zaaaa-aaaai-q32ma-cai.icp0.io)
@@ -34,7 +34,7 @@ is the same door.
 
 ---
 
-### What a million DKP buys
+### Dragon Paladin Wizard Armor
 
 <img src="docs/img/paladins.svg" alt="The four Dragon Paladin houses" width="480">
 

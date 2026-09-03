@@ -20,6 +20,55 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.23.1] — 2026-09-03
+
+**Live.** The Dragon Temple, a temple full of stakeholders, and a world that
+costs less to walk through.
+
+### The Dragon Temple
+
+The Paladin's armour is no longer taken off a shelf. It is **sacrificed for**, in
+the dragons' own house: a hall in the **Dragon Sanctum** with two dragons in
+stone at the door, standards down the nave, the DKP mark on four pillars, and a
+raised dais you climb to make the offering. The Mausoleum's slab on the graveyard
+road is gone; the altar moved, and so did the words.
+
+### The armour looks like the Society it comes from
+
+Four **Dragon Paladin houses** — Emberguard, Ironscale, the Gilded Wyrm and
+Nightwyrm. Plate with pauldrons that overhang the shoulder, membrane wings, a
+drake's head with swept horns, and a burning sword. One right, five faces: earn
+the armour and **all of them** unlock in the avatar menu, the original Paladin
+included, and you may wear whichever you like whenever you like.
+
+### The Temple of the NNS, and its congregation
+
+The temple has a colonnade, a nave and fifteen marble figures. It also has
+**network stakeholders** — clowns, who hit like a skeleton and take coins. They
+are penned inside the precinct and cannot leave it: not when they wander, not
+when they are restocked, and not when they are stood back up after dying.
+
+### The Great Halls get a roof
+
+Buttresses and a nave roof over the guild hall, so it reads as a cathedral from
+the outside rather than a large room.
+
+### Quieter underneath
+
+A walk now costs the world a fraction of what it did. Nothing about walking
+changes for you — the same steps, the same speed — but the realm was searching
+every monster, chest and person in the world on each one, and now asks only the
+place you are standing in.
+
+### Fixed
+
+- The menu no longer pushes the top of the screen down behind the chat panel
+  ([#24](https://github.com/Smugandcomfy/delulu_canyon/issues/24)).
+- Standing on the altar with whole armour and nothing owed used to show **no
+  action at all**, which read as broken. It now says the armour is whole.
+
+---
+
 ## [0.23.0] — 2026-09-03
 
 **Live.** Quieter worlds, safer travel, and a canyon that tells you when it is

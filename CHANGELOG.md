@@ -20,6 +20,91 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.23.0] — 2026-09-03
+
+**Live.** Quieter worlds, safer travel, and a canyon that tells you when it is
+being worked on.
+
+### The world stops paying to be empty
+
+A world with nobody in it used to keep its heartbeat running anyway, fifteen
+times a minute, around the clock. It now **parks itself when the last player
+leaves** and wakes the moment somebody acts. Nothing is lost by stopping: an
+empty world was already frozen — no monsters moved, no epoch turned — so this
+only stops paying to be told so. Waterworld and Space World spend almost all
+their time empty, and almost all of what they were spending was this.
+
+### Being worked on is not the same as being broken
+
+Upgrading a world used to look exactly like a world falling over: the same
+error, the same silence, the same red text once a second. There is now a
+**maintenance state** the canyon can say out loud. The door tells you the canyon
+is being worked on rather than that something failed, the status line says it
+once instead of scrolling it, and it says **"the canyon is open again"** when it
+is.
+
+Two smaller things went with it. A failed name lookup **used to log you out** —
+the login was never the problem, the world was simply stopped, and your session
+is kept now. And a world that cannot be reached will no longer offer to make you
+a second character; it says it cannot see the world, which is the truth.
+
+### Three ways to lose something, closed
+
+- **A traveller now lands whole, or does not land at all.** An arrival decided
+  its last refusal *after* it had already begun placing you. A world it could
+  not fully receive you into would half-place you and then say no — and the
+  journey went home while a copy had already arrived. Every refusal is now
+  decided before anything is written.
+- **A journey that has not settled cannot be raided.** The record of a trip in
+  progress is now the only thing consulted when deciding whether a character may
+  be cleared away. Absence used to be read as "safely arrived", which it never
+  was.
+- **A door that refuses takes nothing.** Some gates took the key, the tombstone
+  or the toll and *then* found another reason to turn you back. Payment now
+  happens where you actually step through, and nowhere earlier.
+
+### Blades
+
+Trade is refused outright while a journey is unsettled, in those words, at the
+first step rather than the last — so a trade cannot be half-arranged around a
+crossing.
+
+### For realm owners
+
+A small standing list of trusted players may take the Paladin's armour without
+paying and pass a torch gate without a torch. That is the whole of it: no other
+power, and only a realm owner may write the list.
+
+---
+
+## [0.22.1] — 2026-09-03
+
+**Live.** Safety is somewhere you can see.
+
+### The surface is not a sanctuary any more
+
+Blades used to be sheathed above the second floor, which made the whole surface
+safe and the whole underworld a killing field — backwards, for a world whose
+towns are on top. Safety is now **local, and visible**: within **ten paces of a
+shop door**, **five of a portal**, and inside a town entire. The named truce
+grounds outrank all of it — the guild halls, the Ossuary, the Orbital, the Space
+Race rink, and any room holding a live boss, because a raid is the one moment
+the canyon makes you cooperate.
+
+Step off a road far from a door and you are fair game, at any depth. The warning
+now speaks on the **crossing** into danger rather than on every field it can
+reach, and it names what actually keeps blades sheathed.
+
+### The armour answers everything
+
+The Paladin's three thousand points used to stop players only, and monsters
+ignored them. Armour is armour: it now absorbs **every** blow, from a wolf or
+from the Void Octopus alike. The consequence is deliberate — the Octopus is now
+the cheapest way to strip a suit, and mending is what makes that a cost rather
+than a trick.
+
+---
+
 ## [0.21.0] — 2026-09-03
 
 **Live.** Friends, phones, and a set of blades that are not drawn yet.

@@ -68,10 +68,42 @@ if you kick first, and dragons — which come once in a long while, always out i
 the open — hit like a landslide. Standing on a vault or a town square heals you
 to full.
 
-If you fall, you become a **ghost**. Your body stays where you fell, holding
-your gold. Walk back to it as a ghost — nothing can hurt you on the way — and
+If you fall — to a monster or to another player, it works the same way — you
+become a **ghost**. Your body stays where you fell, holding your gold. Walk back to it as a ghost — nothing can hurt you on the way — and
 reclaim it. Take too long and your body returns to the earth, and your gold to
 the Keeper's Hoard. Banked gold is never touched.
+
+## Other players, and where blades stay sheathed
+
+**Other players can kill you.** The guide did not say so until now, which was a
+poor way to find out.
+
+**Nothing changes hands.** A player who kills you takes nothing — not your gold,
+not your pack, not a single coin. What it costs you is the walk back as a ghost
+and a body to reclaim, exactly as a monster would. Killing for profit is not a
+thing the canyon lets you do; killing to end an argument is.
+
+**Where you are safe**, and you can see all of it:
+
+- within **ten paces of a shop door**
+- within **five paces of a portal**
+- anywhere inside a **town**
+- the **truce grounds**, which outrank everything: the guild halls, the Ossuary,
+  the Orbital, the Space Race rink, and **any room holding a live boss** — a raid
+  is the one moment the canyon makes you cooperate
+
+Everywhere else, at any depth, blades are out. Open country is not safe for being
+open country, and the surface is not safe for being the surface.
+
+**Four rules keep it from becoming bullying.** You cannot be struck for the first
+minute after arriving somewhere; ghosts and players who have gone idle cannot be
+struck at all; the same pair cannot fight again for ten minutes; and a player
+part-way through a crossing between worlds is untouchable until it settles.
+Striking first costs you karma. Striking back does not.
+
+**Armour, if you have it.** The Paladin's armour is a pool of its own, spent
+before your health, and it answers **everything** — another player, a wolf, the
+Void Octopus alike. It mends a quarter of itself every epoch for nothing.
 
 ## Getting stronger
 
@@ -291,6 +323,18 @@ rarely, the guild's **standard**, a flag carried as a staff that calls
 lightning at fifteen tiles. Its short-armed cousin, the **Tideflame Censer**,
 is brewed, not dispensed — see the Four Tides in the
 [Quest Guide](quests.md).
+
+## When the canyon is being worked on
+
+Sometimes a world is upgraded while you are in it. You will see a line saying the
+canyon is **being worked on** — that is a person doing maintenance, not something
+broken, and it says **"the canyon is open again"** when it is done. It usually
+takes under a minute. Your character, your gold and your pack are untouched;
+nothing you were carrying is at risk, and you do not need to sign in again.
+
+A world with nobody in it also **goes quiet** to save running costs, and wakes
+the moment somebody walks into it. You will never notice this from inside: if
+you are there, it is awake.
 
 ## The loop
 

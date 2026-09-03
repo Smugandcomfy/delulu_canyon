@@ -84,6 +84,16 @@ have produced their own batches, and they are listed on the same terms.
 | Sign-in moved to the identity host the network now points at, after checking that principals do not move with it | **Closed** | `411b333` |
 | A third read-only pass, over every errand, every person you can talk to, and every refusal the client was discarding — 28 findings, 10 of which could not have succeeded for anybody | **Closed** | `1c5c7a6`, `3913635`, `6211bba` |
 | The same pass turned on its own output: six defects found in the fixes themselves before any of them was deployed | **Closed** | `400c8a8`, `6a6e5b9` |
+| A traveller now lands whole, or does not land at all — an arrival decided a refusal after it had begun placing the character | **Closed** | `fcdb44b` |
+| A journey in progress is the only record consulted before a character may be cleared away; absence used to be read as safe arrival | **Closed** | `c00c4ff` |
+| A door that refuses takes nothing — several gates took the toll before finding a later reason to turn the player back | **Closed** | `b483fc0` |
+| A crossing that has not settled refuses a trade at the first step rather than the last | **Closed** | `53d15ff` |
+| An empty world stops paying to keep its heartbeat, and wakes on the next action | **Closed** | `87a413f` |
+| Being worked on can be told apart from being broken, everywhere the player would otherwise see an outage | **Closed** | `f1b8510`, `32f884c`, `bf33c9d`, `a202967` |
+| Safety made local and visible — a shop door, a portal, a town, the named truce grounds — replacing the rule that made the whole surface safe | **Closed** | `2fb3f2b` |
+| A standing list of trusted testers, with two powers and no others | **Closed** | `270c5f1`, `179a083` |
+| A guard that could not read the file it was asked to check, and therefore passed it | **Closed** | `b4baf43` |
+| A way to put back what a defect removed, without touching anything else | **Closed** | `1eca166` |
 | The world's heartbeat could stop for good and say nothing — now survivable, observable and restartable without a deployment | **Closed** | `0e46e1b` |
 | **Fourth pass — an adversarial security review of all six canisters** (see the section below). One access-ordering fix on an owner-only setup call | **Closed** | `ca0a942` |
 | From the same review: rate-limit hardenings so a flood of throwaway accounts cannot waste the canisters' fuel — the safe subset done, the rest scoped | **Closed** | `ca0a942` |
@@ -209,6 +219,15 @@ will finish that before the world opens to strangers.
 This is the fourth independent pass over the code, after the original hardening audit,
 a deep pass on reported behaviour, and the errand/NPC sweep. Security here is a
 standing habit, not a one-time gate.
+
+**Updated 3 September 2026.** Ten further batches are listed above, closed and
+deployed since this page was last written. Three of them are the same class of
+fault found in three different places — a step that took something before it had
+finished deciding whether it would refuse — and they are recorded separately
+because they were separate code, not one bug seen three times. The
+maintenance-window and heartbeat entries are not defects at all; they are listed
+because the log is a record of what changed under the world, and an operator
+pausing a realm now looks different to a player than a realm falling over.
 
 ## Why the open items are vague
 

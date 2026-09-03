@@ -12,7 +12,7 @@
 >
 > **[Changelog](CHANGELOG.md)** · **[Audit log](docs/audit-1.md)** — what is
 > different to play, and what our internal audits found, fixed and still hold
-> open. Current build: **0.21.0**.
+> open. Current build: **0.23.0**.
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
 Tomb Finance–style three-token peg — and, since 0.18.0, **two worlds**: the
@@ -100,6 +100,27 @@ flowchart LR
 
 The files in [src/](src/) name each canister's job; the implementation lives in
 a private repository until launch, for the reasons the audit log gives.
+
+## Where this came from, and who built it
+
+Delulu Canyon began as a fork of **[Sneed MUD](https://github.com/Snassy-icp/sneed_mud)**
+by [Snassy-icp](https://github.com/Snassy-icp) — an on-chain MUD engine for the
+Internet Computer, and the foundation the rooms, the movement grid, the item
+model and the chat rings were built on. The economy, the isometric client, the
+three-token peg and the multi-world crossing are ours; the engine underneath
+them is not, and the debt is worth naming rather than absorbing quietly.
+
+### Contributors
+
+| | |
+|---|---|
+| [Snassy-icp](https://github.com/Snassy-icp) | Sneed MUD, the engine this is forked from |
+| [XanderBrendon](https://github.com/XanderBrendon) | Fractional gold: the move to eight-decimal GOLD across the Keeper, the world and the client — the reason a chest can be worth a fiftieth of a coin instead of a whole one |
+| [Smugandcomfy](https://github.com/Smugandcomfy) | The canyon |
+
+Fractional gold in particular is load-bearing: every chest size, bounty and price
+in the world is quoted in e8s because of that work, and the peg's arithmetic
+would not survive whole-number coins.
 
 ## What this is not
 

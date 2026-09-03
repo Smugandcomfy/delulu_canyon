@@ -20,6 +20,30 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.23.2] — 2026-09-03
+
+**Live.** Two doors that were shut to people who had already opened them.
+
+### The Dragon Temple can be entered
+
+The doorway between the two stone dragons was a door, was walkable, had no
+gate on it — and turned you away saying you were not standing on a portal. You
+were. The temple could be **left** and never **entered**.
+
+### Bound torches cross between worlds
+
+Bind fifty torches at the Masonry, sail to Waterworld, and the Kelp Cathedral
+would still ask you for fifty. Your torches are held in one place for the whole
+canyon, but each world kept its own note of how many you had, and only Luméira
+was ever told. The count now travels with you
+([#26](https://github.com/Smugandcomfy/delulu_canyon/issues/26), reported by
+XanderBrendon).
+
+**If you are already in another world**, cross home and back once after this
+update — the count travels with a journey, so it needs one to catch up.
+
+---
+
 ## [0.23.1] — 2026-09-03
 
 **Live.** The Dragon Temple, a temple full of stakeholders, and a world that

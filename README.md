@@ -1,23 +1,71 @@
+<div align="center">
+
+<img src="docs/img/party.svg" alt="Six adventurers of Delulu Canyon" width="580">
+
 # Delulu Canyon
 
-**An algorithmic peg whose seigniorage is delivered as loot, and whose reserve is fed by the world's losses.**
+### *An algorithmic peg whose seigniorage is delivered as loot,*<br>*and whose reserve is fed by the world's losses.*
 
-> **Play: [delulu.game](https://delulu.game)** — sign in with Internet Identity and
-> you are in. The game is itself a canister; its raw address is
-> [coqqu-zaaaa-aaaai-q32ma-cai.icp0.io](https://coqqu-zaaaa-aaaai-q32ma-cai.icp0.io),
-> the same door either way.
->
-> New here? Start with the **[Player's Guide](docs/guides/how-to-play.md)** and the
-> **[Quest Guide](docs/guides/quests.md)**.
->
-> **[Changelog](CHANGELOG.md)** · **[Audit log](docs/audit-1.md)** — what is
-> different to play, and what our internal audits found, fixed and still hold
-> open. Current build: **0.23.0**.
+<br>
+
+# ▶ **[PLAY AT DELULU.GAME](https://delulu.game)** ◀
+
+**Sign in with Internet Identity and you are in.** No download, no wallet to fund,
+no seed phrase. The game *is* a canister — [coqqu-zaaaa-aaaai-q32ma-cai.icp0.io](https://coqqu-zaaaa-aaaai-q32ma-cai.icp0.io)
+is the same door.
+
+<br>
+
+**[Player's Guide](docs/guides/how-to-play.md)** · **[Quests](docs/guides/quests.md)** · **[Field Guide](docs/guides/field-guide.md)** · **[Activities](docs/guides/activities.md)**
+
+**[Changelog](CHANGELOG.md)** · **[Audit log](docs/audit-1.md)**
+
+`build 0.23.0` · `three worlds` · `on-chain, end to end`
+
+<br>
+
+---
+
+### What is down there
+
+<img src="docs/img/foes.svg" alt="A dragon, the Void Octopus, and a skeleton" width="380">
+
+*A dragon, the Void Octopus, and one of the many skeletons.*
+
+---
+
+### What a million DKP buys
+
+<img src="docs/img/paladins.svg" alt="The four Dragon Paladin houses" width="480">
+
+*Emberguard, Ironscale, the Gilded Wyrm, Nightwyrm — the Dragon Paladin houses,
+earned at the Dragon Temple and worn by nobody who has not.*
+
+---
+
+</div>
+
+## The short version
+
+**Find gold. Carry it home. Try not to die on the way.**
+
+Every six hours a canister called the Keeper reads the price of GOLD and decides
+what the world becomes for the next six. When gold is expensive it **scatters new
+gold as chests across the map** — not paid to stakers, *hidden*, so somebody has
+to walk into the dark and carry it back. When gold is cheap the world turns
+**Dark**, the chests stop, and the Crypt opens to buy gold back and burn it.
+
+Everything you lose down there — a chest you never found, a body you never walked
+back to, gold bitten off you in the dark — becomes the reserve that defends the
+peg. **The patient are paid by the careless.**
+
+## The long version
 
 Delulu Canyon is an isometric MMORPG on the Internet Computer whose economy is a
-Tomb Finance–style three-token peg — and, since 0.18.0, **two worlds**: the
-canyon of Luméira and the isles of Waterworld, each its own canister, with a
-gate between them that a whole character can step through. GOLD is meant to be worth one ICP. Every six
+Tomb Finance–style three-token peg — and **three worlds**: the canyon of
+Luméira, the isles of Waterworld and the dark of the Solar System, each its own
+canister, with gates between them that a whole character can step through,
+carrying everything they own. GOLD is meant to be worth one ICP. Every six
 hours the Keeper — a canister that does nothing but watch the price and decide —
 reads the time-weighted price of GOLD against ICP. When GOLD trades above the
 peg the Keeper mints more of it; but instead of paying that new gold to stakers,

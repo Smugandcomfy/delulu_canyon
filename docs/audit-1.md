@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.24.0**.
+player reports is listed on the same terms. Current build: **0.25.0**.
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's

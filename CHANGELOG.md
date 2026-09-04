@@ -20,6 +20,138 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.25.0] — 2026-09-04
+
+**Live.** A second district with a mansion in it, five animals that are not
+chickens, a room where strangers leave things for each other, twenty-two more
+crates hidden across the land, and a graveyard in every realm.
+
+Staked torches now open doors. That is the theme of this one.
+
+### Player City
+
+A district of your own, reached by a gate on the harbour road five paces east of
+the Chamber's door. A street runs up the middle with a terrace of shopfronts
+down one side — **the eight Chamber shopfronts have moved here**, tenants,
+leases and stock intact. The Chamber stays the office where you sign for one;
+the City is where it actually stands.
+
+Two guild halls opened at the same time. **The Taco Hall**, low and hung with
+paper banners, where somebody is always eating. And **the Gold Guild**, gold
+overhead and gold underfoot and louder than it needs to be — with an inner
+lounge behind a door that costs ten GOLD to pass, which is quieter and much
+better furnished.
+
+### Dominic's Stake House and Grille Palace
+
+The big one. A mansion on the east side of the City with a pitched roof, lit
+windows and a porch, and inside a hall you can get lost in: a long bar, couches
+round two rugs, a gallery of tables down the east wall, and an office end where
+people in suits are visibly working.
+
+**The bar serves you.** Marisa pours, Odalys has something on today, and the two
+waitresses carry plates. A round each per day, on the house.
+
+**The counter at the back sells bots.** Trading ones, staking ones — whatever
+Sneed has published. You sign for it yourself with your own wallet: the realm
+never touches your money and never holds what you buy. What comes back walks
+beside you as a familiar.
+
+**The egg room** sells five animals that are not chickens: a falcon, a white
+Siberian tiger, a flamingo, a giant snail and a wolf. Five GOLD an egg, and
+**five hundred staked torches to be allowed to buy one** — the highest bar in
+the game, and the reason they are allowed to do anything at all:
+
+| | |
+|---|---|
+| Falcon | sees one tile further |
+| White Siberian tiger | hits harder |
+| Flamingo | carries one more thing |
+| Giant snail | takes less damage |
+| Wolf | finishes off what is already nearly dead |
+
+Hold a **Tendys neuron** and you may have one free — but only one, and claiming
+another lets the first go.
+
+**Gifts Left by Other Travellers** is a room of shelves upstairs. Leave
+something and a stranger finds it. **Nothing in there rots**, which is the whole
+point. Leave nothing and you may take one thing, ever; leave things and you may
+take as many as you have left. It is not generosity, it is bookkeeping.
+
+Down the back there is a fenced yard with **graves beside the pool**, and the
+pool keeps its own fence — the two women in it are still not taking visitors.
+
+### Graveyards, in every realm
+
+Luméira has had Hallowmere from the beginning. **Waterworld's had no gravekeeper
+and no way in at all**, and **Space World had no graveyard whatsoever**. Both do
+now, each with a Sexton who will explain, at some length, what a staked torch is
+actually for.
+
+Any world minted from here on comes with one. That is enforced rather than
+remembered.
+
+### Torches open doors now
+
+- **The Chamber of Commerce: 300 staked torches.** It is where shopfronts and
+  guild charters are bought, so the people in it should be the ones already
+  invested in the world. This is a wall and it is meant to be one.
+- **Racing: 5.** Not a wall — a filter, so a lobby is people with something at
+  stake rather than an account made an hour ago to spoil one.
+- **An exotic pet: 500.** See above.
+
+Wardens pass all of these, as they pass everything else.
+
+### Crates: eight became thirty
+
+There were **eight** named fixture crates across sixty-six thousand tiles, which
+meant a player who had walked the world for a week had seen every one. There are
+**thirty** now. The twenty-two new ones are **caches** — no famous item, no key,
+just guards and a haul, and each may be opened **once ever**.
+
+And a new rule across all of them: **one fixture crate every ten days.** They are
+permanent and they do not disappear when opened, so what stops them being a tap
+is now the wait rather than the walk.
+
+### Sneed Hall's bath house
+
+The chapels in the guild hall are baths now. Five people work the wing, two of
+them with a tray, and the lesser potions are on the guild's coin rather than
+theirs. The guild voted on it, which is the most Sneed thing that has ever
+happened to a building.
+
+### Smaller things
+
+- **No more white page between worlds.** Crossing to Waterworld or Space World
+  used to blank the screen while everything reloaded. There is a proper
+  transition over it now, dressed for wherever you are going.
+- **Your pets look like themselves.** The exotic animals were drawing as
+  chickens.
+- **The conjuring bath means something.** The ritual used to work from anywhere
+  in the world; it wants the font now.
+- **A seventh clerk** sits in the Chamber, selling guild charters at a hundred
+  GOLD — half of it burned in front of you.
+- **A raw T-bone** exists. There is exactly one grill in the world and it is not
+  open to the public.
+
+### Deploy day
+
+Five things shipped broken and were fixed the same day, and they were all the
+same kind of thing: **something existed that nobody could reach.**
+
+The bath house had nobody in it. The seventh clerk could not be seated. Nobody
+could stand on the back porch. The counter at Dominic's would talk to you about
+bots and refuse to sell you one, because it wanted you to stand where the
+barista was already standing. And Player City itself would not open, three times
+running, each time for a different door.
+
+While looking into the last of those we also found that **two of Waterworld's
+ten zones had never been reachable** — the Drowned Chapel and its Hallowmere had
+exits and no entrances. Both are open now. That one predates this release and
+nobody had reported it, which is the uncomfortable part.
+
+---
+
 ## [0.24.0] — 2026-09-03
 
 **Live.** A place to keep a shop, an errand that crosses worlds, a row of clerks

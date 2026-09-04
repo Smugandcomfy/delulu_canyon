@@ -176,6 +176,10 @@ Mending costs gold and materials — bone dust for the dagger, a dragon's scale
 for the sword. And every second purchase burns half its price for good, which is
 the Store doing its part for the peg.
 
+**Repairing the Paladin's armour costs 3 GOLD, and that gold is burned.** It
+does not go to a shopkeeper or to the Treasury; it leaves the world altogether.
+Armour is the one thing in the canyon whose upkeep is paid to nobody.
+
 ## The strip at the top: the epoch chip
 
 The Keeper turns every six hours. The strip at the top of your screen shows its
@@ -295,22 +299,54 @@ the mood decides what is worth doing for the next six hours. The
 - **The Obelisk on the plaza** glows with the same mood as the chip, if you
   would rather read the sky than a bar.
 
-## Two worlds, and the gate between
+## Three worlds, and the gates between
 
 Southwest of town, south of the harbour, a portal stands between two fountains
 with a sign that tells you what it is. Through it is **Waterworld**: isles,
 bridges, shallows a boat crosses, six dungeons of its own — a second world
 with the same rules and the same money, running as its own canister.
 
-Three things to know before you sail:
+**Space World** is the third: the Solar System, the Orbital, the Crater Warrens,
+and deepest of them the **Ink Deep**. One errand in the canyon sends you there
+and expects you to come back — see the Lesser Seal in the
+[Quest Guide](quests.md).
+
+Three things to know before you travel:
 
 - **Bank first.** Carried gold and unbanked pouches do not travel. The gate
   will refuse you, politely, until they are in a vault — banked gold is yours
-  in both worlds.
+  in every world.
 - **Everything else goes with you.** Gear, pets, titles, quests, curios,
   crates — the whole character steps through, and steps back the same way.
 - **There is never two of you.** Mid-journey, the world you left holds your
   place; you arrive whole or you stay put.
+
+## The Chamber of Commerce, and keeping a shop
+
+On the harbour road, outside the town proper, stands a hall of grey stone under
+a dome. Everyone who lands at the harbour walks past its door on the way up to
+the plaza, which is the idea. Inside, two colonnades run the length of a nave to
+a rotunda, and **six clerks** sit at desks down both sides. They will tell you
+about forms, easements, the Long Scroll, whose fault a smell is, and why the
+dome does not hold the roof up. One of them has lost a key.
+
+**You can rent a shopfront here.** Sit down at a clerk's desk — you sit to do
+business — and say how many epochs you want. It costs **a quarter of a GOLD the
+epoch**, which is a GOLD a day, split evenly between the Treasury and the
+collector. The shortest lease is four epochs, a day; the longest is four months.
+
+The shop itself is a room of your own off the west aisle, and what fills it is
+your stock. A lease renewed while it is still running **extends**; a lease
+renewed after it has lapsed starts from now, because a shop that lapsed a month
+ago does not get that month back.
+
+## Badges
+
+Eighteen titles, collected as you go rather than claimed. Some come from the
+obvious places and some do not: **World Traveller** wants you to have seen every
+world there is, **Landlord** wants you to hold a shopfront through enough
+epochs, and **Philanthropist** counts the crates you sealed that somebody *else*
+opened. Press **L** for the leaderboard to see which you hold.
 
 ## The guild halls
 

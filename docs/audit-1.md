@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.15.1**.
+player reports is listed on the same terms. Current build: **0.24.0**.
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's
@@ -102,6 +102,21 @@ have produced their own batches, and they are listed on the same terms.
 | Economy accounting, continued — the reserve that pays tombstones back is now set aside before any other spending, under one rule shared by every path that spends from it | **Closed** | `0a608e1` |
 | A world created fresh could have mis-counted its starting treasury on its first upgrade — found by a new test, fixed before any fresh world existed, and the test harness strengthened so this class is caught loudly | **Closed** | `b873f6f` |
 | User chests — a player's own tokens sealed into crates, built custody-first: the trading canister holds the value, the world holds only a pointer, and every destroying path refunds the maker | **Closed** | `254ab6a`, `b873f6f` |
+| Fuel cost under load — five paths that charged the world for work nobody asked for: a per-turn rebuild of an index that only needed the zones with somebody in them, a message queue that had been dead for months and was still being walked, a notification budget counted in events rather than in the sends it would actually make, an unbounded call rate on movement, and a treasury log that copied itself to grow by one | **Closed** | `01dc54c`, `ea6a0ff`, `216a80e` |
+| The canisters stop paying to refuse strangers — an unauthorised caller is now turned away before the message is charged rather than after | **Closed** | `ebe408f` |
+| Dead code and legacy surface, finished — the combat module nothing called is deleted, and two setup entry points that could never have succeeded are gone from the interface | **Closed** | `216a80e`, `c571db1`, `cf21ef8` |
+| A non-destructive hold for automated accounts — an account playing for gold rather than playing can be stopped from gold-bearing activity without being removed and without anything already earned being taken | **Closed** | `3af53ce` |
+| A world says what it is, and the client stops guessing — names, gates and destinations are read from the realm rather than compiled into the client, which is what let a world go its whole life named "Default Realm" | **Closed** | `90a02e0`, `93a9f53` |
+| Cycles watch — a read-only monitor that reads each canister's own fuel balance and raises an alarm under a floor, rather than the balance being something a person has to remember to look at | **Closed** | `27a9452`, `a56f61f` |
+| **The Chamber shipped correct-looking and broken, three times** — a hall with no way in, a doorway its own building painted over, and six clerks every one of which was silently refused. Every endpoint answered correctly for all three; all three were found by walking to the room. The guards that were missing are now in place: the content module had no test at all, and the script its own header named as the thing that would catch its tiles drifting had never read the file | **Closed** | `f5d1321`, `86e61e6` |
+
+**On that last row**, because it is the one worth reading. The three faults had
+nothing in common in the code and everything in common in shape: in each case two
+things that had to agree were written down twice and never compared, and the
+result was a failure that *reported success*. The worst of the three was a guard
+written for a rare case — one clerk failing to find a spot — quietly swallowing a
+case where every clerk failed. A check that cannot fail is worse than no check,
+which this log has now said twice about two different scripts.
 
 ## What players will notice
 

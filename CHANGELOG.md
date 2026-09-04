@@ -20,6 +20,89 @@ Nothing waiting. The work below is live.
 
 ---
 
+## [0.24.0] — 2026-09-03
+
+**Live.** A place to keep a shop, an errand that crosses worlds, a row of clerks
+who will not stop talking about forms, and eighteen titles worth collecting.
+
+### The Chamber of Commerce
+
+A Romanesque hall of grey stone under a dome, on the harbour road **outside** the
+town proper — so everyone who lands at the harbour walks past its door on the way
+up to the plaza. Inside, two colonnades run the length of a nave to a rotunda at
+the north end, and six clerks sit at desks down both sides, each with a scroll and
+an opinion. Between them they treat a zoning ordinance and a working spell as the
+same kind of problem, which is the joke.
+
+**You can rent a shopfront.** Sit down at a clerk's desk — you sit to do business,
+which is what the chairs are for — and say how many epochs. A quarter of a GOLD
+the epoch, which is a GOLD a day, half to the Treasury and half to the collector.
+The lease runs from where you buy it: renew while it is running and it extends;
+renew after it has lapsed and it starts from now, because a shop that lapsed a
+month ago does not get that month back. The shop is a room of your own off the
+Chamber's west aisle, and what fills it is your stock.
+
+### The Lesser Seal — the canyon's first errand across worlds
+
+Underclerk Pettifor has lost a key. Small, brass, bites at one end. It opens the
+Lesser Seal press, and the Lesser Seal press opens **nothing**, but he is
+responsible for it.
+
+He sent the press up to the Solar System office for calibration — quarterly, do
+not ask — and it came back and the key did not. Something down in the dark has it
+now. Finding it means going to **Space World**, into the Ink Deep, and taking it
+off the thing that has it.
+
+If you have **already** raided down there, you are not locked out. The key rides
+the chest's repeat reward rather than its named prize, precisely so the players
+who went first are not the ones shut out.
+
+### Badges
+
+Eighteen titles to collect, awarded as you go rather than claimed — among them
+**World Traveller** for seeing every world there is, **Landlord** for holding a
+shopfront through enough epochs, and **Philanthropist** for the crates you sealed
+that somebody else opened.
+
+### Chairs
+
+You can sit down. Chairs are drawn with somebody in them, you stay sat when the
+tab closes, and a chair is held only by the person actually in it.
+(Contributed by **XanderBrendon**.)
+
+### Smaller things
+
+- **Repairing the Paladin's armour costs 3 GOLD**, and that gold is **burned** —
+  it leaves the world rather than moving around inside it.
+- **Your crates show the token they hold**, and crates can be sealed in bulk.
+- **Space World has a name.** It had been called "Default Realm" — the install
+  default, never overwritten — for the whole life of the world.
+- **A world now says what it is**, and the client stops guessing. Names, gates and
+  destinations come from the realm itself rather than from a list compiled into
+  the client months earlier.
+
+### The Chamber's door, the same day
+
+The Chamber went live in the morning **sealed**. The hall existed, the shopfronts
+existed, the rent was set, and there was no way in from anywhere. Later the same
+day it turned out to have no clerks either — all six had been silently refused,
+so the desks were drawn and nobody was standing at them. Both are fixed and the
+hall is open.
+
+Worth saying plainly, because it is the useful part: **every check we had said the
+Chamber was fine.** Both faults were found by walking to the room. That is now
+written down as the thing to do before calling a place finished.
+
+### Terms
+
+The Terms were updated to **1.2**. They now carry a **bot policy** — a named,
+non-destructive hold that can stop an automated account from gold-bearing activity
+without removing the player or taking anything already earned — and a **data,
+indemnity, arbitration and accessibility policy**. You will be asked to accept
+them again on your next visit.
+
+---
+
 ## [0.23.2] — 2026-09-03
 
 **Live.** Two doors that were shut to people who had already opened them.

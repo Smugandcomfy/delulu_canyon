@@ -47,11 +47,13 @@ log with something in it, and a hen on the way.
 
 ## The quest chains
 
-There are ten quests at present, given out by name, face to face — you must be
-standing beside the giver to take one and standing beside them again to turn it
-in. You may carry **five at a time**. The log names your next step and points at
-where it is. Abandoning one costs you a point of standing; finishing any one at
-all earns you a point, on top of whatever else it pays.
+There are fifteen quests at present, given out by name, face to face — you must
+be standing beside the giver to take one and standing beside them again to turn
+it in. You may carry **five at a time**. The log names your next step and points
+at where it is. Abandoning one costs you a point of standing; finishing any one
+at all earns you a point, on top of whatever else it pays.
+
+Ten are in the canyon, four are on Space World, and one crosses between them.
 
 Gold rewards arrive as a **pouch**, not as banked coin, so they come home the same
 way chest gold does: to the vault, on your own two feet.
@@ -74,6 +76,35 @@ way chest gold does: to the vault, on your own two feet.
 Two of them come round again. **Eggs for the Farmwife** can be taken afresh after
 a couple of days, and **Bread for the Road** after a few more; the rest are once
 each, for good.
+
+### The four on Space World
+
+Given by the station's own people, in the order the world opens up: the Drydock,
+then the Mast, then the Assay, then the Long Wake.
+
+| quest | who gives it | what it asks |
+|---|---|---|
+| **Cold Start** | Dockmaster ORION-4 | Three power cells from the item chests out among the planets, then take the airlock and stand inside the Orbital |
+| **The Solar Gale** | Watch-officer VELA-3 | Twelve stardust from the Orbital's dispensers, then ride the Ringed One's gate down to the Space Race |
+| **Down the Riddled Rock** | Assayer LIBRA-5 | Wear the star-suit, open the hatch, go down, and put six of the things nesting in the Warrens down |
+| **The Ink and the Answer** | Ranger DRACO-6 | Down through the Crater Warrens to the Ink Deep, and bring the Void Octopus down — **it is a raid, not a duel** |
+
+### The one that crosses
+
+**The Lesser Seal**, from **Underclerk Pettifor** at his desk in the Chamber of
+Commerce. He has lost a key — small, brass, bites at one end. It opens the Lesser
+Seal press, and the Lesser Seal press opens *nothing*, but he is responsible for
+it.
+
+The press went up to the Solar System office for calibration, quarterly, and came
+back without the key. Something down in the dark has it now. You will have to go
+to **Space World**, down into the **Ink Deep**, take it off whatever has it, and
+carry it home. Pay is deliberately small in gold and large in standing: the title
+is the point.
+
+**If you have already raided the Ink Deep, you are not shut out.** The key rides
+the chest's repeat reward rather than its named prize — exactly so the people who
+went down there first are not the ones locked out of the errand. Open it again.
 
 ### The long one
 

@@ -21,6 +21,7 @@ Those counts are the audit's own tally and are left as they were written. What h
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
 player reports is listed on the same terms. Current build: **0.25.0**.
+(A fifth pass ran on 5–6 September; its own section is below.)
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's
@@ -109,6 +110,78 @@ have produced their own batches, and they are listed on the same terms.
 | A world says what it is, and the client stops guessing — names, gates and destinations are read from the realm rather than compiled into the client, which is what let a world go its whole life named "Default Realm" | **Closed** | `90a02e0`, `93a9f53` |
 | Cycles watch — a read-only monitor that reads each canister's own fuel balance and raises an alarm under a floor, rather than the balance being something a person has to remember to look at | **Closed** | `27a9452`, `a56f61f` |
 | **The Chamber shipped correct-looking and broken, three times** — a hall with no way in, a doorway its own building painted over, and six clerks every one of which was silently refused. Every endpoint answered correctly for all three; all three were found by walking to the room. The guards that were missing are now in place: the content module had no test at all, and the script its own header named as the thing that would catch its tiles drifting had never read the file | **Closed** | `f5d1321`, `86e61e6` |
+
+### The fifth pass — 5–6 September
+
+Six independent read-only passes over the whole estate at once, along different
+dimensions: reachability, security, cost under load, silent failures and stubs,
+the seam between the realms and the browser, and what a player actually
+experiences. It is the largest single sweep this log records, and — like the
+third pass — it was turned on its own output afterwards.
+
+**Read the first row before the others.** Four of the findings were introduced
+*by the batch that was being written at the time*, three of them by the same
+hand, and one of them inside the fix for another one. That is the finding. The
+process, not the bugs.
+
+| Batch | Status | Commit |
+|---|---|---|
+| **The class, not the bugs** — a mis-spelled field in a record was accepted by the compiler as a *warning* and silently discarded, which gave one item away for nothing and without limit. The compiler knew and nobody was listening; warnings of that shape now fail the build | **Closed** | `614698e` |
+| A newly added creature could not be described to the browser, so any area holding one failed to draw at all — an interface written down twice and never compared, which is the shape this log has now recorded four times | **Closed** | `614698e` |
+| **Money sent to the wrong address.** A deposit address shown to a player, with a button to copy it, was rendered incorrectly — while the balance check read the *right* one. Money went somewhere it could not be retrieved from and nothing appeared to happen | **Closed** | `ef8ee39` |
+| **A monitor that could never raise an alarm.** The health panel asked itself a question it was not on its own list of people allowed to ask, took the refusal for an empty answer, and reported that nothing was wrong — whatever the estate was doing. A check that cannot fail is worse than no check; this log has now said that about three different things | **Closed** | `ef8ee39` |
+| **A repeatable prize with no meter on it** — a chest that could be re-opened far more often than intended, and was live. Metered, and the two tables that were supposed to agree about which chests are which now do | **Closed** | `0747b55` |
+| A donation baked into a third-party component was switched on by default in the token engines. Turned off deliberately rather than left as a default nobody had chosen | **Closed** | `01b8316` |
+| **Three readings in the canister that mints, all of which answered when they should have refused** — one from memory after the source went quiet, one from a stale value, and one that read a missing answer as zero and let it through to a mint. All three now refuse, and refusing is the safe direction in every one | **Closed** | `82b6200` |
+| **Availability, in the market's own safety check.** A protective mechanism could stop far more than it was meant to, and could have done so with nobody attacking it. It now confirms what it sees before it acts, and the decision is no longer one an outside caller can ask it to make. No balance was ever at risk | **Closed** | `3a66647` |
+| **Crate custody made specific.** Opening a player's sealed crate was authorised on the *kind* of caller rather than on the particular crate. Custody is now recorded when a crate is carried into a world and checked when it is opened, with a handover for when it travels. Crates sealed before the change keep working exactly as they did | **Closed** | `3a66647` |
+| A reward that wrote two receipts checked the room for each of them separately, so a player near the limit could take the reward and silently lose half of it, with no way to retry | **Closed** | `93b6f73` |
+| **Fourteen decorations, across two releases, that no hand-authored area could use.** A validator had stopped being updated while the world kept adding to it, and every map using one was refused. It was invisible because the automatic path did not go through the validator. The script that should have caught it does now, and was verified by putting the fault back | **Closed** | `93b6f73` |
+| **The missing gate — things that exist and nobody can reach.** Four of the six passes independently found the same shape: features built, tested, protected and deployed with no way for a player to get to them. Seventeen of them. That is not a list of oversights, it is an absent check, and the check now exists and runs. Ten are wired up; the rest are named on the open list | **Mostly closed** | `0b1e4f9` |
+| A guard suite that stopped at its first complaint, so one expected complaint hid every check behind it — including, for a fortnight, two real ones. It now runs all of them and reports all of them | **Closed** | `0b1e4f9` |
+| The token engines stop paying to refuse strangers — ten owner-only calls were charged for before they were checked. No balance was ever at risk; the cost was | **Closed** | `0b1e4f9` |
+| Fees left stranded in a pool by one staker could be paid to a later one. Refused rather than reassigned, with an operator path to settle them to whoever is owed | **Closed** | `be0518e` |
+
+**On the second row of that table** — the one about a creature that could not be
+described. It is the same fault as the Chamber's, as the signpost's, and as the
+lantern's: two things that must agree, written down in two places, with nothing
+comparing them. Every time it has appeared the fix has been a comparison, and
+every time the comparison has caught something else the week after.
+
+**On those two market rows.** They are named by area and effect only, and more
+briefly than the rest, for the reason this page gives at the bottom: **the fixes
+are written but not yet deployed**, and this world is live and holds real value.
+Neither could move or duplicate anyone's tokens. Neither had happened. Both were
+found by reading the code rather than by anybody running into them. They will be
+described properly here once the batch ships — the log is a record of what
+changed under the world, and "could not be exploited" and "could not go wrong"
+are different claims worth keeping apart.
+
+**Still open from this pass**, named by area as always: the remaining unreachable
+entry points; a set of cost reductions on the poll that drives the client and on
+two per-turn passes over the world; a batch of refusals that name internal
+machinery instead of telling a player what to do; and one item that cannot be
+fixed from the code at all, because the content it concerns exists only inside a
+running canister and not in any file.
+
+## What this pass changed for players
+
+- **The Sneed Lounge, and the guild rooms around it.** Couches you can sit on —
+  every couch in the game had been scenery — a portal each way between the lounge
+  and the steakhouse, and staff who have opinions.
+- **Deep-sea fishing.** Five hundred species, a fight screen with a bar and a
+  button, a book that remembers everything you have landed, and five fish of
+  which there is exactly one each in the world, first come.
+- **Willemsted**, a pastel town on the water, with a quay you can cast from and
+  two shops.
+- **A fire in every world.** Cold is coming; the fires are lit early and say so.
+- **The egg room explains itself** instead of refusing you without saying why.
+- **The doors in the steakhouse are spread out and signposted** — they were in a
+  heap and unlabelled.
+- **Several things that existed and could not be reached** now can: the exotic
+  eggs shipped a release ago that nobody could buy, a guild room whose door
+  needed a key nobody could obtain, a coop that was drawn and did nothing, and
+  the ledger of what you have caught.
 
 **On that last row**, because it is the one worth reading. The three faults had
 nothing in common in the code and everything in common in shape: in each case two
@@ -234,6 +307,10 @@ will finish that before the world opens to strangers.
 This is the fourth independent pass over the code, after the original hardening audit,
 a deep pass on reported behaviour, and the errand/NPC sweep. Security here is a
 standing habit, not a one-time gate.
+
+**Updated 6 September 2026** with the fifth pass, above. The batch it belongs to
+is finished and under review; nothing from it is deployed yet, which is why the
+current build still reads 0.25.0.
 
 **Updated 3 September 2026.** Ten further batches are listed above, closed and
 deployed since this page was last written. Three of them are the same class of

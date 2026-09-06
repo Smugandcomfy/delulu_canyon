@@ -16,7 +16,7 @@ launched, which is what `0.x` means here.
 
 ## [Unreleased]
 
-Nothing waiting. The work below is live.
+0.26 pending review.
 
 ---
 

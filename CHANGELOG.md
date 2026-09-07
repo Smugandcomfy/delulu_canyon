@@ -16,7 +16,62 @@ launched, which is what `0.x` means here.
 
 ## [Unreleased]
 
-Nothing waiting.
+**The Vault**, built and closed. You will be able to bank a thing the way you
+bank gold — it becomes a token you own, it stays yours to use, and it does not
+drop when you die. It is finished and deliberately shut: it opens in one world
+first, and only once a week of its accounting has been watched and found exact.
+An item is not a number, and a mistake in one cannot be papered over afterwards.
+
+**A cut for the room** at the counter at the back of Dominic's, also closed.
+When it opens, binding a bot as a familiar will cost a small fee that goes back
+into the game. The counter will say the price before it charges it.
+
+---
+
+## [0.27.0] — 2026-09-07
+
+**Live in all three worlds.** Shops that never worked, a counter that buys as
+well as sells, and familiars the world remembers for you.
+
+### Waterworld and Space World have working shops
+
+This is the big one, and it is an admission. **Neither world's shops had ever
+sold anything** — not once, since the day they opened. Every purchase, every
+repair, every fare, and every trade with a townsperson that paid in gold was
+refused by a piece of configuration that had never been set. Luméira was fine,
+which is why it went unnoticed for so long: the counters were drawn, the
+storekeepers stood behind them, the prices were right, and nothing could be
+bought.
+
+It is set now, in both worlds, and every gold path in them works.
+
+### The Store buys back
+
+Old Bessany and the smith will take things off you as well as sell them. Two
+thirds of the asking price, and worn gear pays two thirds of what is left of it.
+Five things before the next turn — enough to clear out a stack you have outgrown,
+not enough to liquidate a hoard in one visit.
+
+They buy back only what they sell, and only blades and tools. Food, reagents and
+anything you found rather than bought, they will not take — the folk who barter
+will. The gold goes to your pouch; bank it at a vault as usual.
+
+### Your familiars are the world's business now
+
+A bound bot used to live only in your browser. Clear your site data on the wrong
+day and it was gone — a thing you had paid for, forgotten by the only place that
+knew about it. The world keeps them now, so they survive a cleared cache and
+follow you to another device.
+
+### Smaller things you will notice
+
+- **Night no longer shrinks when you zoom out.** The dark wash was drawn at the
+  size of the screen and not the size of the view, so zooming out left a bright
+  border around the world.
+- **The rod is sold at both Willemsted counters**, not only one. A player who
+  found the fishmonger first should not be told to go and find the other shop.
+- **Refusals at a counter name the amount** you need to approve, instead of
+  reporting a number nobody can act on.
 
 ---
 

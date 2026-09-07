@@ -22,9 +22,9 @@ Nothing waiting.
 
 ## [0.26.0] — 2026-09-06
 
-**Rolling out.** Five hundred kinds of fish, a town on the water that buys them,
-a fire in every world, and a long list of things that existed and could not be
-reached.
+**Live in all three worlds.** Five hundred kinds of fish, a town on the water
+that buys them, a fire in every world, and a long list of things that existed
+and could not be reached.
 
 ### Deep-sea fishing
 
@@ -74,6 +74,30 @@ The ICDV guild room can be entered by the people it was built for, and its door
 now says what it actually wants instead of the same sentence every other door
 says. The Taco hall is a meeting room again — tables, chairs, and an altar that
 reads the DAO's own token straight from its ledger.
+
+### Player City, and the square
+
+The district is half again as large, and there is a walled square standing in
+the new ground: grass, a fountain in the middle, a fence around it, and two
+gates. A sign at each gate reads *leave an item, take an item*.
+
+Anything set down inside the square stays where it was left. Things dropped in
+the open world decay in time; these do not. It is somewhere to leave a thing you
+have finished with for whoever comes after you.
+
+Dominic's Stakehouse stands behind the district, and its three back rooms — the
+egg room, the bath, and the room where travellers leave gifts — can be walked
+into again. Their doors had been refusing to move because the place they opened
+onto was outside the old walls. The larger district put ground under it.
+
+### Willemsted's two counters
+
+They were stocked with the wrong things. The rod shop offered groceries, and
+Marta's shelf came out empty however much you had landed. Both now sell what
+they were built to sell.
+
+Reported from play, which is why there is now a check that fails the build when
+a shop is stocked with something the world has no way to show.
 
 ### Things that existed and could not be reached
 

@@ -16,7 +16,86 @@ launched, which is what `0.x` means here.
 
 ## [Unreleased]
 
-0.26 pending review.
+Nothing waiting.
+
+---
+
+## [0.26.0] — 2026-09-06
+
+**Rolling out.** Five hundred kinds of fish, a town on the water that buys them,
+a fire in every world, and a long list of things that existed and could not be
+reached.
+
+### Deep-sea fishing
+
+Five hundred kinds of fish. Cast off any deep water, or from Willemsted's quay,
+and something takes the line — then decide how to play it. **Haul** does damage
+and risks losing it. **Give line** does none, is far less likely to lose it, and
+*tires* the fish so every haul after is safer. Giving line frays the rod a
+little, so a fresh rod buys you patience and a worn one does not.
+
+Your book remembers every kind you have ever landed and names you for it at
+twenty-five, seventy-five, a hundred and fifty and three hundred. It counts a
+*kind*, so landing the same fish again moves nothing.
+
+**Five of the five hundred exist once each in the whole world.** Whoever lands
+one holds that row for ever.
+
+Fish are things now: you carry them, and you can trade them like anything else.
+
+### Willemsted, and the fishmonger
+
+A pastel town on the water in Waterworld — five townhouses on one street, a quay
+along the whole south edge, three speedboats knocking against their moorings.
+Two counters. The middle house sells the rod and the compass; at the east end,
+**Marta Quillon** buys what you landed.
+
+She pays for the ordinary ones — never much, and never for one of the five,
+which she will explain if you ask. She sells **hooks**, which make every haul
+bite harder and go with the fish if it breaks the line, and **chum buckets**,
+which show what is swimming within five tiles of your boat for a few minutes.
+Row to a mark and cast on it and that is what you hook. Two prizes hang on her
+wall for anyone who brings her enough different rare fish.
+
+### The Sneed Lounge, and the rooms around it
+
+Couches you can sit on — every couch in the game had been scenery. A portal each
+way between the lounge and the steakhouse. Staff with opinions. **Mr. Sneed** is
+looking for his jersey and will trade something remarkable for a steak.
+
+### Fires
+
+A bonfire in each of the three worlds. Winter is coming and the fires are lit
+early; they say plainly that they are unfinished.
+
+### The ICDV guild, and the Taco hall
+
+The ICDV guild room can be entered by the people it was built for, and its door
+now says what it actually wants instead of the same sentence every other door
+says. The Taco hall is a meeting room again — tables, chairs, and an altar that
+reads the DAO's own token straight from its ledger.
+
+### Things that existed and could not be reached
+
+A fortnight-old release shipped five exotic pets nobody could buy. A guild room
+sat behind a door whose key could not be obtained. A coop was drawn, legended,
+standable — and did nothing. Money a failed payment left you owing was recorded
+against you with no way to see it or clear it. Tokens could leave a pouch and
+never enter one.
+
+All of those work now, and **a check was added that fails the build when a
+player-facing feature has no way in.** Four separate reviews found that same
+shape independently; it is not a list of oversights, it is an absent check.
+
+### Smaller things you will notice
+
+- **Refusals say what to do**, instead of naming the machine underneath.
+- **Travel between worlds** no longer flashes a blank page — from either door.
+- **Your party** is in the menu, not only behind one glyph in the chat header.
+- **Where You Stand**, a new screen: relics found, gifts given and taken, and
+  anything owed in either direction.
+- A backgrounded tab **stops polling every second**, and several parts of the
+  world stopped doing far more work per turn than they needed to.
 
 ---
 

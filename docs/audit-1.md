@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.25.0**.
+player reports is listed on the same terms. Current build: **0.26.0**.
 (A fifth pass ran on 5–6 September; its own section is below.)
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
@@ -308,9 +308,10 @@ This is the fourth independent pass over the code, after the original hardening 
 a deep pass on reported behaviour, and the errand/NPC sweep. Security here is a
 standing habit, not a one-time gate.
 
-**Updated 6 September 2026** with the fifth pass, above. The batch it belongs to
-is finished and under review; nothing from it is deployed yet, which is why the
-current build still reads 0.25.0.
+**Updated 6 September 2026** with the fifth pass, above, and again when 0.26
+rolled out. Every batch in that section is closed; the two market rows are still
+named by area only, and get a proper entry once the fix has been live long
+enough to be worth describing.
 
 **Updated 3 September 2026.** Ten further batches are listed above, closed and
 deployed since this page was last written. Three of them are the same class of

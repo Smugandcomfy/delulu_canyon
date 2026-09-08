@@ -14,17 +14,66 @@ launched, which is what `0.x` means here.
 
 ---
 
-## [Unreleased]
+## [0.27.1] — 2026-09-08
 
-**The Vault**, built and closed. You will be able to bank a thing the way you
-bank gold — it becomes a token you own, it stays yours to use, and it does not
-drop when you die. It is finished and deliberately shut: it opens in one world
-first, and only once a week of its accounting has been watched and found exact.
-An item is not a number, and a mistake in one cannot be papered over afterwards.
+**Live in all three worlds.** The client and the Keeper moved; the worlds
+themselves are unchanged from 0.27.0.
 
-**A cut for the room** at the counter at the back of Dominic's, also closed.
-When it opens, binding a bot as a familiar will cost a small fee that goes back
-into the game. The counter will say the price before it charges it.
+### The Vault is open in Waterworld
+
+It was built and deliberately shut. It is now open in **one world**, which was
+always the plan: a thing you bank becomes a token titled to you, it stays yours
+to use — you can wear a banked sword without taking it back out — and it does
+not drop when you die. It opens elsewhere once a week of its accounting has been
+watched and found exact.
+
+And banked things can be **sold**. List one for gold from your wallet, and
+anyone can buy it from theirs. The house takes 3% to the coffers. The seller
+hands the token over first and the market checks it has really arrived before
+the listing exists, because a listing without the thing behind it is a promise
+the buyer is the one to discover is empty.
+
+### Two worlds had stopped turning, and nobody had noticed
+
+This is the one worth reading. Waterworld and Space World had been sitting at
+**epoch zero since the day they opened**. The heartbeat that carries the
+Obelisk's mood is the same heartbeat that turns a world's epoch, and it was only
+ever reaching one world.
+
+So in those two: no boss ever came back, no chest ever refilled, nothing ever
+decayed, and the wildlife was never topped up. Three separate reports — the
+Obelisk flashing over and over on mobile, "there aren't many monsters", and a
+shop that took money and gave nothing back — turned out to be one cause and two
+of its neighbours.
+
+Both worlds are turning now. Their wildlife is switched on, and Space World —
+which had **no hostile monsters anywhere in it** — has been stocked.
+
+### Screens that could not be used
+
+Every screen in the game was read, and then played. Twenty-six faults survived
+being checked twice; twenty-three are fixed. Almost all of them were the same
+shape: the world was right and the screen in front of you was wrong.
+
+- **Escape opens the menu.** It had never once done so.
+- The **action bar pages** instead of pushing its own buttons off the edge when
+  you stand somewhere busy.
+- **Barter lets you type an amount.** The box was being rebuilt under your
+  fingers four times a second, so a decimal point could not survive being typed.
+  And adding an item to an offer no longer sweeps your gold off the table.
+- The **egg room and the bonfire can be paid.** Neither ever could be.
+- The **smithy repairs the blade you are holding**, rather than only one spare
+  in your bag.
+- **"Return to Luméira" goes to Luméira**, instead of walking you to the middle
+  of whichever world you were already in and announcing you had arrived.
+- A **full creel says so**, instead of reporting a fish it did not keep as landed.
+
+### And a version that had been lying
+
+The build line in the menu exists to answer one question — which version am I
+actually looking at — and it had been answering it wrongly for five releases.
+Fixed, and the build now refuses to ship when the two version numbers and this
+file disagree.
 
 ---
 

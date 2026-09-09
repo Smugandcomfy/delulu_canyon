@@ -14,6 +14,94 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.28.1] — 2026-09-08
+
+**The realm and the Keeper moved. The client is unchanged from 0.28.0.**
+
+### The Guild has stopped buying
+
+The store counter no longer buys things back. You can still buy from it, repair
+at it, and sell nothing to it — the Sell buttons are simply gone rather than
+present and refusing.
+
+This is not a punishment and it is meant to be temporary. Monsters come back
+every forty seconds and do not check who is killing them, so anything a monster
+drops can be turned into coin at a rate nothing else in the world can match.
+Gold has always had a brake on it — you carry it, at risk, until you walk it to
+a vault — and the counter had no equivalent. It reopens when there is one.
+
+### One reward was being farmed, and it now asks you to have played
+
+A quest reward that paid a torch could be reached by a character who had done
+almost nothing. It is now behind the same kind of requirement the rest of the
+world uses: a thing you must have done, and a standing you must have reached.
+
+A second reward of the same shape was found and closed at the same time. It had
+never been farmed, because the world it lives in had no players in it yet —
+which is luck, not a defence.
+
+Accounts that were farming at scale have been dealt with separately: a small
+number banned, and a larger number placed under review while the ledger is read.
+Anyone caught up in that wrongly should say so and it will be looked at.
+
+### Banking never worked in two of the three worlds
+
+The worst of the three, and nobody reported it. Banking gold, claiming a bounty
+and receiving a torch reward all worked in Earth and quietly refused everywhere
+else — since the day those worlds opened. If you play in Waterworld or Space
+World and had a vault visit that seemed to do nothing, that was this.
+
+All three worlds now do all three things.
+
+### Earth's clock stopped for about an hour
+
+Late in the day Earth stopped: nothing moved, monsters did not act, and some
+actions hung rather than failing. The world's heartbeat had died, and the
+automatic recovery that exists for exactly this had used up its attempts against
+something it could not fix on its own.
+
+It is running again, and the underlying cause — the world was close enough to
+running out of fuel that it could no longer talk to the other canisters — has
+been dealt with rather than papered over. Nothing was lost: the world freezes
+where it is and resumes, it does not roll back.
+
+---
+
+## [0.28.0] — 2026-09-08 (client only)
+
+**First person, behind `V`, and off unless you turn it on.** The realm knows
+nothing about it — this is a way of drawing the world you are already in, not a
+different world.
+
+`V` turns it on and off. `Q` and `E` turn your head in steps rather than
+sweeping, so you always know which way you are facing. `W` goes the way you are
+looking. Your choice is remembered between visits.
+
+The work after it turned on was making it **legible**, because the first version
+was not:
+
+- Buildings say what they are. The game already knew every name and was covering
+  it up.
+- A compass, and arrows at the edge of the screen for things behind you.
+- Corners have an edge, floors and ceilings are shaded apart, and a room lit by
+  the torch you are carrying no longer has a ceiling brighter than its floor.
+- Things on the floor are drawn, and buildings have a seam between them.
+- Seven kinds of wall that had all been drawn in the same colour are now seven
+  colours.
+- People standing beside you are drawn as people. They had been rectangles, and
+  the view was too narrow to see them anyway.
+
+It is a way of looking, not a way of playing: everything you can do in the
+overhead view you do the same way here.
+
+### Also in this release
+
+- **Liquidity positions can be cashed out.** Two players uprooted a position and
+  found it was not in their wallet, because there was no way in the client to
+  turn a position back into tokens. There is now.
+
+---
+
 ## [0.27.1] — 2026-09-08
 
 **Live in all three worlds.** The client and the Keeper moved; the worlds

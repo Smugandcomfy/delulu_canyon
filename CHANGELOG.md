@@ -14,6 +14,115 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.29.1] — 2026-09-09
+
+**Everything below reaches the worlds for the first time.** The realms had stayed
+on the previous build for a day while this was finished, so the season, the
+repairs and the new things all arrive together.
+
+### The counters take your money again
+
+The ferry, a bed at the inn and Marrow's rod-mending refused every payment, from
+everyone. Each one asked your purse to hand over the fare without ever asking
+your permission first — so the fare could not be taken, and the refusal you saw
+was a sentence about coins delivered to somebody standing next to a boat. They
+work now, and a crossing back no longer asks a second time.
+
+Two more counters had exactly the same fault and nobody had reported them:
+putting a token into a pouch at the vault, and settling what you owe for a mend.
+A check now runs before every release that looks for a counter which can take
+money but never asks — it is what found those two.
+
+Closes #35 and #37.
+
+### Your rod can be mended anywhere
+
+Marrow Quill mends rods, and Marrow stands in Luméira — so a worn rod in
+Waterworld or Space World had no mender at all, and the shop counters said they
+could not help. Every shop counter, storekeeper and bonewright now mends a rod.
+Marrow is still cheaper, which is what the world has always told you.
+
+### The castle door remembers you
+
+The Castle Tower door took a key **and** a loaf every single time you walked
+through it. Walking out is free, so anything that put you back outside cost you
+another key and another loaf — and the loaf is a quest with a long wait behind
+it. Two players bought a second key within a quarter of an hour of the first.
+
+The door still keeps what it takes. It just does not ask the same person twice.
+
+Closes #20. If this caught you, say so — we have been putting it right by hand.
+
+### Winter
+
+A season now closes over the canyon, and it is announced before it arrives.
+While it holds, a zone that is not lit is a harder place to be: you move slower,
+you do not mend, and you cannot see as far.
+
+**Nothing is taken from you.** An unlit zone is a worse hour, never a lost sword,
+and the Graveyard is reachable throughout.
+
+Feeding a fire lights **the zone**, not the person — the torch you put in warms
+everyone standing there, and a crowded town costs more to keep lit than an empty
+one. Winter is weather, so it **stops at the door**: dungeons, guild halls and
+interiors stay warm whatever is happening outside.
+
+### Self Immolation
+
+At a bonfire, in Winter, you can give the fire everything you are carrying.
+
+Carried gold, every pouch, your pack and what you are wearing — only what is in
+the vault survives it — and it buys hours of light for the zone, for everyone
+standing in it. The fire asks twice before it takes anything, and tells you
+exactly what it is about to take.
+
+You then walk a while alight. Nothing can touch you and you can touch nothing:
+no fighting, no picking things up, no doors. You burn where you chose to burn.
+Anyone who stands beside you can listen to what the fire is saying through you,
+and it says the same thing to everyone — so it is worth arguing about.
+
+### Torches you earn now travel the way gold does
+
+A torch from a quest now lands in your pouch: carried, at risk, on your body if
+you die, and worth nothing until you walk it to a vault. Gold has always worked
+that way and gold has been healthy; torches did not, and one reward was being
+farmed by hundreds of accounts. The walk is the whole difference.
+
+### The world costs less to run when it is quiet
+
+The heartbeat that drives the world now costs what the world is actually doing.
+A realm with nothing happening in it beats slower and spends less; a realm with
+monsters awake beats at full speed. This is the change behind a realm running out
+of funds on the 8th, and it is the reason it should not happen again.
+
+---
+
+## [0.29.0] — 2026-09-08 (client only)
+
+**First person got a great deal better to look at.** The realms were unchanged.
+
+### The sky says what the Keeper is doing
+
+The overhead view has tinted its sky by the Keeper's mood for releases. First
+person did not — it was one flat navy whatever the world was doing, so the two
+views of one world disagreed about the loudest thing in it. They agree now, and
+every sky stays a night sky.
+
+### Walls have a grain, and the floor stopped lying
+
+Near walls now show courses and joints, drawn from the stone's own colour, so a
+wall reads as built rather than painted. And the ground under your feet changes
+as you cross from grass to sand to stone — it used to be grass everywhere
+outdoors, which is why every street looked like the same street.
+
+### The fishing fight stopped covering the water
+
+Hook a fish in first person and the fight now sits along the bottom of the
+screen with the water still visible, instead of a window across the middle of
+it. Same fight, same numbers, only the layout moves.
+
+---
+
 ## [0.28.1] — 2026-09-08
 
 **The realm and the Keeper moved. The client is unchanged from 0.28.0.**

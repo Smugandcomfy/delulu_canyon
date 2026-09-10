@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.26.0**.
+player reports is listed on the same terms. Current build: **0.29.1**.
 (A fifth pass ran on 5–6 September; its own section is below.)
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
@@ -78,6 +78,12 @@ have produced their own batches, and they are listed on the same terms.
 | Content and world correctness — the weapon ladder priced against itself, a key placed where it could be found, and the several places the world contradicted its own guide | **Closed** | `69f02e0`, `fe1583a`, `d38d1df`, `5f32734` |
 | The Ossuary's pub, and the rule that what the shops sell and what the chests give away stay apart | **Closed** | `d8c5fe5` |
 | Movement — a square the world refused once stayed refused; and a way back that was never tied to its door | **Closed** | `9fa8482`, `5fb20c6` |
+| Counters that could take payment but never asked permission first — the ferry, the inn and rod-mending, plus two more found by the check written for it rather than by a player | **Closed** | `3edc157` |
+| A mender who existed in one world only, and a counter elsewhere that said it could not help | **Closed** | `3edc157` |
+| A door charging its toll on every passage instead of once, and the walk back that made that a lock-out rather than a cost | **Closed** | `bb7c810` |
+| The season, and the rule that weather stops at the door | **Closed** | `bb7c810` |
+| Two clocks — a season decided on one and measured against another, caught on the deploy before it reached anybody | **Closed** | `079bab7` |
+| The heartbeat's standing cost, which is what emptied a realm on 8 September | **Closed** | `6a04e8a` |
 | The Keeper's own payments, and a way to recover a staking position stranded behind a sign-in nobody can use | **Closed** | `86a1253` |
 | Sign-in — an unfinished trip to the identity window handed out a second, empty account | **Closed** | `6eaea06` |
 | Barter — the trade window discarded the trade as it opened, so no trade could ever be completed | **Closed** | `1173f79` |
@@ -312,6 +318,21 @@ standing habit, not a one-time gate.
 rolled out. Every batch in that section is closed; the two market rows are still
 named by area only, and get a proper entry once the fix has been live long
 enough to be worth describing.
+
+**Updated 9 September 2026.** Seven further batches are listed above. Two are
+worth separating from the rest. One is a fault we found by writing the check
+first: a rule that every counter able to take payment must ask permission before
+it does, which then found two counters nobody had reported. The other was caught
+during the deploy itself rather than after it — a season decided on one clock and
+measured against another, which would have left two worlds dark for weeks and
+which no test could have found, because the tests run one world and one world
+cannot have two clocks.
+
+One item is **open and named by area only**, per the rule below: the reserve that
+backs what players carry unbanked has grown to the point where it crowds out the
+purse the world pays out of, so some trades that pay coin refuse. It is an
+accounting and funding matter rather than a fault in the code — the refusal is
+the world declining to promise what it cannot pay — and it is being worked.
 
 **Updated 3 September 2026.** Ten further batches are listed above, closed and
 deployed since this page was last written. Three of them are the same class of

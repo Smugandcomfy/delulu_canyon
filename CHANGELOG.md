@@ -14,6 +14,44 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.29.2] — 2026-09-09
+
+### There was no bonfire. In any world.
+
+The fire that Winter is fed at, and that you can now walk into, had never
+actually been laid — not in Luméira, not in Waterworld, not in Space World. It
+had been built, tested and shipped, and then nothing ever put one in the ground.
+
+Because the fire's panel only opens when you are standing beside it, that meant
+**Winter's fires could not be fed and Self Immolation could not be reached**,
+the day after both went live. Neither was broken; there was simply nowhere to
+use them. It was found by counting what is actually in the world rather than
+trusting that a finished feature was in it.
+
+### And now it is four tiles across, out of town, and on your map
+
+Rather than a campfire near the square, each world has a proper brazier: an iron
+bowl on three legs, heaped and burning, four tiles to a side.
+
+**Luméira's stands in a clearing in the pale wood, north of the Tendys farm** —
+trees either side, well out of town. Waterworld's is among its trees, and Space
+World and Player City have their own out past their squares.
+
+It is the only orange on the minimap and carries a landmark dot, so you can
+steer by it from across a world.
+
+### Traders can pay you again
+
+Selling to an NPC for coin could refuse with *"the Canyon's purse cannot cover
+that today"* — including for players who had never traded with that NPC at all.
+
+The refusal itself was right: the world will not promise coin it cannot pay. It
+was working from a stale figure for its own purse, which had drifted to about
+half of what was really there, so the amount it believed was free had fallen to
+nearly nothing. It reads the true number now.
+
+---
+
 ## [0.29.1] — 2026-09-09
 
 **Everything below reaches the worlds for the first time.** The realms had stayed

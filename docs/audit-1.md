@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.29.1**.
+player reports is listed on the same terms. Current build: **0.29.2**.
 (A fifth pass ran on 5–6 September; its own section is below.)
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
@@ -84,6 +84,10 @@ have produced their own batches, and they are listed on the same terms.
 | The season, and the rule that weather stops at the door | **Closed** | `bb7c810` |
 | Two clocks — a season decided on one and measured against another, caught on the deploy before it reached anybody | **Closed** | `079bab7` |
 | The heartbeat's standing cost, which is what emptied a realm on 8 September | **Closed** | `6a04e8a` |
+| A feature that had been built, tested and shipped, and never actually placed in any world — found by counting what is in the ground rather than trusting the release | **Closed** | `c65d103`, `e87b4f9` |
+| A guard that refused every legal placement by counting the thing being placed as damage | **Closed** | `ae1ed81` |
+| A cached reading of the world's own purse, drifted to half the true figure, refusing trades that should have paid | **Closed** | — |
+| Version drift, twice in one batch: realms reporting a build they were not running | **Closed** | `03bdade` |
 | The Keeper's own payments, and a way to recover a staking position stranded behind a sign-in nobody can use | **Closed** | `86a1253` |
 | Sign-in — an unfinished trip to the identity window handed out a second, empty account | **Closed** | `6eaea06` |
 | Barter — the trade window discarded the trade as it opened, so no trade could ever be completed | **Closed** | `1173f79` |

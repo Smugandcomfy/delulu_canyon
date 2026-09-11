@@ -299,7 +299,7 @@ the mood decides what is worth doing for the next six hours. The
 - **The Obelisk on the plaza** glows with the same mood as the chip, if you
   would rather read the sky than a bar.
 
-## Three worlds, and the gates between
+## Four worlds, and the gates between
 
 Southwest of town, south of the harbour, a portal stands between two fountains
 with a sign that tells you what it is. Through it is **Waterworld**: isles,
@@ -310,6 +310,36 @@ with the same rules and the same money, running as its own canister.
 and deepest of them the **Ink Deep**. One errand in the canyon sends you there
 and expects you to come back — see the Lesser Seal in the
 [Quest Guide](quests.md).
+
+**Desert World** is the fourth: dunes, three pyramids, a temple precinct, oases,
+salt flats, a bitter lake you can fish from the shore of, and a necropolis where
+the masons work beside what they carved.
+
+Above ground there are nine places, among them the Hall of Cards, the Court of
+the Four Winds, the Observatory and the Tomb of the First Kings. Five dungeons
+run under them: **the Gate of the Two Truths**, **the Chamber of Wheels**, **the
+Senet Hall**, **the Quarry of Red Granite** and **the Cisterns**.
+
+Three of the five are built around an arena, and what waits in each lives nowhere
+else: **Cerberus** at the Gate of the Two Truths, **the Ophan** in the Chamber of
+Wheels, and **the Grandmaster** in the Senet Hall.
+
+The **Temple of the Question** itself is laid at one tile to one cubit, to the
+measurements in 1 Kings 6. Nobody is meant to walk into the room at the far end.
+You can.
+
+> **The Ophan is a gate, not a fight.** A million hit points, and only two things
+> in the game can touch it at all: **Gabriel's Sword**, or **Mr. Sneed's relic**.
+> Either one ends it by itself — the hard part is owning one and then living
+> through the room.
+>
+> The relic reaches thirty-five tiles and finishes it from the doorway. The sword
+> means walking into a ring of fire that carries **twelve tiles**, more than twice
+> any other boss's reach, and standing in it a very long time. Take anything else
+> and you will not scratch it.
+
+**Every world now reaches every other on foot.** There are twelve gates; the
+desert is reachable from all three of the others and they are reachable from it.
 
 Three things to know before you travel:
 

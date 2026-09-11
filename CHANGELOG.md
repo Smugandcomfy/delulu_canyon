@@ -14,6 +14,269 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.30.4] — 2026-09-11
+
+### The Ophan
+
+The winged eyeball in the Chamber of Wheels has **a million hit points and twelve
+tiles of reach.**
+
+It was never a damage race, and the million does not make it one. **Only two
+things in the game can touch the Ophan at all** — Gabriel's Sword, and Mr.
+Sneed's relic — and either one of them ends it on its own. The difficulty is
+getting hold of one, and then surviving the room.
+
+What the million changes is which of the two you would sensibly choose. The relic
+reaches thirty-five tiles and ends it from the doorway. The sword makes you walk
+into a ring of fire that now carries **twelve tiles** — more than twice any other
+boss's reach — and stand in it for something like two thousand swings. Same
+outcome, opposite experience, and the walk has stopped being the reasonable one.
+
+The reach is the Ophan's alone; nothing else in any world moved.
+
+### The worlds run leaner
+
+A world was walking every character ever created, several times a minute, to work
+out who was in it — including everyone who had closed the tab weeks ago. Luméira
+was doing that a thousand times over for nine people actually standing in it, and
+it was most of what the world cost to run.
+
+It counts who is *here* now. Nothing about play changes; the worlds simply stop
+paying for people who went home, which is what buys the next world.
+
+Two smaller versions of the same thing: a world nobody had visited for an hour
+stayed wide awake for ever, and a world that came up empty could never fall
+asleep at all.
+
+---
+
+## [0.30.3] — 2026-09-10
+
+### Five dungeons under the desert
+
+The Gate of the Two Truths, the Chamber of Wheels, the Senet Hall, the Quarry of
+Red Granite and the Cisterns — five new places under the nine that were already
+there. Three of them are built around an arena: **Cerberus** waits at the Gate of
+the Two Truths, **the Ophan** in the Chamber of Wheels, and **the Grandmaster**
+in the Senet Hall.
+
+Each now stands where its room was drawn for it. Until this, a boss was scattered
+to wherever there happened to be floor the first time anybody looked — and then
+stayed there for good, in three rooms built around where it was meant to be.
+
+### Dungeons outside the canyon open at their real depth
+
+**Every dungeon in Waterworld, Space World and the desert had been opening
+shallow** — however deep it was drawn, however far down you walked. Only Luméira's
+three deep places were ever told how deep they were; everywhere else the world
+assumed one floor down and stopped there.
+
+Depth is not decoration. It decides what lives there, how hard the wizard hits,
+and what is in the chests. So the isles' six dungeons and the Warrens and the Ink
+Deep have been quietly easier and poorer than they were drawn to be, since the day
+each of them opened. Every zone in all three worlds has been given its depth.
+
+### The altar you were told to stand on
+
+Two rooms in the desert are entirely about standing on a dais — and a dais drew as
+bare floor, so there was nothing to stand on and no sign of where. There is an
+altar on it now, found by the shape of the floor rather than by the room's name,
+so it appears wherever one belongs.
+
+### TORCH you were owed and could not claim
+
+Players reported TORCH they had earned and could not collect. The pot was full and
+the Keeper was working: what went wrong is that a claim asked for the whole of
+what you were owed at once, and a claim above a certain size is refused — so two
+grants that had failed for an ordinary reason were enough to lock every claim
+after them, permanently.
+
+**It pays what it can now and leaves the rest owed,** which is what it always
+said it did. It took a day to find because the world was throwing away the
+Keeper's reason and showing you its own; the Keeper's sentence reaches you now.
+
+### The Crypt will not promise more than it can pay
+
+Bonds are a claim on the Hoard, and the Hoard is fed by what the world loses.
+Until now the only limit on selling bonds was measured against how much GOLD
+exists — a number that knows nothing about the reserve standing behind them.
+
+**Nothing had been spent; the claim had simply grown past the backing.** The Crypt
+now prices new bonds against the reserve itself, and tightens exactly when
+redemption is most attractive. If it cannot back what you are asking for, it says
+so and sells you nothing.
+
+---
+
+## [0.30.2] — 2026-09-10
+
+### The desert has three bosses
+
+Cerberus, the Ophan and the Grandmaster — ten thousand hit points each at this
+point, and each with something to take off it that exists nowhere else. Their
+arenas opened a release later; see 0.30.3 for where they stand.
+
+**One of them cannot be hurt by just anything.** What a blow counts as is decided
+by a single table that both ways of striking consult, so a creature that answers
+only to a particular thing answers to it however you come at it. The Ophan is the
+desert's one — see 0.30.4.
+
+### The cloak stopped hiding you from monsters
+
+The Cloak of the Bright Epoch is protection from *people*. It had been hiding you
+from everything with teeth as well, which made walking a dungeon in one a
+different game from walking it without. Monsters and bosses see you now.
+
+### Hairloss has a slot
+
+Mr. Sneed's relic had no slot of any kind, which meant it was armed by being in
+your pack — nothing to equip, nothing to take off. It is a trinket now, and you
+choose whether you are carrying it or wearing it.
+
+### A journey refuses at the door, not halfway
+
+If the world you are travelling to cannot answer, the gate turns you back before
+you step through, instead of letting you find out in the middle. And anyone a
+silent world left locked mid-journey is settled and sent on.
+
+### A chat problem no longer slows the world
+
+Sending chat out to everyone had been part of the same heartbeat that moves the
+monsters. A busy moment in one could be felt in the other. They are separate now.
+
+---
+
+## [0.30.1] — 2026-09-10
+
+### Signs speak outside Luméira
+
+A signpost in any world but the first stored its words and never said them. They
+say them now, and two signs in a wide world no longer land on one another.
+
+### The stable was never real
+
+Boarding an animal has needed you to stand at a coop since it was written, and
+there has never been a coop anywhere. There is one in the desert, and the tool
+that lays tiles will now lay one in any world that wants it.
+
+### Twelve gates
+
+The desert is reachable on foot from all three worlds and they are reachable from
+it. Luméira's new gate stands between the two fountains by the shore.
+
+### Monsters you have hurt show it
+
+In first person a creature you have wounded carries its health, and one that has
+noticed you is marked. Nothing appears over a creature at full health, so the
+screen stays quiet until something is not.
+
+---
+
+## [0.30.0] — 2026-09-10
+
+**A fourth world has ground in it.** Desert World is nine zones, a temple built to
+an old measure, a tomb under the great pyramid, and a fire that will take you at
+any time of year.
+
+### The desert
+
+Dunes, three pyramids, a temple precinct and the wadi that used to be a river.
+Oases with palms round them, a bitter lake you can fish from the shore of, salt
+flats, and a necropolis where the masons work beside what they carved. Nine
+places, and everything in them can be walked to.
+
+The **Temple of the Question** is laid at one tile to one cubit, to the
+measurements in 1 Kings 6: sixty cubits deep and twenty across, a main hall of
+forty by twenty, a porch twenty broad and ten deep with two pillars at its mouth,
+and at the far end a room twenty by twenty with two figures in it whose wings meet
+in the middle. Nobody is meant to walk in there. You can.
+
+### Inside is warm now
+
+Winter used to stop at a dungeon door and nowhere else. It now stops at any door:
+a temple, a hall, a court and an observatory keep the weather off you, and the
+open world does not. That was the rule as written a release ago and only part of
+it had arrived.
+
+### The fire takes you year-round
+
+Self Immolation no longer waits for winter. Stand at a bonfire whenever you like.
+Everything it asks of you is unchanged, and so is everything it costs.
+
+### Also
+
+- Sixteen new faces, and the people wearing them can now be given any of them.
+- A world can say what it is: a fourth look, sand and pale stone, with limestone
+  lintels and lotus columns where another world has marble.
+- Music knows a world by what it is rather than by its name, so a new place sounds
+  like itself.
+
+---
+
+## [0.29.5] — 2026-09-10
+
+Three reported in one night, and each was a true thing said in the wrong place.
+
+### You could not bank a TORCH pouch anywhere but Luméira
+
+A player earned two TORCH from a quest in Waterworld and could not put them
+away — the vault answered with a sentence about who is allowed to operate a
+canister, delivered to somebody standing at a vault holding two torches. They
+could not bank them and would not leave the world carrying them.
+
+The pouch worked in the first world and was refused in the other two. It works in
+every world the Keeper serves.
+
+### The fire blamed the approval for every refusal
+
+Feeding a second torch failed by telling you the fire had not been approved to
+spend them — after the first had gone in without any such thing. The message could
+not be true and could not be acted on, because one cause was being named for every
+possible failure. Both fires now tell you what actually happened.
+
+### Chat refused you without telling you why
+
+Saying anything could fail with an error code and no words. The limit on how fast
+you can speak was being enforced in two places, and the one that could explain
+itself was never reached. The door now turns away only what it is for, and
+anything you can do something about is answered in a sentence.
+
+---
+
+## [0.29.4] — 2026-09-09
+
+### Hairloss reaches thirty-five tiles
+
+Mr. Sneed's relic reached five. It now reaches **thirty-five** — more than half the
+width of a zone, and further than you can see.
+
+This is a change of what the relic *is* rather than a nudge, and it was chosen
+over a recommendation of twelve to fifteen. Everything that kept it inside the
+rules still does: PvP has to be live where your target is standing, their own tile
+is what decides, and a ghost casts nothing.
+
+---
+
+## [0.29.3] — 2026-09-09
+
+### The fire told you it did not work yet
+
+A player walked out to the new fire pit, found it, and was told *"full
+functionality comming soon use at ur own risk"*.
+
+That line was written when the bonfire shipped as a placeholder, and it stopped
+being true the day Winter and Self Immolation went live. It had simply never
+moved.
+
+**A stale warning is worse than none** — it teaches you to skip the line, and this
+is the one screen in the game with an irreversible button on it. The slot now
+carries the warning actually worth reading: that giving yourself to the fire takes
+everything the vault is not holding, and cannot be undone. The instructions say
+what the fire does, too — it warms you, and in Winter it keeps the whole zone lit
+for everyone standing in it.
+
+---
+
 ## [0.29.2] — 2026-09-09
 
 ### There was no bonfire. In any world.

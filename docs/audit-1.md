@@ -20,8 +20,9 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.29.2**.
-(A fifth pass ran on 5–6 September; its own section is below.)
+player reports is listed on the same terms. Current build: **0.30.4**.
+(A fifth pass ran on 5–6 September; its own section is below, followed by the
+ordinary batches since.)
 
 Two findings are worth calling out for being *wrong*. Both were investigated properly and both
 turned out to describe a bug that does not exist — one in the movement code, one in the client's
@@ -173,6 +174,31 @@ two per-turn passes over the world; a batch of refusals that name internal
 machinery instead of telling a player what to do; and one item that cannot be
 fixed from the code at all, because the content it concerns exists only inside a
 running canister and not in any file.
+
+### The batches since — 9–11 September
+
+Not a pass. This is ordinary work: player reports, a fourth world brought up, and
+one measurement that turned into the largest cost fix this log records.
+
+| Batch | Status | Commit |
+|---|---|---|
+| A warning that had stopped being true, left on the one screen in the game with a button that cannot be undone | **Closed** | `35bbbb6` |
+| Three refusals reported in one night: a pouch that could only be banked in the first world, a fire naming one cause for every failure, and a limit enforced in the one place that could not explain itself | **Closed** | `beeebd6` |
+| A relic hiding its holder from the monsters as well as from people, which made a dungeon walked in one a different game from the same dungeon walked without | **Closed** | `1bd25c8` |
+| A journey that could strand a traveller mid-crossing when the far world went quiet, instead of refusing at the door | **Closed** | `1bd25c8` |
+| **Every dungeon outside the first world opening at the shallowest depth**, however deep it was drawn. Depth decides what lives there, how hard it hits and what is in the chests — so three worlds' dungeons had been quietly easier and poorer than they were built to be, since the day each one opened | **Closed** | `0766c0d` |
+| Rewards a player had earned and could not collect, because a claim asked for the whole of what was owed at once and a large enough claim is refused — so two ordinary failures locked every claim after them | **Closed** | `0766c0d` |
+| Bonds measured against how much money exists rather than against the reserve standing behind them. Nothing had been spent; the claim had grown past the backing | **Closed** | `0766c0d` |
+| A boss placed at random the first time it was seen and then fixed there for good — in three arenas that had been built around where it was meant to stand | **Closed** | `0766c0d` |
+| A room whose entire ritual is standing in one particular spot, drawn with nothing to stand on | **Closed** | `e809d3f` |
+| **The heartbeat's standing cost, again** — this time scaling with every character ever created rather than with who is online. About nine tenths of a world's bill was spent walking people who had closed the tab | **Closed** | `11da3fd` |
+| A world nobody had visited for an hour staying on its fast, expensive cadence for ever; and a newly created world that could never fall asleep at all | **Closed** | `11da3fd` |
+| **Every canister we control checked against a freshly built copy of its own code** rather than against the version it reports. It found four running something other than what the tree says, one of which reported the right version while running the wrong build — which is the whole reason the check is a hash and not a string | **Closed** | `5839c8f` |
+
+**On the last row.** A version number is a line somebody typed; it does not move
+when the code does. Three of those four had been sitting undeployed with nothing
+pointing at them, and the only reason anyone knew is that the question was asked
+of every canister at once instead of the ones that were expected to have changed.
 
 ## What this pass changed for players
 

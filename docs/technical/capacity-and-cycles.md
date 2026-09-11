@@ -114,6 +114,34 @@ Two consequences shape the design:
   permanently more expensive one. It is the reason the world sends *changes* rather than
   re-sending everything in view.
 
+### 4 · The standing cost, which nobody's actions pay for
+
+Everything above is the cost of what players *do*. There is a second bill, and for a
+world with few people in it, it is the larger of the two: **the heartbeat.**
+
+The world moves on its own. Monsters walk, chests decay, weather turns, the season
+advances — several times a minute, whether anybody is logged in or not. That work is
+billed to the canister exactly like a player's action, and it is charged whether or
+not there is anyone there to see it.
+
+**The failure mode is that a heartbeat's cost can scale with the wrong number.** The first
+world's tick was walking every character that had ever been created, to work out who
+was standing in it — an honest way to answer the question, and one whose cost grows
+with *registrations*, a number that only ever goes up. By September it was walking
+about a thousand entries, twenty-one thousand times a day, for nine people actually
+online: roughly **nine tenths of what the world cost to run** was spent scanning
+people who had closed the tab, some of them weeks earlier.
+
+It now keeps a list of who is actually here, bounded by concurrency rather than by
+history. Two more of the same shape sat beside it: a world nobody had visited for an
+hour stayed on its fast, expensive cadence for ever, and a freshly minted world could
+never fall asleep at all — which matters because the price of selling somebody a world
+of their own depends entirely on an empty one being nearly free.
+
+**The general rule, stated because it cost us a realm to learn:** in a game where the
+world pays for its own existence, the thing to watch is not the cost of an action. It
+is every loop whose length is a total rather than a present count.
+
 ## What the room actually looks like now
 
 The geometry work that came out of this. Corridors used to be one tile wide — two players could

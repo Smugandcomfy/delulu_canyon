@@ -14,6 +14,136 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.33.0] — 2026-09-13
+
+### Twenty new quests, and four that nobody could ever reach
+
+Space World gets an arc of ten, and **Luméira gets its first new arc since
+launch** — ten more, picking up threads the original fifteen left hanging. If you
+ever wondered what the harbourmaster keeps in the book he does not show anyone,
+that is now a thing you can find out.
+
+And four quests on Space World have been **repaired rather than added.** They
+were written long ago, and the people who give them had never actually been put
+in the world — so the quests existed, and no player could ever be offered one.
+The surface of Space World is now properly inhabited: dockmasters, riggers,
+watch-officers, a gardener, a balladeer. The four quests work.
+
+### The shield you probably own is weaker, and the one you earned is better
+
+This is a takeaway and it is easier to say plainly than to bury.
+
+A plain **Buckler** used to halve every blow. It falls out of ordinary chests
+perhaps six times in a hundred, and it was the second-best shield in the game —
+better than both keyed fixture shields, and better than a **boss reward**. The
+numbers had each been chosen against the monster they were meant to survive, and
+never against each other.
+
+So the ladder now runs the way you would expect: a common drop is the weakest, a
+keyed chest beats it, the deep keyed chest beats that, and the **boss reward
+beats them all** bar the relics. Against a boss's blow that is roughly a whole
+extra hit of margin for the reward, and one less for the common drop.
+
+**If you have been relying on a Buckler, you will feel this.** It is the right
+way round now, but it is worth knowing before you walk into something.
+
+### The shelf means something
+
+Every weapon the Store sells has been repriced. The cheapest blade used to cost
+less than a loaf of bread, which made the entire ladder above it decorative.
+Eleven weapons that had only ever been quest rewards, boss drops or chest finds
+are now **also on the shelf**, so there is a route to them that does not depend on
+luck.
+
+They are expensive. That is deliberate, and the world's earning side is being
+worked on to match — see below.
+
+### The world hits harder
+
+Skeletons were scenery. A new player could stand in a crowd of them and read the
+map. They now hit for something you have to respect, and **dark elf wizards hit
+considerably harder at depth.**
+
+### Winter tells you it is coming
+
+The season now announces itself **an epoch ahead**, on every world. A player who
+could not have known was a player who was robbed, and that is no longer the
+arrangement.
+
+### Smaller things
+
+- **You can throw fish back.** A full creel used to end the trip.
+- **Smug's three nurses look like nurses.** They had been wearing the bath-house
+  wing's swimwear since they arrived, which nobody had mentioned and everybody
+  must have noticed.
+- The **welcome gift is once per person**, not once per world. It was always
+  meant to be a joining present rather than a souvenir of each place you visit.
+- When the peg is under strain, **rewards paid out of the world's purse are
+  reduced rather than refused.** You keep the quest, the items, the standing and
+  the karma; only the coin is smaller, and it recovers on its own when the peg
+  does. A quest that cannot pay you in full is still a quest you can finish.
+
+---
+
+## [0.31.3] — 2026-09-11
+
+### The boundary nodes can be counted exactly
+
+However many have arrived on a map, that number can now be set to whatever it
+should be — trimmed as well as topped up. Trimming is allowed in any season;
+adding is not, because a node that exists outside its season is a thing without a
+reason. The newest arrivals are the first to go, so a correction undoes the most
+recent decision rather than one you have already walked across a world to find.
+
+---
+
+## [0.31.2] — 2026-09-11
+
+### Cold
+
+Some worlds are cold now, and being cold costs you. Standing in it drains you,
+and the answer is fire: a lit bonfire is the difference between crossing a place
+and camping in it. **One world carries the cold and the others do not**, on
+purpose — so it can be judged on its own before it goes anywhere else.
+
+### The nodes belong to the season
+
+They arrive with Winter and they leave with it. A boundary node's blow also moves
+with the peg now: the further the world drifts from its footing, the harder the
+thing that comes to collect. At a healthy peg it is an inconvenience.
+
+### Two worlds had no monsters at all
+
+Two of the four overworlds had been typed as towns, which meant nothing hostile
+would ever spawn on them. They are wilderness again.
+
+---
+
+## [0.31.1] — 2026-09-11
+
+### The boundary node has its own face
+
+It was borrowing another creature's picture. It is drawn now — its own shape, its
+own cell — so you can tell at a glance what is walking toward you.
+
+---
+
+## [0.31.0] — 2026-09-11
+
+### Something new arrives when the peg slips
+
+A **boundary node** is not a monster in the usual sense. It does not live in a
+dungeon and it is not there to be farmed: it appears when the world's footing
+slips, it walks, and it takes something. It drops nothing at all, and that is not
+an oversight — a creature that paid you for killing it would be a reason to want
+the peg to fail.
+
+It arrives only in its season, and **nothing spawns one automatically.** That was
+the safe way to ship it: something that takes from players should be watched on
+its way in rather than discovered.
+
+---
+
 ## [0.30.4] — 2026-09-11
 
 ### The Ophan

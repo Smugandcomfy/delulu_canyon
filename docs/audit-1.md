@@ -20,7 +20,7 @@ It produced **78 findings**. This page is the public record of what has been don
 Those counts are the audit's own tally and are left as they were written. What has
 happened since is in the batch table below, which is kept current — three of the
 five areas the audit left open have closed, and the work that came after it from
-player reports is listed on the same terms. Current build: **0.30.4**.
+player reports is listed on the same terms. Current build: **0.36.0**.
 (A fifth pass ran on 5–6 September; its own section is below, followed by the
 ordinary batches since.)
 
@@ -200,6 +200,32 @@ when the code does. Three of those four had been sitting undeployed with nothing
 pointing at them, and the only reason anyone knew is that the question was asked
 of every canister at once instead of the ones that were expected to have changed.
 
+### The batches since — 12–14 September
+
+Ordinary work again, and three of these are the same shape: **something that had
+been built, tested, shipped and never once reachable.** None of them failed. Each
+was simply never connected to anything, and nothing we own could tell the
+difference between that and working.
+
+| Batch | Status | Commit |
+|---|---|---|
+| **A pet hotel with no coops.** Boarding a pet has required a coop tile since early September; **no live map has ever had one**, in any world. The feature was shipped, tested, and refused every player who tried it, every time. The Chicken Farm came back 3,545 grass, 183 water, 167 tree, 145 sand, 36 path, 17 rock, two portals and a vault tile — and no coops | **Closed** | `1ace436` |
+| **A room whose only path ran into the water.** Every part of the conjuring ritual worked. The causeway was drawn running east and the door is south, so the obvious line from the entrance walks into the pond — and the refusal then told the player to *"stand in the water"*, the one tile that could never work. A path that exists and cannot be found is the same to a player as one that does not exist | **Closed** | `1ace436` |
+| The repair counter quoting one price and charging another — a dagger shown at 0.0125 GOLD and a sword at 120, against a till taking 3 for both | **Closed** | `1ace436` |
+| A token's fee re-read from its ledger every time and its **decimals never once** — the field where being wrong is silent, total, and off by a power of ten | **Closed** | `1ace436` |
+| **A guild ladder that nothing read.** Eighteen rungs, fifty-nine passing tests, and not one line of the game importing it. It passed every check we own, twice, because **a table that compiles is indistinguishable from a feature** to all of them | **Closed** | `e4b821d` |
+| **A quarter of shop revenue that could not be switched on safely.** One stored field turned out to be the destination for six different payments across three tokens — two of the Paladin's, the Chamber's rent, the egg split and the shop's share. Turning the shop's share on would have moved five other things with it | **Closed** | `e4b821d` |
+| Three GOLD stranded on a world's shop account since the summer, reachable by nothing we had: one recovery path is driven by what is owed and the other by what is recorded, and neither can move a balance nobody is owed | **Closed** | `854dcf8` |
+| A counter the client could not see. The realm had been reporting it for a release; the browser's copy of the interface never declared it, so the operator screen showed two of three figures. **Our drift check compares method names and says in its own output that it cannot catch a missing field** — this is the case it was warning about | **Closed** | `e4b821d` |
+
+**On the first, fifth and eighth rows.** Three separate features, built properly,
+tested properly, and connected to nothing. **A test proves the code does what it
+says; it cannot prove anyone calls it.** Each was found by trying to operate the
+thing rather than by reading it — walking to the coops, asking what rung a player
+stands on, opening the screen that should have shown the number. That is now the
+first question asked of anything described as finished: *not "does it work" but
+"what reaches it".*
+
 ## What this pass changed for players
 
 - **The Sneed Lounge, and the guild rooms around it.** Couches you can sit on —
@@ -300,6 +326,35 @@ lesson we have taken is narrower than "add monitoring": **anything whose failure
 invisible to the person it fails needs to report its own health**, and the clock is
 now the first thing that does.
 
+## A second outage, and the number that did not show it
+
+On 14 September **Desert World stopped answering entirely.** It had run out of
+cycles — the fuel a canister burns simply by existing — and a canister with none
+is *frozen*: it refuses every call until it is topped up. Nothing was lost. A
+frozen canister rejects work rather than forgetting anything, and it came back
+exactly as it was.
+
+It was found the way the last one was: by going to look at something else.
+
+**The number that should have shown it did not.** We had been reading the balance
+column, and by balance Desert World was not the lowest — another canister held
+less and was in no danger at all. What actually decides a freeze is the balance
+**minus a reserve**, and that reserve is the daily burn multiplied by a per-canister
+threshold — thirty days on the worlds, **ninety on the Keeper**. Two canisters can
+hold the same amount and be months apart.
+
+Checking every canister properly found the real hazard was not the Desert at all:
+**the social canister had about ten days left**, and it carries chat and presence
+for all four worlds. On balance alone it looked mid-table.
+
+All four at risk have been refilled to well over a year each, and the check we run
+now asks for the free figure rather than the balance, across every canister rather
+than the one being worked on.
+
+**The honest part, again.** This was not raised by anything. It is the same lesson
+as the heartbeat in a different suit: *the figure that is easy to read was not the
+figure that mattered*, and reading the easy one felt like having checked.
+
 ## The security review
 
 Before opening the world wider we ran an adversarial security review across all six
@@ -384,10 +439,15 @@ hashes let anyone with access to the implementation repository check every line 
 
 ## What comes next
 
-The remaining batches are, roughly in order: the accounting paths that move value between the
-Keeper and the world, better visibility into what the price oracle is doing and why, the world
-geometry migration, the cost work that matters as concurrency grows, and finally removing the
-legacy surface that predates the current design.
+The remaining batches are, roughly in order: better visibility into what the price oracle is
+doing and why, the world geometry migration, the cost work that matters as concurrency grows,
+and finally removing the legacy surface that predates the current design.
+
+**The first item on this list has now landed** and is worth marking rather than quietly
+deleting: *the accounting paths that move value between the Keeper and the world.* There is
+now a single account that receives and never pays, a way to push from it down to any world,
+and a share of shop revenue flowing into it. Before 14 September there was nothing that put
+money in at all — every path led outward or burned.
 
 A second audit, focused on three specific behaviours reported from play, has also been completed;
 its findings are folded into the same batches.

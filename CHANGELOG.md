@@ -14,6 +14,56 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.36.0] — 2026-09-14
+
+### The Tendys Hall has a ladder, and you can see where you stand
+
+Eighteen rungs, from **Yardbird** — "you are through the door, which is more than
+most" — up to **The Coop Royal**, which is one chair at the head of the Hall and
+takes 32,768 TENDY staked to sit in.
+
+Each rung is one doubling above the last: half a TENDY makes you a Scratcher, one
+makes you a Pullet, four buys a Perchholder a place on the bar (the cold end, by
+the draught, but yours). The bands go Member, Roost, Flock, Brood, Royal.
+
+Open **Guilds** and the Tendys row now shows your rung, how many you have earned,
+and what the next one costs. **Nothing new is asked of you** — the door already
+recorded your stake when you walked through it, and this reads that. It costs no
+call to the DAO and nothing to check.
+
+⚠️ **One thing worth knowing before you find out the hard way.** What the Hall
+gives you is yours to keep. **The door is not.** Unstake and the next
+re-verification closes it, and the game says so in the panel rather than letting
+you discover it at the barn door.
+
+If your reading is older than the door's re-verification window, the panel tells
+you that too, and keeps showing your stake rather than pretending it is zero.
+
+### The shop's prices have not changed, and where the money goes has
+
+**Nothing you buy costs a penny more.** What changed is behind the counter: a
+quarter of what the shop takes now goes to a shared pot held by the Keeper,
+instead of all of it staying in the world where you spent it.
+
+The point is the worlds with fewer people in them. Delulu Canyon has most of the
+players and most of the trade; the Desert has fourteen zones and almost nobody.
+A shared pot can pay for a quest purse or a welcome chest in a world that has not
+earned one yet, and until today there was no way to do that at all.
+
+### Housekeeping, said out loud
+
+**Desert World was unreachable for part of today.** It ran out of cycles — the
+fuel a canister burns simply by existing — and a canister with none stops
+answering until it is topped up. **Nothing was lost**: it refuses calls rather
+than forgetting anything, and it came back exactly as it was. It and three other
+canisters have been refilled with well over a year of runway each.
+
+And **three GOLD had been stuck** on Desert World's shop account since the summer
+— real, safe, and reachable by nothing we had. There is now a tool for it, and it
+is back in the Desert's treasury where it can pay for something.
+
+---
+
 ## [0.35.0] — 2026-09-14
 
 ### The rare egg room is open, and the eggs have prices

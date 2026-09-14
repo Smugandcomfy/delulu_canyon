@@ -14,6 +14,58 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.35.0] — 2026-09-14
+
+### The rare egg room is open, and the eggs have prices
+
+The Exotic Egg Room under Dominic's Stakehouse **no longer asks for torches**. It
+had been gated at five, which stopped new players at the door of the one room that
+sells them a companion.
+
+Five eggs, and a ladder rather than a flat rate:
+
+| | |
+|---|---|
+| Falcon | **25 GOLD** |
+| Flamingo | **50 GOLD** |
+| Giant Snail | **100 GOLD** |
+| Wolf | **200 GOLD** |
+| White Siberian Tiger | **400 GOLD** |
+
+### Fifty-two animals go on sale
+
+The menagerie's whole roster can be bought now, from **25 GOLD** at the bottom of
+the ladder to **30,000** at the top. They have always had names, prices and
+attributes; what they never had was a counter to buy them over.
+
+### ⭐ The pet hotel finally works
+
+The Chicken Farm has kept coops in its description since September, and **there
+were no coops**. Not hidden, not gated — the tiles had never been drawn, so
+`board a pet` refused everybody who tried, every time, in every world.
+
+Six coops now stand south of the lane, past the well. Leave a pet there and it
+stops following you and stops counting against your flock; collect it when you
+want it back.
+
+### The Conjuring Bath can be reached
+
+Every part of the ritual worked. The **causeway ran east and the door is south**,
+so the straight line from the entrance walks you into water — and the refusal then
+told you to *"stand in the water"*, which is the one tile that could never work.
+
+The causeway now runs to the door. If you have been trying to conjure a familiar
+and could not get to the font, that is why.
+
+### ⚠️ Taking an item back out of the vault costs 0.01 GOLD
+
+It used to be free. Putting one in has always cost 1 GOLD and still does.
+
+One hundredth of a GOLD is deliberately small — it is there so that vaulting and
+unvaulting in a loop costs something, not to price you out of your own items.
+
+---
+
 ## [0.34.0] — 2026-09-13
 
 ### Sixty-five ranged weapons, and something to feed them

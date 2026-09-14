@@ -14,6 +14,100 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.34.0] — 2026-09-13
+
+### Sixty-five ranged weapons, and something to feed them
+
+You can now fight at a distance. Slings, bows, flintlocks, muskets, crossbows,
+revolvers, rifles, lasers, miniguns and launchers — **sixty-five of them**, from a
+twine sling at one GOLD to a missile battery. Every realm's Store counter carries
+the forty-five that belong to nobody in particular.
+
+**Five belong to each world**, and there is now an armourer standing near each
+Store who sells them and nothing else:
+
+| world | who | what they keep |
+|---|---|---|
+| Delulu Canyon | **Orrin Bowyer** | stavesling, wyrmbone longbow, grovewood arbalest, ashfire repeater, a minigun |
+| Waterworld | **Cully Brineshot** | handline, harpoon caster, brineglass arbalest, tideglass lasgun, a depth-charge mortar |
+| Desert World | **Hazra Sunmark** | scarab slingstaff, sandglass flintlock, kiln-bolt crossbow, sunmirror lance, a bazooka |
+| Space World | **Deckhand Ossary** | salvage slug-thrower, station scattergun, orbital sidearm, void lasgun |
+
+⚠️ **"Belongs to a world" means sold there, not locked there.** Buy a sunmirror
+lance in the Desert and carry it to Waterworld; it works. Please do not file that
+as a bug.
+
+**Everything ranged eats ammunition.** Eight kinds — sling stones, arrows, paper
+and brass cartridges, quarrels, rockets, linked belt, sentry cores — sold on every
+realm's counter, and buy them by the hundred, because a single stone costs more in
+ledger fees than it does in stone. **An empty weapon says so** rather than quietly
+doing nothing.
+
+Nine of the heavier ones run on **power cells** instead, the same way the Orbital's
+energy weapons always have: a cell tops the magazine up, and firing spends it a
+shot at a time.
+
+⭐ **Quartermaster Vex** now keeps a counter on the Orbital that sells ammunition
+and nothing else — and will mend what you bring him.
+
+### Fishing is worth something now
+
+Landing a species **you have never caught before** earns you karma. Three a turn,
+and the book itself pays the first time you open it. Each of the four milestones —
+25, 75, 150 and 300 species — pays more.
+
+Catching the same fish again earns nothing, which is the same rule the book has
+always kept. There is no way to farm it.
+
+### ⛔ The repair counter was quoting the wrong price
+
+Worth saying plainly, because it was our mistake and it was in your favour half
+the time and against you the other half.
+
+The counter has charged a flat **3 GOLD** to mend anything since 12 September. It
+was still *showing* you an older number — **0.0125 GOLD** for an iron dagger, and
+**120 GOLD** for Gabriel's Sword. So the dagger looked almost free and the sword
+looked ruinous, and neither was true.
+
+The price you are shown is now the price you are charged.
+
+### Power cells cost 0.25 GOLD, down from 0.50
+
+Halved, and deliberately.
+
+A cell is twenty charge spent a shot at a time, not a single round — so a cell is
+already good value measured per shot. The reason to make it better is that the
+nine cell-fed weapons **never wear out and never need mending**: cells are their
+entire running cost. A dear cell would have made them the expensive way to fight
+instead of the convenient one.
+
+If you own a laser, it just got cheaper to fire.
+
+### The Legend can look things up again
+
+Seventy-four items had no entry — every new weapon and, it turns out, **Marrow's
+Compass**, which has been missing from the index since the day it went on sale.
+
+### The Desert has wildlife
+
+Goats, boar and deer had been placed there once by hand and never replenished.
+They restock properly now, which matters if the bonewright has asked you for
+hides.
+
+### Familiars
+
+If you have bound a Sneed bot, its panel does a great deal more: it can show you
+what each neuron holds, where to send ICP to make a new one, what each chore is
+configured to do, and **the servant's own log**, which is how you find out why
+something failed rather than only that it did. Thirty new actions, every one
+behind the same "type the amount back" confirmation the withdrawals already use.
+
+⛔ **What it deliberately cannot do is re-key your familiar.** Granting or
+revoking a botkey happens on sneeddao.com, by you, and the game has no way to
+reach it. That is on purpose: this is a web page, and your bot holds real neurons.
+
+---
+
 ## [0.33.0] — 2026-09-13
 
 ### Twenty new quests, and four that nobody could ever reach

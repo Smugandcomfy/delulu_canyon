@@ -14,6 +14,102 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.37.3] — 2026-09-20
+
+### ⛔ Nothing could be bought with GOLD for most of a day, and here is why
+
+On 20 September the Store, the vending machines, the gold-priced doors, the vault,
+the Crypt, the Graveyard and the ferry all refused, with an error that meant
+nothing to anyone reading it. Sending and receiving GOLD worked the whole time,
+and so did everything that does not cost gold. **No balance was wrong at any
+point, and nothing was lost.**
+
+The fault was in the token ledger — not in the game, and not in anything a player
+did. Spending gold at a counter asks the ledger's permission first, and that one
+question had started failing. It could not recover on its own: each failure undid
+the tidying-up that would have cleared the condition, so it met the same state the
+next time and failed again.
+
+**It is fixed and live.** Before it went anywhere near the world it was rehearsed
+against a copy of the ledger deliberately put into the broken state, to prove it
+comes back with every balance intact; a snapshot was taken first; and afterwards
+the repaired path was exercised with a real transaction on the open market. The
+total supply of GOLD is the same number it was before, to the last decimal.
+
+**The two other tokens, TORCH and TOMBSTONE, are built the same way and are owned
+by the Sneed DAO**, so putting the same fix in them is a proposal rather than
+something we can do alone. It is being prepared. If you have had a torch refused
+at a bonfire, that is very likely the same fault and it is not forgotten.
+
+### You could always trade items with another player. Nothing told you so
+
+Walk up to somebody, stand beside them, and you can hand over items, the gold you
+are carrying and your pouches — both of you have to accept, and nothing moves
+until you do. That has been true for a long time and people have been doing it.
+
+What was wrong is where the game told you about it. At the Store the button that
+opens a trade sorted behind two buttons that both sound like trading, and on a
+phone that pushed it onto the second page of the action bar, behind a small arrow.
+Meanwhile the screen called **The Bazaar** — which trades *tokens* between players
+— said it was for trading with other players and had no way to pass an item.
+
+So: beside a counter, trading with a person now sits near the front where you can
+see it, and it says **"Trade items with …"**. The Bazaar opens by naming whoever
+is standing next to you and offering to start that trade. The storekeepers' own
+button is **"Barter with …"**, so the two stop looking alike.
+
+### Quest rewards refused while the purse was full
+
+A quest that pays gold could refuse with *"the treasury is empty"* while the
+world's purse held plenty. The world was reading a figure it had noted down
+earlier rather than looking, and gold that somebody else had contributed never
+appeared in it. Only a realm owner could make it look again.
+
+It now looks for itself: when a reward is about to be refused for an empty purse,
+the world checks the real balance and tries once more. If it really is empty, you
+get the same honest refusal as before, and the quest stays ready to hand in.
+
+### Willemsted's two shopkeepers had nothing to say
+
+Marta Quillon at the slab and Ines Halloway at the rod counter would both take
+your money and neither would speak — "Talk" produced an error. They were built
+without a word to say. They have lines now, and they will tell you what the other
+one sells.
+
+### Smaller things you will notice
+
+- **A dragon bounty the Keeper cannot yet pay** used to sit at the front of the
+  action bar and take the Space key, sometimes for days, ahead of the door you
+  were standing on. It now waits at the back, rests after a refusal instead of
+  inviting another one, and says in gold what it is worth — it had been naming the
+  wrong token entirely.
+- **Standing next to a portal, "Enter …" only walked you onto it**, and you had to
+  press again. One press now does both. If something is standing on the portal it
+  says so, rather than appearing to do nothing.
+- **A button could ignore a click** while the bar under it refreshed — which it
+  does about once a second whenever anything nearby is moving. The Space key
+  always worked, which is why it looked so arbitrary. The bar now holds still
+  while you are pressing it.
+- **The menu covered the chat** on tall, narrow screens.
+- **A journey that had already arrived could keep sending you home.** One player
+  spent 25 hours in Luméira with their character safe in Waterworld. Fixed.
+- **An active player could be refused at the terms screen** and shut out of the
+  world they were already playing in. Fixed.
+
+### Housekeeping, said out loud
+
+Earlier in September the four worlds were burning fuel hundreds of times faster
+than they should have been, and Desert World froze twice in one day. Two separate
+things were happening: a call anybody could make that cost the world real money
+and the caller nothing, and a flood of several hundred machine-made characters on
+Desert World that the world still pays to carry.
+
+Both doors are shut. **No player's character, items or gold were touched**, and
+the worlds are funded with well over a year of runway each. Clearing out the junk
+characters is still owed, and it is on the list in the open.
+
+---
+
 ## [0.36.0] — 2026-09-14
 
 ### The Tendys Hall has a ladder, and you can see where you stand

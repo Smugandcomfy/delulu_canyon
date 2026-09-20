@@ -20,7 +20,7 @@ is the same door.
 
 **[Changelog](CHANGELOG.md)** · **[Audit log](docs/audit-1.md)**
 
-`build 0.36.0` · `four worlds` · `on-chain, end to end`
+`build 0.37.3` · `four worlds` · `on-chain, end to end`
 
 <br>
 

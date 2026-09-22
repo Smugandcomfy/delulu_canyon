@@ -14,6 +14,76 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.37.5] — 2026-09-22
+
+### A journey now settles itself
+
+Nine players were stranded between worlds — three of them for a day, and **six for
+seven days**, shut out of the world they had left while the world they were
+crossing to had never heard of them. All nine have been put right by hand, and
+nothing of theirs was lost: the six were returned to where they set off from, and
+the three were finished into the world that already held them.
+
+**The cause was that finishing a crossing depended on your own browser.** When you
+cross, the world you left has to be told the crossing worked. The game asked it
+once, quietly, when you next signed in — and if that failed, or if you simply did
+not come back, nobody ever asked again. The machinery to fix it existed and
+nothing ever ran it.
+
+Now the worlds do it themselves:
+
+- a crossing the destination never accepted is **undone** automatically, not just
+  one that succeeded;
+- each world checks for stranded travellers every couple of minutes;
+- and **a world will not go to sleep while somebody is still crossing it** — which
+  is how a short wait turned into a week on a quiet world.
+
+⚠️ **A crossing can still be delayed.** If the world you are heading to is down,
+you wait for it. What has changed is that the wait now ends on its own.
+
+---
+
+## [0.37.4] — 2026-09-22
+
+### The weekly prize stops paying people for turning up alone
+
+The prize fund was **88% spent**, and not because anything was broken. Each world
+paid a prize in five categories every week, at a flat rate, regardless of whether
+anyone competed. Counted across the four worlds, **most categories had exactly one
+entrant** — collecting first prize every week for being the only person who did
+the thing. Only Beasts Slain was a real contest. Opening a fourth world had
+multiplied the bill by four without multiplying the players.
+
+The lifetime cap was no help either: when a winner is capped the prize **passes
+down** to the runner-up, so the money leaves the fund anyway. The cap stops one
+person taking everything; it was never a brake on the fund draining.
+
+So, two rules:
+
+- a category with **fewer than three entrants pays nothing**;
+- and **the last player in a category never collects** — a prize is for beating
+  somebody.
+
+**Prizes are also smaller**: 15/10/5 TORCH becomes **5/3/2**, on every world.
+Together these take the worst case from 600 TORCH a week to well under a hundred.
+
+⚠️ **Said plainly: the fund still runs out eventually**, and nothing currently
+refills it. What that should be replaced with has not been decided, and we would
+rather say so than let it empty quietly.
+
+### Also fixed, without needing an update
+
+- **The Desert's halls were empty.** Eighteen people who had been written for the
+  Temple, the Court, the three Halls, the Observatory and the Tombs had never been
+  put in the world, so quests that asked for them could not be offered at all. They
+  are standing there now, and six of those quests are reachable for the first time.
+- **Quest rewards and pouches were being refused** on worlds whose purse was in
+  fact full. Each world reads a noted-down balance rather than counting its own
+  money, and on one world that note was nine days old. All four have been brought
+  up to date, and one world's torch purse was genuinely empty and has been funded.
+
+---
+
 ## [0.37.3] — 2026-09-20
 
 ### ⛔ Nothing could be bought with GOLD for most of a day, and here is why

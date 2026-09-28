@@ -164,12 +164,22 @@ any hour depends entirely on what the price did:
 The [field guide](../guides/field-guide.md) is the short version of that, and the same text
 players see in-game.
 
-## Planned
+## Since this was written
 
-Some of the world's design is not live yet, and is described here only so the
-shape is clear. Nothing in this section should be relied on.
+This page once carried a list of design that was built but not yet switched on.
+All of it is live now:
 
-- **The Graveyard** — the plots are built but not yet emitting.
-- **Parties and player-versus-player**, in any form.
-- **Item drops from monsters**, trade between players, and the curio and activity
-  systems sketched in the design notes.
+- **The Graveyard** emits TORCH for planted positions, in every world.
+- **Parties** hold together across worlds — up to eight, invited by name.
+- **Player-versus-player** is on. Safety is local and visible: near a shop door,
+  near a portal, inside a town, and on the truce grounds. Step off a road
+  anywhere else, at any depth, and blades are out.
+- **Monsters drop** what they carry — hide, feathers, fangs, wisp-light — and
+  **players trade**, face to face and through the Bazaar's standing offers.
+- **Curios and the flavour economy** are in;
+  [activities.md](../guides/activities.md) is the full account.
+
+The [changelog](../../CHANGELOG.md) has the dates. What is still unfinished — the
+world-geometry migration, the accounting passes between the Keeper and the world
+— is engineering rather than world design, and the [audit log](../audit-1.md)
+tracks it.

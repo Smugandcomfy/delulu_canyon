@@ -14,6 +14,70 @@ launched, which is what `0.x` means here.
 
 ---
 
+## [0.37.7] — 2026-09-28
+
+### Two worlds went quiet for a while
+
+**Luméira and Waterworld both ran out of the cycles that pay for running them**
+and stopped answering. A world that runs dry refuses calls rather than losing
+anything, so **nothing was lost**: every character, bag and banked coin was
+exactly where it had been. Both were refilled the same morning and are running.
+
+It happened because the worlds had been costing far more to run than the
+dashboards said. The honest version of where that stands is below.
+
+### About eighteen hundred script-made characters are gone from Waterworld
+
+They were made by a script over a few days, walked about, and did nothing else.
+None of them held any gold. They have been removed. If a real character of yours
+was caught up in it, say so and it will be looked at.
+
+### A lighter heartbeat, and a result we are reporting rather than promising
+
+Every few seconds each world takes a step: monsters move, wounds mend, eggs warm.
+That step was also looking at **every character who had ever stood in a busy
+place**, including people who went home weeks ago. It now looks only at the people
+actually there. **Nothing about play changes.** The people it moves around and the
+order it treats them in are the same as before. The one difference is that a
+monster may now walk across the empty spot where somebody logged off, which
+matches what you already see: offline characters were never drawn.
+
+⚠️ **It has not yet lowered the running cost.** On a copy of a live world the
+step itself became about seven times cheaper. On the real worlds, measured over
+half an hour afterwards, the total bill did not come down. So the step was not
+the main cost, and the search goes on. We will say what the next change does
+once it is measured, not before.
+
+---
+
+## [0.37.6] — 2026-09-22
+
+### First person becomes playable
+
+- **You can see your fight.** Damage dealt and taken, armour, weapon cracks and
+  enemy bolts were all drawn *underneath* the first-person view and never seen.
+  They show now, and your own numbers float in the middle of the view.
+- **A phone can turn.** Dragging turns you, and on desktop the same drag is
+  mouse-look. Before this a phone could only walk forward.
+- **It is sharp.** The view was stretched and blurred on large screens. Phones
+  keep their old settings until it has been measured on real devices.
+- **Twenty more kinds of wall have texture**, so a cathedral no longer looks like
+  a coloured slab next to a lighthouse.
+- **Bodies and sponsor chests appear.** A fallen friend's pack was invisible in
+  first person, and so were chests holding real tokens.
+
+⚠️ Still missing: the minimap does not turn with you, there is no crosshair, a
+tap still steps rather than attacks, and water nearby tints the floor around you.
+
+### You go offline sooner
+
+A character idle for half an hour now counts as offline, where it used to be an
+hour. You were already shown as away after twenty minutes, and your next action
+brings you straight back. It was meant to make the worlds cheaper to run and did
+not. It is kept because it is a sensible setting on its own.
+
+---
+
 ## [0.37.5] — 2026-09-22
 
 ### A journey now settles itself
